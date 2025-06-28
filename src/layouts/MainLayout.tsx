@@ -5,9 +5,45 @@ import { Globe, Menu, X, ChevronDown } from 'lucide-react';
 export default function MainLayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [hoverTimeout, setHoverTimeout] = useState<ReturnType<typeof setTimeout> | null>(null);
+  const location = useLocation();
 
-  const toggleDropdown = (menu: string) => {
-    setActiveDropdown(activeDropdown === menu ? null : menu);
+  // Close dropdown when location changes (navigation)
+  React.useEffect(() => {
+    setActiveDropdown(null);
+    setIsMenuOpen(false);
+  }, [location]);
+
+  // Cleanup timeout on unmount
+  React.useEffect(() => {
+    return () => {
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
+    };
+  }, [hoverTimeout]);
+
+  const handleMouseEnter = (menu: string) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setActiveDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150); // 150ms delay
+    setHoverTimeout(timeout);
+  };
+
+  const closeDropdown = () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setActiveDropdown(null);
   };
 
   return (
@@ -35,9 +71,12 @@ export default function MainLayout() {
               </Link>
               
               {/* Khám phá - Dropdown */}
-              <div className="relative">
+              <div 
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('explore')}
+                onMouseLeave={handleMouseLeave}
+              >
                 <button 
-                  onClick={() => toggleDropdown('explore')}
                   className="flex items-center text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 >
                   Khám phá
@@ -51,13 +90,13 @@ export default function MainLayout() {
                       <div className="mb-4">
                         <h3 className="font-semibold text-gray-800 mb-2">Tham luận</h3>
                         <div className="space-y-1 ml-4">
-                          <Link to="/forums/forum-4-9" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/forums/forum-4-9" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Diễn đàn 4/9
                           </Link>
-                          <Link to="/forums/forum-5-9" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/forums/forum-5-9" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Diễn đàn 5/9  
                           </Link>
-                          <Link to="/forums/summit-5-9" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/forums/summit-5-9" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Hội nghị thượng đỉnh 5/9
                           </Link>
                         </div>
@@ -67,22 +106,22 @@ export default function MainLayout() {
                       <div className="mb-4">
                         <h3 className="font-semibold text-gray-800 mb-2">Hoạt động</h3>
                         <div className="space-y-1 ml-4">
-                          <Link to="/activities/exhibition" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/exhibition" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Triển lãm - Gian hàng
                           </Link>
-                          <Link to="/activities/conference" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/conference" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Diễn đàn - Hội nghị
                           </Link>
-                          <Link to="/activities/matching" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/matching" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Matching DN 1:1
                           </Link>
-                          <Link to="/activities/gala" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/gala" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Tiệc giao lưu & tổng kết
                           </Link>
-                          <Link to="/activities/tour" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/tour" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Tour thăm quan Hệ sinh thái
                           </Link>
-                          <Link to="/activities/tourism" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/activities/tourism" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Du lịch địa phương
                           </Link>
                         </div>
@@ -90,7 +129,7 @@ export default function MainLayout() {
 
                       {/* Nhà tài trợ */}
                       <div className="mb-4">
-                        <Link to="/sponsors" className="block font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+                        <Link to="/sponsors" onClick={closeDropdown} className="block font-semibold text-gray-800 hover:text-blue-600 transition-colors">
                           Nhà tài trợ
                         </Link>
                       </div>
@@ -99,13 +138,13 @@ export default function MainLayout() {
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-2">Tài liệu chương trình</h3>
                         <div className="space-y-1 ml-4">
-                          <Link to="/documents/introduction" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/documents/introduction" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Giới thiệu
                           </Link>
-                          <Link to="/documents/presentations" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/documents/presentations" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Tham luận
                           </Link>
-                          <Link to="/documents/directory" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                          <Link to="/documents/directory" onClick={closeDropdown} className="block text-sm text-gray-600 hover:text-blue-600 transition-colors">
                             Danh bạ Doanh nghiệp
                           </Link>
                         </div>
