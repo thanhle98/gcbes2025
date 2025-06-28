@@ -1,4 +1,4 @@
-# Cấu trúc Project ECCDF2025
+# Cấu trúc Project GCBEF2025
 
 ## Tổng quan
 Project đã được cấu trúc lại thành hệ thống multi-page application sử dụng React Router theo đúng yêu cầu từ README.md.

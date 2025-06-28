@@ -148,11 +148,9 @@ export default function HomePage() {
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Logo chương trình */}
           <div className="mb-8">
-            <div className="w-24 h-24 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-6 border border-white/20">
-              <Globe className="w-12 h-12 text-white" />
-            </div>
+            
             <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
-              ECCDF2025
+              GCBEF2025
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 font-light">
               Hội nghị quốc tế về Thương mại điện tử xuyên biên giới
@@ -223,7 +221,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Về Hội nghị ECCDF2025
+              Về Hội nghị GCBEF2025
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Hội nghị Quốc tế về Thương mại Điện tử Xuyên biên giới 2025 là sự kiện quan trọng nhất trong năm, 
