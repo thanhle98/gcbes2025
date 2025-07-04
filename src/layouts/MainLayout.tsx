@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet, Link, useLocation } from "react-router-dom";
+import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function MainLayout() {
@@ -9,11 +9,14 @@ export default function MainLayout() {
     typeof setTimeout
   > | null>(null);
   const location = useLocation();
+  const navigation = useNavigate();
 
   // Close dropdown when location changes (navigation)
   React.useEffect(() => {
     setActiveDropdown(null);
     setIsMenuOpen(false);
+    // scroll to top
+    window.scrollTo(0, 0);
   }, [location]);
 
   // Cleanup timeout on unmount
@@ -56,8 +59,9 @@ export default function MainLayout() {
           <div className="flex justify-between items-center py-4">
             {/* Logo GCBES */}
             <img
-              src="/GCBEF-LOGO.svg"
-              alt="GCBEF Logo"
+              onClick={() => navigation("/")}
+              src="/GCBES-LOGO.svg"
+              alt="GCBES Logo"
               className="h-10 w-auto"
             />
 
@@ -66,7 +70,7 @@ export default function MainLayout() {
               {/* Giới thiệu */}
               <Link
                 to="/"
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-custom-blue transition-colors font-medium"
               >
                 Giới thiệu
               </Link>
@@ -77,7 +81,7 @@ export default function MainLayout() {
                 onMouseEnter={() => handleMouseEnter("explore")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                <button className="flex items-center text-gray-700 hover:text-custom-blue transition-colors font-medium">
                   Khám phá
                   <ChevronDown className="ml-1 w-4 h-4" />
                 </button>
@@ -94,21 +98,21 @@ export default function MainLayout() {
                           <Link
                             to="/forums/forum-4-9"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Diễn đàn 4/9
                           </Link>
                           <Link
                             to="/forums/forum-5-9"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Diễn đàn 5/9
                           </Link>
                           <Link
                             to="/forums/summit-5-9"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Hội nghị thượng đỉnh 5/9
                           </Link>
@@ -124,42 +128,42 @@ export default function MainLayout() {
                           <Link
                             to="/activities/exhibition"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Triển lãm - Gian hàng
                           </Link>
                           <Link
                             to="/activities/conference"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Diễn đàn - Hội nghị
                           </Link>
                           <Link
                             to="/activities/matching"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Matching DN 1:1
                           </Link>
                           <Link
                             to="/activities/gala"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Tiệc giao lưu & tổng kết
                           </Link>
                           <Link
                             to="/activities/tour"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Tour thăm quan Hệ sinh thái
                           </Link>
                           <Link
                             to="/activities/tourism"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Du lịch địa phương
                           </Link>
@@ -171,7 +175,7 @@ export default function MainLayout() {
                         <Link
                           to="/sponsors"
                           onClick={closeDropdown}
-                          className="block font-semibold text-gray-800 hover:text-blue-600 transition-colors"
+                          className="block font-semibold text-gray-800 hover:text-custom-blue transition-colors"
                         >
                           Nhà tài trợ
                         </Link>
@@ -186,21 +190,21 @@ export default function MainLayout() {
                           <Link
                             to="/documents/introduction"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Giới thiệu
                           </Link>
                           <Link
                             to="/documents/presentations"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Tham luận
                           </Link>
                           <Link
                             to="/documents/directory"
                             onClick={closeDropdown}
-                            className="block text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                            className="block text-sm text-gray-600 hover:text-custom-blue transition-colors"
                           >
                             Danh bạ Doanh nghiệp
                           </Link>
@@ -224,7 +228,7 @@ export default function MainLayout() {
               )}
             </button>
 
-            <button className="hidden lg:block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <button className="hidden lg:block bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
               Đăng ký tham dự
             </button>
           </div>
@@ -235,7 +239,7 @@ export default function MainLayout() {
               <nav className="flex flex-col space-y-3">
                 <Link
                   to="/"
-                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                  className="text-gray-700 hover:text-custom-blue transition-colors font-medium"
                 >
                   Giới thiệu
                 </Link>
@@ -305,7 +309,7 @@ export default function MainLayout() {
                 </div>
                 <Link
                   to="/sponsors"
-                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                  className="text-gray-700 hover:text-custom-blue transition-colors font-medium"
                 >
                   Nhà tài trợ
                 </Link>
@@ -334,7 +338,7 @@ export default function MainLayout() {
                     </Link>
                   </div>
                 </div>
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold w-full mt-3">
+                <button className="bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold w-full mt-3">
                   Đăng ký tham dự
                 </button>
               </nav>
@@ -354,14 +358,8 @@ export default function MainLayout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-                  <img
-                    src="/GCBEF-LOGO.svg"
-                    alt="GCBEF Logo"
-                    className="w-10 h-10 rounded-lg"
-                  />
-                </div>
-                <h3 className="text-lg font-bold">GCBEF2025</h3>
+               
+                <h3 className="text-lg font-bold">GCBES - 2025</h3>
               </div>
               <p className="text-gray-400">
                 Hội nghị quốc tế về Thương mại điện tử xuyên biên giới
@@ -417,14 +415,14 @@ export default function MainLayout() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Liên hệ</h4>
               <p className="text-gray-400">
-                Email: info@GCBEF2025.com
+                Email: info@GCBES2025.com
                 <br />
                 Điện thoại: +84 24 1234 5678
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 GCBEF2025. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2025 GCBES2025. Tất cả quyền được bảo lưu.</p>
           </div>
         </div>
       </footer>

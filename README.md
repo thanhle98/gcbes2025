@@ -1,4 +1,4 @@
-# Hội nghị quốc tế GCBEF2025
+# Hội nghị quốc tế GCBES2025
 
 ## Cấu trúc menu
 
