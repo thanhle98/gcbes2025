@@ -354,7 +354,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="HBM_2301.jpg"
                 alt="Conference Overview"
                 className="rounded-2xl shadow-2xl"
               />
