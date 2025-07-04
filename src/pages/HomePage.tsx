@@ -53,14 +53,17 @@ function LazyBackgroundVideo() {
 
   return (
     <div ref={containerRef} className="absolute inset-0">
-      {/* Always show poster image */}
-      <img
-        src="/background-init.png"
-        alt="Conference Background"
-        className={`w-full h-full object-cover transition-opacity duration-1000 ${
-          isVideoLoaded ? 'opacity-0' : 'opacity-100'
-        }`}
-      />
+      {/* Always show poster image - WebP with JPG fallback */}
+      <picture>
+        <source srcSet="/background-init.webp" type="image/webp" />
+        <img
+          src="/background-init-compressed.jpg"
+          alt="Conference Background"
+          className={`w-full h-full object-cover transition-opacity duration-1000 ${
+            isVideoLoaded ? 'opacity-0' : 'opacity-100'
+          }`}
+        />
+      </picture>
       
       {/* Load video only when needed */}
       {shouldLoadVideo && (
