@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Calendar,
   MapPin,
@@ -17,6 +17,74 @@ import {
   Play,
   Package,
 } from "lucide-react";
+
+// Lazy loading video component
+function LazyBackgroundVideo() {
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting && !shouldLoadVideo) {
+          // Add a small delay to prioritize critical content
+          setTimeout(() => setShouldLoadVideo(true), 1000);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [shouldLoadVideo]);
+
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+    if (videoRef.current) {
+      videoRef.current.play().catch(console.error);
+    }
+  };
+
+  return (
+    <div ref={containerRef} className="absolute inset-0">
+      {/* Always show poster image */}
+      <img
+        src="/background-init.png"
+        alt="Conference Background"
+        className={`w-full h-full object-cover transition-opacity duration-1000 ${
+          isVideoLoaded ? 'opacity-0' : 'opacity-100'
+        }`}
+      />
+      
+      {/* Load video only when needed */}
+      {shouldLoadVideo && (
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            isVideoLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          onCanPlay={handleVideoLoad}
+          onLoadedData={handleVideoLoad}
+        >
+          <source src="/background-video.mp4" type="video/mp4" />
+        </video>
+      )}
+      
+      <div className="absolute inset-0 bg-custom-gradient-overlay"></div>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const topics = [
@@ -164,26 +232,8 @@ export default function HomePage() {
     <div>
       {/* Hero Banner */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            className="w-full h-full object-cover"
-          >
-            <source src="/background-video.mp4" type="video/mp4" />
-            {/* Fallback image for browsers that don't support video */}
-            <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920"
-              alt="Conference Background"
-              className="w-full h-full object-cover"
-            />
-          </video>
-          <div className="absolute inset-0 bg-custom-gradient-overlay"></div>
-        </div>
+        {/* Background Video with Lazy Loading */}
+        <LazyBackgroundVideo />
 
         {/* Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
