@@ -15,6 +15,7 @@ import {
   Award,
   ChevronRight,
   Play,
+  Package,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -151,24 +152,36 @@ export default function HomePage() {
   ];
 
   const stats = [
-    { number: "500+", label: "Doanh nghiệp, hiệp hội", icon: Users },
-    { number: "50+", label: "Diễn giả", icon: Mic },
-    { number: "20+", label: "Quốc gia tham dự", icon: Globe },
-    { number: "100+", label: "Gian hàng", icon: Building2 },
-    { number: "2000+", label: "Khách tham quan", icon: Users },
+    { number: "10.000m²", label: "Diện tích trưng bày", icon: Building2 },
+    { number: "600+", label: "Booth trưng bày", icon: Building2 },
+    { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
+    { number: "10+", label: "Hội thảo & các hoạt động", icon: Mic },
+    { number: "10.000+", label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn", icon: Package },
+    { number: "10.000+", label: "Khách tham quan, đoàn thu mua quốc tế", icon: Users },
   ];
 
   return (
     <div>
       {/* Hero Banner */}
-      <section className="relative min-h-[63vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Background Video */}
         <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Conference Background"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920"
             className="w-full h-full object-cover"
-          />
+          >
+            <source src="/background-video.mp4" type="video/mp4" />
+            {/* Fallback image for browsers that don't support video */}
+            <img
+              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920"
+              alt="Conference Background"
+              className="w-full h-full object-cover"
+            />
+          </video>
           <div className="absolute inset-0 bg-custom-gradient-overlay"></div>
         </div>
 
@@ -212,18 +225,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
-          </div>
-        </div>
       </section>
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
