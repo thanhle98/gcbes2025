@@ -16,6 +16,7 @@ import {
   ChevronRight,
   Play,
   Package,
+  ArrowDown,
 } from "lucide-react";
 
 // Lazy loading video component
@@ -60,11 +61,11 @@ function LazyBackgroundVideo() {
           src="/background-init-compressed.jpg"
           alt="Conference Background"
           className={`w-full h-full object-cover transition-opacity duration-1000 ${
-            isVideoLoaded ? 'opacity-0' : 'opacity-100'
+            isVideoLoaded ? "opacity-0" : "opacity-100"
           }`}
         />
       </picture>
-      
+
       {/* Load video only when needed */}
       {shouldLoadVideo && (
         <video
@@ -75,7 +76,7 @@ function LazyBackgroundVideo() {
           playsInline
           preload="metadata"
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-            isVideoLoaded ? 'opacity-100' : 'opacity-0'
+            isVideoLoaded ? "opacity-100" : "opacity-0"
           }`}
           onCanPlay={handleVideoLoad}
           onLoadedData={handleVideoLoad}
@@ -83,7 +84,7 @@ function LazyBackgroundVideo() {
           <source src="/background-video.mp4" type="video/mp4" />
         </video>
       )}
-      
+
       <div className="absolute inset-0 bg-custom-gradient-overlay"></div>
     </div>
   );
@@ -223,12 +224,19 @@ export default function HomePage() {
   ];
 
   const stats = [
-    { number: "10.000m²", label: "Diện tích trưng bày", icon: Building2 },
-    { number: "600+", label: "Booth trưng bày", icon: Building2 },
-    { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
+    {
+      number: "10,000+",
+      label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn",
+      icon: Package,
+    },
     { number: "10+", label: "Hội thảo & các hoạt động", icon: Mic },
-    { number: "10.000+", label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn", icon: Package },
-    { number: "10.000+", label: "Khách tham quan, đoàn thu mua quốc tế", icon: Users },
+    { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
+    { number: "600+", label: "Booth trưng bày", icon: Building2 },
+    {
+      number: "10,000+",
+      label: "Khách tham quan, đoàn thu mua quốc tế",
+      icon: Users,
+    },
   ];
 
   return (
@@ -242,32 +250,28 @@ export default function HomePage() {
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Logo chương trình */}
           <div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
               GCBES2025
             </h1>
-            <b className="text-xl md:text-3xl text-white">
-              Hội nghị quốc tế về Thương mại điện tử xuyên biên giới
+            <b className="text-xl md:text-3xl leading-10 text-white">
+              DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ
+              <br />
+              VÀ CÔNG NGHỆ SỐ 2025
             </b>
           </div>
 
-          <p className="text-lg max-w-3xl mx-auto leading-relaxed pt-8">
-            Tham gia cùng hơn 500 chuyên gia hàng đầu từ 20+ quốc gia để khám
-            phá những xu hướng mới nhất trong thương mại điện tử xuyên biên giới
-            và công nghệ số
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-8 pt-8">
+          <div className="flex flex-wrap justify-center gap-8 py-4">
             <div className="flex items-center space-x-2 ">
               <Calendar className="w-5 h-5" />
               <span>4-6 tháng 9, 2025</span>
             </div>
-            <div className="flex items-center space-x-2 ">
+            <div className="flex items-center space-x-2">
               <MapPin className="w-5 h-5" />
               <span>TP Hồ Chí Minh, Việt Nam</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="bg-custom-gradient hover:opacity-90 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
               Đăng ký ngay
             </button>
@@ -276,14 +280,24 @@ export default function HomePage() {
               <span>Xem giới thiệu</span>
             </button>
           </div>
-        </div>
 
+          <p className="text-sm max-w-3xl mx-auto leading-relaxed pt-16 text-blue-50 text-justify md:text-center">
+            Tham gia cùng hơn 500 chuyên gia hàng đầu từ 60 quốc gia Toạ đàm
+            đa quốc gia - Hợp tác chuyển đổi số toàn diện cho Xuất khẩu Việt
+            Nam, nâng cao năng lực sản xuất và công nghệ số
+          </p>
+
+          {/* scroll down */}
+          <div className="flex justify-center items-center pt-16">
+            <ArrowDown className="w-10 h-10 text-white animate-bounce" />
+          </div>
+        </div>
       </section>
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
