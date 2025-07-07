@@ -552,12 +552,17 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
               Đối tác & Nhà tài trợ
             </h2>
-            <p className="text-gray-600">
-              Được hỗ trợ bởi những tổ chức hàng đầu trong ngành
+            <p className="text-xl text-gray-600 font-medium">
+              Đang cập nhật
             </p>
           </div>
 
-          {/* Nhà tài trợ Kim cương */}
+          {/* Commented out for future use */}
+          {/* 
+          <p className="text-gray-600">
+            Được hỗ trợ bởi những tổ chức hàng đầu trong ngành
+          </p>
+
           <div className="mb-12">
             <div className="flex items-center justify-center mb-6">
               <Star className="w-6 h-6 text-yellow-500 mr-2" />
@@ -582,7 +587,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Nhà tài trợ Bạch kim */}
           <div>
             <div className="flex items-center justify-center mb-6">
               <Award className="w-5 h-5 text-gray-400 mr-2" />
@@ -602,6 +606,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+          */}
         </div>
       </section>
     </div>
