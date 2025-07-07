@@ -90,155 +90,168 @@ function LazyBackgroundVideo() {
   );
 }
 
+const topics = [
+  {
+    icon: Globe,
+    title: "TMĐT xuyên biên giới",
+    color: "bg-emerald-50 border border-emerald-200",
+    iconColor: "text-emerald-600",
+    textColor: "text-gray-800",
+    description:
+      "Vượt qua rào cản, mở rộng thị trường toàn cầu thông qua các nền tảng số",
+  },
+  {
+    icon: Brain,
+    title: "Công nghệ & AI",
+    color: "bg-blue-50 border border-blue-200",
+    iconColor: "text-blue-600",
+    textColor: "text-gray-800",
+    description: "AI thay đổi cuộc chơi, doanh nghiệp nào sẽ dẫn đầu?",
+  },
+  {
+    icon: GraduationCap,
+    title: "Đào tạo nguồn nhân lực",
+    color: "bg-teal-50 border border-teal-200",
+    iconColor: "text-teal-600",
+    textColor: "text-gray-800",
+    description: "Phát triển năng lực chuyên môn, xây dựng nền tảng bền vững",
+  },
+  {
+    icon: Truck,
+    title: "Logistics",
+    color: "bg-cyan-50 border border-cyan-200",
+    iconColor: "text-cyan-600",
+    textColor: "text-gray-800",
+    description: "Tối ưu hóa hệ thống và nâng cao hiệu quả kinh doanh",
+  },
+  {
+    icon: Shield,
+    title: "Chính sách quản lý nhà nước",
+    color: "bg-green-50 border border-green-200",
+    iconColor: "text-green-600",
+    textColor: "text-gray-800",
+    description: "Khung pháp lý mới, cơ hội thúc đẩy đột phá mới",
+  },
+  {
+    icon: Leaf,
+    title: "Phát triển bền vững",
+    color: "bg-lime-50 border border-lime-200",
+    iconColor: "text-lime-600",
+    textColor: "text-gray-800",
+    description: "Kinh doanh xanh, lợi nhuận lâu dài",
+  },
+];
+
+const sessions = [
+  {
+    date: "4/9",
+    title:
+      "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+    subtitle:
+      "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+    type: "Diễn đàn",
+    time: "12:00 - 18:00",
+    location: "Hội trường chính",
+  },
+  {
+    date: "5/9",
+    title:
+      "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
+    subtitle: "Chiến lược mở rộng thị trường toàn cầu",
+    type: "Diễn đàn",
+    time: "09:00 - 12:00",
+    location: "Hội trường A",
+  },
+  {
+    date: "5/9",
+    title:
+      "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025 - Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
+    subtitle: "Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
+    type: "Hội nghị thượng đỉnh",
+    time: "14:00 - 17:30",
+    location: "Hội trường chính",
+  },
+  {
+    date: "5/9",
+    title: "Gala dinner giao lưu",
+    subtitle: "Kết nối và chia sẻ kinh nghiệm cùng các chuyên gia quốc tế",
+    type: "Sự kiện",
+    time: "19:00 - 22:00",
+    location: "Nhà hàng VIP",
+  },
+  {
+    date: "6/9",
+    title: "Tour thăm quan",
+    subtitle:
+      "Khám phá các mô hình kinh doanh thành công và trung tâm logistics hiện đại",
+    type: "Hoạt động",
+    time: "08:00 - 17:00",
+    location: "Các địa điểm tại Hà Nội",
+  },
+];
+
+const speakers = [
+  {
+    name: "Bà Lê Hoàng Oanh",
+    title: "Cục trưởng",
+    company: "Cục Thương mại điện tử và Kinh tế số Bộ Công Thương",
+    image:
+      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    name: "Ông Liu Liang",
+    title: "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
+    company: "Tỉnh Vân Nam, Trung Quốc",
+    image:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    name: "Bà Anna Nguyễn",
+    title: "Phó chủ tịch",
+    company: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
+    image:
+      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    name: "Ông Nguyễn Ngọc Dũng",
+    title: "Chủ tịch",
+    company: "Hiệp hội Thương mại điện tử Việt Nam (VECOM)",
+    image:
+      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    name: "Ông Jang Woo Sung",
+    title: "Ủy ban Tư vấn xuất khẩu",
+    company: "Hiệp hội xuất khẩu tỉnh Gyeonggi",
+    image:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    name: "Ông Nguyễn Lâm Thanh",
+    title: "Đại diện TikTok tại Việt Nam & Phó Chủ tịch VDCA",
+    company: "TikTok Vietnam & Hội truyền thông số Việt Nam",
+    image:
+      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+];
+
+const stats = [
+  {
+    number: "10,000+",
+    label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn",
+    icon: Package,
+  },
+  { number: "10+", label: "Hội thảo & các hoạt động", icon: Mic },
+  { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
+  { number: "600+", label: "Booth trưng bày", icon: Building2 },
+  {
+    number: "10,000+",
+    label: "Khách tham quan, đoàn thu mua quốc tế",
+    icon: Users,
+  },
+];
+
 export default function HomePage() {
-  const topics = [
-    {
-      icon: Globe,
-      title: "TMĐT xuyên biên giới",
-      color: "bg-custom-gradient",
-      description:
-        "Vượt qua rào cản, mở rộng thị trường toàn cầu thông qua các nền tảng số",
-    },
-    {
-      icon: Brain,
-      title: "Công nghệ & AI",
-      color: "bg-custom-gradient",
-      description: "AI thay đổi cuộc chơi, doanh nghiệp nào sẽ dẫn đầu?",
-    },
-    {
-      icon: GraduationCap,
-      title: "Đào tạo nguồn nhân lực",
-      color: "bg-gradient-to-br from-emerald-600 to-emerald-800",
-      description: "Phát triển năng lực chuyên môn xây dựng nền tảng bền vững",
-    },
-    {
-      icon: Truck,
-      title: "Logistics",
-      color: "bg-gradient-to-br from-orange-600 to-orange-800",
-      description: "Tối ưu hóa hệ thống và nâng cao hiệu quả kinh doanh",
-    },
-    {
-      icon: Shield,
-      title: "Chính sách quản lý nhà nước",
-      color: "bg-gradient-to-br from-red-600 to-red-800",
-      description: "Khung pháp lý mới, cơ hội thúc đẩy đột phá mới",
-    },
-    {
-      icon: Leaf,
-      title: "Phát triển bền vững",
-      color: "bg-gradient-to-br from-green-600 to-green-800",
-      description: "Kinh doanh xanh, lợi nhuận lâu dài",
-    },
-  ];
-
-  const sessions = [
-    {
-      date: "4/9",
-      title: "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình",
-      subtitle:
-        "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
-      type: "Diễn đàn",
-      time: "09:00 - 12:00",
-      location: "Hội trường chính",
-    },
-    {
-      date: "5/9",
-      title:
-        "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
-      subtitle: "Chiến lược mở rộng thị trường toàn cầu",
-      type: "Diễn đàn",
-      time: "09:00 - 12:00",
-      location: "Hội trường A",
-    },
-    {
-      date: "5/9",
-      title:
-        "Toàn cảnh Diễn đàn quốc tế thương mại điện tử xuyên biên giới năm 2025",
-      subtitle: "Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-      type: "Hội nghị thượng đỉnh",
-      time: "14:00 - 17:30",
-      location: "Hội trường chính",
-    },
-    {
-      date: "5/9",
-      title: "Gala dinner giao lưu",
-      subtitle: "Kết nối và chia sẻ kinh nghiệm cùng các chuyên gia quốc tế",
-      type: "Sự kiện",
-      time: "19:00 - 22:00",
-      location: "Nhà hàng VIP",
-    },
-    {
-      date: "6/9",
-      title: "Tour thăm quan",
-      subtitle:
-        "Khám phá các mô hình kinh doanh thành công và trung tâm logistics hiện đại",
-      type: "Hoạt động",
-      time: "08:00 - 17:00",
-      location: "Các địa điểm tại Hà Nội",
-    },
-  ];
-
-  const speakers = [
-    {
-      name: "TS. Nguyễn Minh Đức",
-      title: "Thứ trưởng Bộ Công Thương",
-      company: "Bộ Công Thương Việt Nam",
-      image:
-        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Bà Sarah Chen",
-      title: "Giám đốc Khu vực Đông Nam Á",
-      company: "Amazon Global Selling",
-      image:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Ông David Kim",
-      title: "CEO & Founder",
-      company: "E-commerce Innovation Hub",
-      image:
-        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "TS. Lê Thị Minh Hương",
-      title: "Chuyên gia AI & Thương mại điện tử",
-      company: "Viện Nghiên cứu Công nghệ FPT",
-      image:
-        "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Ông Michael Zhang",
-      title: "Giám đốc Phát triển Kinh doanh",
-      company: "Alibaba Group",
-      image:
-        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Bà Trần Thị Lan Anh",
-      title: "Tổng Giám đốc",
-      company: "Hiệp hội Thương mại điện tử Việt Nam",
-      image:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-  ];
-
-  const stats = [
-    {
-      number: "10,000+",
-      label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn",
-      icon: Package,
-    },
-    { number: "10+", label: "Hội thảo & các hoạt động", icon: Mic },
-    { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
-    { number: "600+", label: "Booth trưng bày", icon: Building2 },
-    {
-      number: "10,000+",
-      label: "Khách tham quan, đoàn thu mua quốc tế",
-      icon: Users,
-    },
-  ];
-
   return (
     <div>
       {/* Hero Banner */}
@@ -282,9 +295,9 @@ export default function HomePage() {
           </div>
 
           <p className="text-sm max-w-3xl mx-auto leading-relaxed pt-16 text-blue-50 text-justify md:text-center">
-            Tham gia cùng hơn 500 chuyên gia hàng đầu từ 60 quốc gia Toạ đàm
-            đa quốc gia - Hợp tác chuyển đổi số toàn diện cho Xuất khẩu Việt
-            Nam, nâng cao năng lực sản xuất và công nghệ số
+            Tham gia cùng hơn 500 chuyên gia hàng đầu từ 60 quốc gia Toạ đàm đa
+            quốc gia - Hợp tác chuyển đổi số toàn diện cho Xuất khẩu Việt Nam,
+            nâng cao năng lực sản xuất và công nghệ số
           </p>
 
           {/* scroll down */}
@@ -328,10 +341,14 @@ export default function HomePage() {
               Công Thương) chủ trì, phối hợp cùng Vụ Thị trường trong nước tổ
               chức.
               <br />
-              Diễn đàn nhằm thúc đẩy TMĐT xuyên biên giới, chuyển đổi số trong
-              xuất khẩu, hỗ trợ doanh nghiệp nâng cao năng lực cạnh tranh, kết
-              nối chuỗi cung ứng toàn cầu và xây dựng hệ sinh thái TMĐT bền
-              vững.
+              <br />
+              GCBES 2025  – Diễn đàn Ứng dụng Thương mại điện tử và Công nghệ số
+              là một trong những sự kiện hàng đầu trong khu vực, nơi hội tụ các
+              nhà sản xuất, platform thương mại điện tử, nền tảng công nghệ,
+              doanh nghiệp logistics và các chuyên gia hàng đầu từ Việt Nam và
+              quốc tế. Mục tiêu hướng đến mở ra kỷ nguyên mới cho xuất khẩu hàng
+              hoá toàn cầu thông qua Thương mại điện tử xuyên biên giới (CBEC)
+              và ứng dụng công nghệ AI.
             </p>
           </div>
 
@@ -344,8 +361,9 @@ export default function HomePage() {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-700">
-                    Kết nối với hơn 500 chuyên gia và doanh nghiệp hàng đầu
-                    trong lĩnh vực thương mại điện tử
+                    Kết nối trực tiếp với seller,buyer từ +60 quốc gia quốc tế,
+                    Tham vấn mô hình quản trị Thương mại điện tử  từ Mỹ, Trung
+                    Quốc, Nhật Bản, ASEAN
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -356,12 +374,14 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700">Tham vấn chuyên môn trực tiếp</p>
+                  <p className="text-gray-700">
+                    Kết nối toàn cầu – Hiểu Việt Nam qua góc nhìn quốc tế
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-700">
-                    Mở rộng mạng lưới đối tác chiến lược và đầu tư
+                    Đưa sản phẩm nội địa ra thế giới – Không cần qua trung gian
                   </p>
                 </div>
               </div>
@@ -439,14 +459,22 @@ export default function HomePage() {
               return (
                 <div key={index} className="group cursor-pointer">
                   <div
-                    className={`${topic.color} rounded-2xl p-8 text-white transform group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl`}
+                    className={`${topic.color} rounded-2xl p-8 bg-white transform group-hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-lg`}
                   >
-                    <Icon className="w-12 h-12 mb-6 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-xl font-bold mb-4">{topic.title}</h3>
-                    <p className="text-white/90 leading-relaxed min-h-[60px]">
+                    <Icon
+                      className={`w-12 h-12 mb-6 ${topic.iconColor} group-hover:scale-110 transition-transform duration-300`}
+                    />
+                    <h3 className={`text-xl font-bold mb-4 ${topic.textColor}`}>
+                      {topic.title}
+                    </h3>
+                    <p
+                      className={`${topic.textColor}/80 leading-relaxed min-h-[60px]`}
+                    >
                       {topic.description}
                     </p>
-                    <div className="flex items-center mt-6 text-white/80 group-hover:text-white transition-colors">
+                    <div
+                      className={`flex items-center mt-6 ${topic.iconColor} group-hover:${topic.iconColor} transition-colors`}
+                    >
                       <span className="text-sm font-medium">Tìm hiểu thêm</span>
                       <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
