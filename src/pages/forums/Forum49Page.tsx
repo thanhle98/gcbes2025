@@ -239,9 +239,14 @@ export default function Forum49Page() {
             Tham gia diễn đàn để cập nhật những xu hướng công nghệ mới nhất và kết nối với cộng đồng chuyên gia
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+            <a 
+              href={REGISTRATION_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 text-center"
+            >
               Đăng ký ngay
-            </button>
+            </a>
             <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
               Tải tài liệu
             </button>
