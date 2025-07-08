@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronRight, Play, ArrowDown } from "lucide-react";
+import { useTranslation } from "../../contexts/LanguageContext";
 
 interface HeroSectionProps {
   onOpenPopup: () => void;
@@ -76,6 +77,8 @@ function LazyBackgroundVideo() {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPopup }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Video with Lazy Loading */}
@@ -88,13 +91,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPopup }) => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tight">
-          <span className="block">Diễn đàn ứng dụng Công nghệ số</span>
+          <span className="block">{t('heroTitle')}</span>
           <span className="block text-cyan-400 drop-shadow-lg">
-            trong kỷ nguyên vươn mình
+            {t('heroTitle2')}
           </span>
         </h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-          Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam
+          {t('heroSubtitle')}
+        </p>
+        <p className="text-md md:text-lg max-w-2xl mx-auto mb-8 opacity-90">
+          {t('heroDate')} • {t('heroLocation')}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -103,7 +109,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPopup }) => {
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full text-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-blue-500/25"
           >
-            Đăng ký ngay
+            {t('heroRegister')}
             <ChevronRight className="ml-2 -mr-1 h-6 w-6 transform transition-transform duration-300 group-hover:translate-x-1" />
           </a>
           <button
@@ -111,7 +117,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPopup }) => {
             className="group inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             <Play className="mr-2 -ml-1 h-6 w-6" />
-            Xem giới thiệu
+            {t('heroWatchVideo')}
           </button>
         </div>
         <div className="mt-16 animate-bounce">

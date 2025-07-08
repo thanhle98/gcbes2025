@@ -18,166 +18,163 @@ import {
 } from "lucide-react";
 import VideoPopup from "../components/common/VideoPopup";
 import HeroSection from "./home/HeroSection";
+import { useTranslation } from "../contexts/LanguageContext";
+import { TranslationKey } from "../i18n/translations";
 
-// Lazy loading video component is now in HeroSection.tsx
-
-const topics = [
-  {
-    icon: Globe,
-    title: "TMĐT xuyên biên giới",
-    color: "bg-emerald-50 border border-emerald-200",
-    iconColor: "text-emerald-600",
-    textColor: "text-gray-800",
-    description:
-      "Vượt qua rào cản, mở rộng thị trường toàn cầu thông qua các nền tảng số",
-  },
-  {
-    icon: Brain,
-    title: "Công nghệ & AI",
-    color: "bg-blue-50 border border-blue-200",
-    iconColor: "text-blue-600",
-    textColor: "text-gray-800",
-    description: "AI thay đổi cuộc chơi, doanh nghiệp nào sẽ dẫn đầu?",
-  },
-  {
-    icon: GraduationCap,
-    title: "Đào tạo nguồn nhân lực",
-    color: "bg-teal-50 border border-teal-200",
-    iconColor: "text-teal-600",
-    textColor: "text-gray-800",
-    description: "Phát triển năng lực chuyên môn, xây dựng nền tảng bền vững",
-  },
-  {
-    icon: Truck,
-    title: "Logistics",
-    color: "bg-cyan-50 border border-cyan-200",
-    iconColor: "text-cyan-600",
-    textColor: "text-gray-800",
-    description: "Tối ưu hóa hệ thống và nâng cao hiệu quả kinh doanh",
-  },
-  {
-    icon: Shield,
-    title: "Chính sách quản lý nhà nước",
-    color: "bg-green-50 border border-green-200",
-    iconColor: "text-green-600",
-    textColor: "text-gray-800",
-    description: "Khung pháp lý mới, cơ hội thúc đẩy đột phá mới",
-  },
-  {
-    icon: Leaf,
-    title: "Phát triển bền vững",
-    color: "bg-lime-50 border border-lime-200",
-    iconColor: "text-lime-600",
-    textColor: "text-gray-800",
-    description: "Kinh doanh xanh, lợi nhuận lâu dài",
-  },
-];
-
-const sessions = [
-  {
-    date: "4/9",
-    title:
-      "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
-    subtitle:
-      "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
-    type: "Diễn đàn",
-    time: "12:00 - 18:00",
-    location: "Hội trường chính",
-  },
-  {
-    date: "5/9",
-    title:
-      "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
-    subtitle: "Chiến lược mở rộng thị trường toàn cầu",
-    type: "Diễn đàn",
-    time: "09:00 - 12:00",
-    location: "Hội trường A",
-  },
-  {
-    date: "5/9",
-    title:
-      "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025 - Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-    subtitle: "Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-    type: "Hội nghị thượng đỉnh",
-    time: "14:00 - 17:30",
-    location: "Hội trường chính",
-  },
-  {
-    date: "5/9",
-    title: "Gala dinner giao lưu",
-    subtitle: "Kết nối và chia sẻ kinh nghiệm cùng các chuyên gia quốc tế",
-    type: "Sự kiện",
-    time: "19:00 - 22:00",
-    location: "Nhà hàng VIP",
-  },
-  {
-    date: "6/9",
-    title: "Tour thăm quan",
-    subtitle:
-      "Khám phá các mô hình kinh doanh thành công và trung tâm logistics hiện đại",
-    type: "Hoạt động",
-    time: "08:00 - 17:00",
-    location: "Các địa điểm tại Hà Nội",
-  },
-];
-
-const speakers = [
-  {
-    name: "Bà Lê Hoàng Oanh",
-    title: "Cục trưởng",
-    company: "Cục Thương mại điện tử và Kinh tế số Bộ Công Thương",
-    image: "/speakers/le-hoang-oanh.png",
-  },
-  {
-    name: "Ông Liu Liang",
-    title: "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
-    company: "Tỉnh Vân Nam, Trung Quốc",
-    image: "/speakers/liu-liang.png",
-  },
-  {
-    name: "Bà Anna Nguyễn",
-    title: "Phó chủ tịch",
-    company: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
-    image: "/speakers/anna-nguyen.png",
-  },
-  {
-    name: "Ông Nguyễn Ngọc Dũng",
-    title: "Chủ tịch",
-    company: "Hiệp hội Thương mại điện tử Việt Nam (VECOM)",
-    image: "/speakers/nguyen-ngoc-dung.png",
-  },
-  {
-    name: "Ông Jang Woo Sung",
-    title: "Ủy ban Tư vấn xuất khẩu",
-    company: "Hiệp hội xuất khẩu tỉnh Gyeonggi",
-    image: "/speakers/jang-woo-sung.png",
-  },
-  {
-    name: "Ông Nguyễn Lâm Thanh",
-    title: "Đại diện TikTok tại Việt Nam & Phó Chủ tịch VDCA",
-    company: "TikTok Vietnam & Hội truyền thông số Việt Nam",
-    image: "/speakers/nguyen-lam-thanh.png",
-  },
-];
-
-const stats = [
-  {
-    number: "10,000+",
-    label: "Sản phẩm trưng bày, dịch vụ đạt tiêu chuẩn",
-    icon: Package,
-  },
-  { number: "10+", label: "Hội thảo & các hoạt động", icon: Mic },
-  { number: "60+", label: "Quốc gia & vùng lãnh thổ", icon: Globe },
-  { number: "600+", label: "Booth trưng bày", icon: Building2 },
-  {
-    number: "10,000+",
-    label: "Khách tham quan, đoàn thu mua quốc tế",
-    icon: Users,
-  },
-];
+// All data arrays are now generated dynamically using translations
 
 export default function HomePage() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const dynamicStats = [
+    {
+      number: "10,000+",
+      label: t("statsProducts"),
+      icon: Package,
+    },
+    { number: "10+", label: t("statsEvents"), icon: Mic },
+    { number: "60+", label: t("statsCountries"), icon: Globe },
+    { number: "600+", label: t("statsBooths"), icon: Building2 },
+    {
+      number: "10,000+",
+      label: t("statsVisitors"),
+      icon: Users,
+    },
+  ];
+
+  const dynamicTopics = [
+    {
+      icon: Globe,
+      title: t("topicCrossBorder"),
+      color: "bg-emerald-50 border border-emerald-200",
+      iconColor: "text-emerald-600",
+      textColor: "text-gray-800",
+      description: t("topicCrossBorderDesc"),
+    },
+    {
+      icon: Brain,
+      title: t("topicTechAI"),
+      color: "bg-blue-50 border border-blue-200",
+      iconColor: "text-blue-600",
+      textColor: "text-gray-800",
+      description: t("topicTechAIDesc"),
+    },
+    {
+      icon: GraduationCap,
+      title: t("topicTraining"),
+      color: "bg-teal-50 border border-teal-200",
+      iconColor: "text-teal-600",
+      textColor: "text-gray-800",
+      description: t("topicTrainingDesc"),
+    },
+    {
+      icon: Truck,
+      title: t("topicLogistics"),
+      color: "bg-cyan-50 border border-cyan-200",
+      iconColor: "text-cyan-600",
+      textColor: "text-gray-800",
+      description: t("topicLogisticsDesc"),
+    },
+    {
+      icon: Shield,
+      title: t("topicPolicy"),
+      color: "bg-green-50 border border-green-200",
+      iconColor: "text-green-600",
+      textColor: "text-gray-800",
+      description: t("topicPolicyDesc"),
+    },
+    {
+      icon: Leaf,
+      title: t("topicSustainable"),
+      color: "bg-lime-50 border border-lime-200",
+      iconColor: "text-lime-600",
+      textColor: "text-gray-800",
+      description: t("topicSustainableDesc"),
+    },
+  ];
+
+  const dynamicSessions = [
+    {
+      date: "4/9",
+      title: t("session1Title"),
+      subtitle: t("session1Subtitle"),
+      type: t("session1Type"),
+      time: "12:00 - 18:00",
+      location: t("mainHall"),
+    },
+    {
+      date: "5/9",
+      title: t("session2Title"),
+      subtitle: t("session2Subtitle"),
+      type: t("session2Type"),
+      time: "09:00 - 12:00",
+      location: t("hallA"),
+    },
+    {
+      date: "5/9",
+      title: t("session3Title"),
+      subtitle: t("session3Subtitle"),
+      type: t("session3Type"),
+      time: "14:00 - 17:30",
+      location: t("mainHall"),
+    },
+    {
+      date: "5/9",
+      title: t("session4Title"),
+      subtitle: t("session4Subtitle"),
+      type: t("session4Type"),
+      time: "19:00 - 22:00",
+      location: t("vipRestaurant"),
+    },
+    {
+      date: "6/9",
+      title: t("session5Title"),
+      subtitle: t("session5Subtitle"),
+      type: t("session5Type"),
+      time: "08:00 - 17:00",
+      location: t("locationsInHanoi"),
+    },
+  ];
+
+  const dynamicSpeakers = [
+    {
+      name: t("speaker1Name"),
+      title: t("speaker1Title"),
+      company: t("speaker1Company"),
+      image: "/speakers/le-hoang-oanh.png",
+    },
+    {
+      name: t("speaker2Name"),
+      title: t("speaker2Title"),
+      company: t("speaker2Company"),
+      image: "/speakers/liu-liang.png",
+    },
+    {
+      name: t("speaker3Name"),
+      title: t("speaker3Title"),
+      company: t("speaker3Company"),
+      image: "/speakers/anna-nguyen.png",
+    },
+    {
+      name: t("speaker4Name"),
+      title: t("speaker4Title"),
+      company: t("speaker4Company"),
+      image: "/speakers/nguyen-ngoc-dung.png",
+    },
+    {
+      name: t("speaker5Name"),
+      title: t("speaker5Title"),
+      company: t("speaker5Company"),
+      image: "/speakers/jang-woo-sung.png",
+    },
+    {
+      name: t("speaker6Name"),
+      title: t("speaker6Title"),
+      company: t("speaker6Company"),
+      image: "/speakers/nguyen-lam-thanh.png",
+    },
+  ];
 
   return (
     <div>
@@ -187,7 +184,7 @@ export default function HomePage() {
       <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {stats.map((stat, index) => {
+            {dynamicStats.map((stat, index) => {
               const Icon = stat.icon;
               return (
                 <div key={index} className="text-center">
@@ -210,56 +207,32 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              VỀ HỘI NGHỊ GCBES2025
+              {t("aboutTitle")}
             </h2>
             <p className="text-xl text-gray-600 mx-auto leading-relaxed">
-              Sự kiện chuyên ngành do Cục Thương mại điện tử và Kinh tế số (Bộ
-              Công Thương) chủ trì, phối hợp cùng Vụ Thị trường trong nước tổ
-              chức.
-              <br />
-              <br />
-              GCBES 2025  – Diễn đàn Ứng dụng Thương mại điện tử và Công nghệ số
-              là một trong những sự kiện hàng đầu trong khu vực, nơi hội tụ các
-              nhà sản xuất, platform thương mại điện tử, nền tảng công nghệ,
-              doanh nghiệp logistics và các chuyên gia hàng đầu từ Việt Nam và
-              quốc tế. Mục tiêu hướng đến mở ra kỷ nguyên mới cho xuất khẩu hàng
-              hoá toàn cầu thông qua Thương mại điện tử xuyên biên giới (CBEC)
-              và ứng dụng công nghệ AI.
+              {t("aboutDescription")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Tại sao tham gia?
+                {t("aboutWhyJoinTitle")}
               </h3>
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700">
-                    Kết nối trực tiếp với seller,buyer từ +60 quốc gia quốc tế,
-                    Tham vấn mô hình quản trị Thương mại điện tử  từ Mỹ, Trung
-                    Quốc, Nhật Bản, ASEAN
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700">
-                    Nắm bắt chính sách, cập nhật xu hướng mới nhất
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700">
-                    Kết nối toàn cầu – Hiểu Việt Nam qua góc nhìn quốc tế
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700">
-                    Đưa sản phẩm nội địa ra thế giới – Không cần qua trung gian
-                  </p>
-                </div>
+                {[
+                  "aboutReason1",
+                  "aboutReason2",
+                  "aboutReason3",
+                  "aboutReason4",
+                ].map((reason, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-custom-green rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700">
+                      {t(reason as TranslationKey)}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="relative">
@@ -279,22 +252,21 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              DIỄN GIẢ NỔI BẬT
+              {t("speakersTitle")}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Gặp gỡ trao đổi những chuyên gia hàng đầu trong lĩnh vực Thương
-              mại điện tử xuyên biên giới đến từ nhiều quốc gia khác
+              {t("speakersSubtitle")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {speakers.map((speaker, index) => (
+            {dynamicSpeakers.map((speaker, index) => (
               <div
                 key={index}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative p-6 pt-8">
-                  <div className="relative w-32 h-32 mx-auto mb-6">
+                  <div className="relative w-40 h-40 mx-auto mb-6">
                     <img
                       src={speaker.image}
                       alt={speaker.name}
@@ -310,7 +282,9 @@ export default function HomePage() {
                   <p className="text-custom-blue font-semibold mb-2">
                     {speaker.title}
                   </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{speaker.company}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {speaker.company}
+                  </p>
                 </div>
               </div>
             ))}
@@ -323,16 +297,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              CÁC CHỦ ĐỀ CHÍNH
+              {t("topicsTitle")}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Khám phá 6 lĩnh vực then chốt của thương mại điện tử xuyên biên
-              giới
+              {t("topicsSubtitle")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {topics.map((topic, index) => {
+            {dynamicTopics.map((topic, index) => {
               const Icon = topic.icon;
               return (
                 <div key={index} className="group cursor-pointer">
@@ -353,7 +326,9 @@ export default function HomePage() {
                     <div
                       className={`flex items-center mt-6 ${topic.iconColor} group-hover:${topic.iconColor} transition-colors`}
                     >
-                      <span className="text-sm font-medium">Tìm hiểu thêm</span>
+                      <span className="text-sm font-medium">
+                        {t("topicLearnMore")}
+                      </span>
                       <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -369,15 +344,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 uppercase">
-              Chương trình sự kiện
+              {t("sessionsTitle")}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Lịch trình chi tiết cho 3 ngày sự kiện đầy ý nghĩa
+              {t("sessionsSubtitle")}
             </p>
           </div>
 
           <div className="space-y-6">
-            {sessions.map((session, index) => (
+            {dynamicSessions.map((session, index) => (
               <div
                 key={index}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
@@ -412,7 +387,7 @@ export default function HomePage() {
                     </div>
                     <div className="mt-6 lg:mt-0 lg:ml-8">
                       <button className="bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                        Tham gia
+                        {t("sessionsJoin")}
                       </button>
                     </div>
                   </div>
@@ -435,9 +410,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
-              Đối tác & Nhà tài trợ
+              {t("sponsorsTitle")}
             </h2>
-            <p className="text-xl text-gray-600 font-medium">Đang cập nhật</p>
+            <p className="text-xl text-gray-600 font-medium">
+              {t("sponsorsUpdating")}
+            </p>
           </div>
 
           {/* Commented out for future use */}
