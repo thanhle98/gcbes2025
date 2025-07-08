@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronRight, Play, ArrowDown } from "lucide-react";
 import { useTranslation } from "../../contexts/LanguageContext";
+import { REGISTRATION_FORM_URL } from "../../constants/urls";
 
 interface HeroSectionProps {
   onOpenPopup: () => void;
@@ -104,7 +105,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPopup }) => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#"
+            href={REGISTRATION_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full text-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-blue-500/25"

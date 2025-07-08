@@ -20,6 +20,7 @@ import VideoPopup from "../components/common/VideoPopup";
 import HeroSection from "./home/HeroSection";
 import { useTranslation } from "../contexts/LanguageContext";
 import { TranslationKey } from "../i18n/translations";
+import { REGISTRATION_FORM_URL, INTRO_VIDEO_ID } from "../constants/urls";
 
 // All data arrays are now generated dynamically using translations
 
@@ -386,9 +387,14 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="mt-6 lg:mt-0 lg:ml-8">
-                      <button className="bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                      <a 
+                        href={REGISTRATION_FORM_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      >
                         {t("sessionsJoin")}
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -400,7 +406,7 @@ export default function HomePage() {
 
       {isPopupOpen && (
         <VideoPopup
-          youtubeId="xPQN91l9djU"
+          youtubeId={INTRO_VIDEO_ID}
           onClose={() => setIsPopupOpen(false)}
         />
       )}

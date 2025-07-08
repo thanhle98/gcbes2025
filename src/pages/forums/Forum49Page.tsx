@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, MapPin, Users, Clock, ChevronRight, Brain, Lightbulb, Target } from 'lucide-react';
+import { REGISTRATION_FORM_URL } from '../../constants/urls';
 
 export default function Forum49Page() {
   const agenda = [
@@ -124,9 +125,14 @@ export default function Forum49Page() {
               </div>
             </div>
             <div className="mt-8">
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <a 
+                href={REGISTRATION_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
                 Đăng ký tham dự
-              </button>
+              </a>
             </div>
           </div>
         </div>

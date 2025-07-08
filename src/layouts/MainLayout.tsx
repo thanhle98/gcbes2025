@@ -3,6 +3,7 @@ import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import { useTranslation } from "../contexts/LanguageContext";
 import LanguageSwitcher from "../components/common/LanguageSwitcher";
+import { REGISTRATION_FORM_URL } from "../constants/urls";
 
 export default function MainLayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -111,9 +112,14 @@ export default function MainLayout() {
               </button>
             </div>
 
-            <button className="hidden lg:block bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <a 
+              href={REGISTRATION_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:block bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            >
               {t("navRegister")}
-            </button>
+            </a>
           </div>
 
           {/* Mobile Navigation */}
@@ -226,9 +232,14 @@ export default function MainLayout() {
                 </div>
                 */}
                 
-                <button className="bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold w-full mt-3">
+                <a 
+                  href={REGISTRATION_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-custom-gradient hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold w-full mt-3 text-center"
+                >
                   {t("navRegister")}
-                </button>
+                </a>
               </nav>
             </div>
           )}
