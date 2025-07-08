@@ -14,81 +14,12 @@ import {
   Star,
   Award,
   ChevronRight,
-  Play,
   Package,
-  ArrowDown,
 } from "lucide-react";
+import VideoPopup from "../components/common/VideoPopup";
+import HeroSection from "./home/HeroSection";
 
-// Lazy loading video component
-function LazyBackgroundVideo() {
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting && !shouldLoadVideo) {
-          // Add a small delay to prioritize critical content
-          setTimeout(() => setShouldLoadVideo(true), 1000);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [shouldLoadVideo]);
-
-  const handleVideoLoad = () => {
-    setIsVideoLoaded(true);
-    if (videoRef.current) {
-      videoRef.current.play().catch(console.error);
-    }
-  };
-
-  return (
-    <div ref={containerRef} className="absolute inset-0">
-      {/* Always show poster image - WebP with JPG fallback */}
-      <picture>
-        <source srcSet="/background-init.webp" type="image/webp" />
-        <img
-          src="/background-init-compressed.jpg"
-          alt="Conference Background"
-          className={`w-full h-full object-cover transition-opacity duration-1000 ${
-            isVideoLoaded ? "opacity-0" : "opacity-100"
-          }`}
-        />
-      </picture>
-
-      {/* Load video only when needed */}
-      {shouldLoadVideo && (
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-            isVideoLoaded ? "opacity-100" : "opacity-0"
-          }`}
-          onCanPlay={handleVideoLoad}
-          onLoadedData={handleVideoLoad}
-        >
-          <source src="/background-video.mp4" type="video/mp4" />
-        </video>
-      )}
-
-      <div className="absolute inset-0 bg-custom-gradient-overlay"></div>
-    </div>
-  );
-}
+// Lazy loading video component is now in HeroSection.tsx
 
 const topics = [
   {
@@ -195,43 +126,37 @@ const speakers = [
     name: "Bà Lê Hoàng Oanh",
     title: "Cục trưởng",
     company: "Cục Thương mại điện tử và Kinh tế số Bộ Công Thương",
-    image:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/le-hoang-oanh.png",
   },
   {
     name: "Ông Liu Liang",
     title: "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
     company: "Tỉnh Vân Nam, Trung Quốc",
-    image:
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/liu-liang.png",
   },
   {
     name: "Bà Anna Nguyễn",
     title: "Phó chủ tịch",
     company: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
-    image:
-      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/anna-nguyen.png",
   },
   {
     name: "Ông Nguyễn Ngọc Dũng",
     title: "Chủ tịch",
     company: "Hiệp hội Thương mại điện tử Việt Nam (VECOM)",
-    image:
-      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/nguyen-ngoc-dung.png",
   },
   {
     name: "Ông Jang Woo Sung",
     title: "Ủy ban Tư vấn xuất khẩu",
     company: "Hiệp hội xuất khẩu tỉnh Gyeonggi",
-    image:
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/jang-woo-sung.png",
   },
   {
     name: "Ông Nguyễn Lâm Thanh",
     title: "Đại diện TikTok tại Việt Nam & Phó Chủ tịch VDCA",
     company: "TikTok Vietnam & Hội truyền thông số Việt Nam",
-    image:
-      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "/speakers/nguyen-lam-thanh.png",
   },
 ];
 
@@ -252,60 +177,11 @@ const stats = [
 ];
 
 export default function HomePage() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <div>
-      {/* Hero Banner */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Video with Lazy Loading */}
-        <LazyBackgroundVideo />
-
-        {/* Content */}
-        <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Logo chương trình */}
-          <div>
-            <h1 className="text-5xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
-              GCBES2025
-            </h1>
-            <b className="text-xl md:text-3xl leading-10 text-white">
-              DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ
-              <br />
-              VÀ CÔNG NGHỆ SỐ 2025
-            </b>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-8 py-4">
-            <div className="flex items-center space-x-2 ">
-              <Calendar className="w-5 h-5" />
-              <span>4-6 tháng 9, 2025</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <MapPin className="w-5 h-5" />
-              <span>TP Hồ Chí Minh, Việt Nam</span>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-custom-gradient hover:opacity-90 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-              Đăng ký ngay
-            </button>
-            <button className="flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
-              <Play className="w-5 h-5" />
-              <span>Xem giới thiệu</span>
-            </button>
-          </div>
-
-          <p className="text-sm max-w-3xl mx-auto leading-relaxed pt-16 text-blue-50 text-justify md:text-center">
-            Tham gia cùng hơn 500 chuyên gia hàng đầu từ 60 quốc gia Toạ đàm đa
-            quốc gia - Hợp tác chuyển đổi số toàn diện cho Xuất khẩu Việt Nam,
-            nâng cao năng lực sản xuất và công nghệ số
-          </p>
-
-          {/* scroll down */}
-          <div className="flex justify-center items-center pt-16">
-            <ArrowDown className="w-10 h-10 text-white animate-bounce" />
-          </div>
-        </div>
-      </section>
+      <HeroSection onOpenPopup={() => setIsPopupOpen(true)} />
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
@@ -417,22 +293,24 @@ export default function HomePage() {
                 key={index}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
-                <div className="relative">
-                  <img
-                    src={speaker.image}
-                    alt={speaker.name}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="relative p-6 pt-8">
+                  <div className="relative w-32 h-32 mx-auto mb-6">
+                    <img
+                      src={speaker.image}
+                      alt={speaker.name}
+                      className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-t from-custom-blue/10 to-transparent"></div>
+                  </div>
                 </div>
-                <div className="p-6">
+                <div className="px-6 pb-6 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {speaker.name}
                   </h3>
-                  <p className="text-custom-blue font-semibold mb-1">
+                  <p className="text-custom-blue font-semibold mb-2">
                     {speaker.title}
                   </p>
-                  <p className="text-gray-600">{speaker.company}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{speaker.company}</p>
                 </div>
               </div>
             ))}
@@ -545,6 +423,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {isPopupOpen && (
+        <VideoPopup
+          youtubeId="xPQN91l9djU"
+          onClose={() => setIsPopupOpen(false)}
+        />
+      )}
+
       {/* Logo Nhà tài trợ */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -552,9 +437,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
               Đối tác & Nhà tài trợ
             </h2>
-            <p className="text-xl text-gray-600 font-medium">
-              Đang cập nhật
-            </p>
+            <p className="text-xl text-gray-600 font-medium">Đang cập nhật</p>
           </div>
 
           {/* Commented out for future use */}
