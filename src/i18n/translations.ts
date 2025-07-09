@@ -60,7 +60,7 @@ export const translations = {
 
     speaker3Name: "Mrs. Anna Nguyen",
     speaker3Title: "Vice President",
-    speaker3Company: "Asia Cross-Border E-commerce Business Coalition (ACBC)",
+    speaker3Company: "Alliance of Global Cross-border E-commerce ACBC",
 
     speaker4Name: "Mr. Nguyen Ngoc Dung",
     speaker4Title: "Chairman",
@@ -160,7 +160,7 @@ export const translations = {
 
     // Footer
     footerTitle: "GCBES - 2025",
-    footerDescription: "International Conference on Cross-Border E-commerce",
+    footerDescription: "Global Cross-Border E-commerce Summit 2025",
     footerLinks: "Links",
     footerHome: "Home",
     footerSponsors: "Sponsors",
@@ -169,8 +169,9 @@ export const translations = {
     footerForums: "Forums",
     footerActivities: "Activities",
     footerContact: "Contact",
-    footerEmail: "Email: info@GCBES2025.com",
-    footerPhone: "Phone: +84 24 1234 5678",
+    footerEmail: "anna@vietfas.com",
+    footerPhone: "+84 906 888 888 (Mrs. Anna)",
+    footerAddress: "House 01, 107 Nguyen Chi Thanh, Dong Da, Hanoi",
     footerCopyright: "© 2025 GCBES2025. All rights reserved.",
 
     // Common
@@ -339,7 +340,7 @@ export const translations = {
 
     // Footer
     footerTitle: "GCBES - 2025",
-    footerDescription: "Hội nghị quốc tế về Thương mại điện tử xuyên biên giới",
+    footerDescription: "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025",
     footerLinks: "Liên kết",
     footerHome: "Trang chủ",
     footerSponsors: "Nhà tài trợ",
@@ -348,8 +349,9 @@ export const translations = {
     footerForums: "Diễn đàn",
     footerActivities: "Hoạt động",
     footerContact: "Liên hệ",
-    footerEmail: "Email: info@GCBES2025.com",
-    footerPhone: "Điện thoại: +84 24 1234 5678",
+    footerEmail: "anna@vietfas.com",
+    footerPhone: "+84 906 888 888 (Anna)",
+    footerAddress: "01 ngõ 107 Nguyễn Chí Thanh, Đống Đa, Hà Nội",
     footerCopyright: "© 2025 GCBES2025. Tất cả quyền được bảo lưu.",
 
     // Common

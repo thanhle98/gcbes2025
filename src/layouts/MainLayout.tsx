@@ -319,7 +319,7 @@ export default function MainLayout() {
                   </div>
                   <div className="flex items-start space-x-3 text-gray-300">
                     <MapPin className="w-5 h-5 mt-1 text-cyan-400 flex-shrink-0" />
-                    <span>TP HCM, Vietnam</span>
+                    <span>{t("footerAddress")}</span>
                   </div>
                 </div>
               </div>
