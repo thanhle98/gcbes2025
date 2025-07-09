@@ -58,7 +58,7 @@ export default function ActivitiesPage() {
       icon: Camera,
       date: '6 tháng 9, 2025',
       time: '08:00 - 17:00',
-      location: 'Các địa điểm tại Hà Nội',
+      location: 'Các địa điểm tại HCM',
       participants: '100+ tham gia',
       color: 'from-green-600 to-green-800',
       details: 'Tham quan các công ty công nghệ, trung tâm logistics và startup nổi bật.'
@@ -66,11 +66,11 @@ export default function ActivitiesPage() {
     {
       id: 'tourism',
       title: 'Du lịch địa phương',
-      description: 'Trải nghiệm văn hóa và ẩm thực độc đáo của Hà Nội',
+      description: 'Trải nghiệm văn hóa và ẩm thực độc đáo của HCM',
       icon: Plane,
       date: '6-7 tháng 9, 2025',
       time: 'Cả ngày',
-      location: 'Hà Nội & vùng phụ cận',
+      location: 'HCM & vùng phụ cận',
       participants: '150+ du khách',
       color: 'from-red-600 to-red-800',
       details: 'Tour du lịch văn hóa với các điểm đến nổi tiếng và ẩm thực truyền thống.'
