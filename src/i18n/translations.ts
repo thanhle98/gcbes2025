@@ -5,7 +5,7 @@ export const translations = {
     heroTitle2: "Breakthrough Era - Global Export Solutions",
     heroSubtitle: "Digital transformation solutions for Vietnamese manufacturing and export enterprises",
     heroDate: "September 4-6, 2025",
-    heroLocation: "Hanoi, Vietnam",
+    heroLocation: "HCM City, Vietnam",
     heroRegister: "Register Now",
     heroWatchVideo: "Watch Introduction Video",
 
@@ -159,7 +159,7 @@ export const translations = {
     mainHall: "Main Hall",
     hallA: "Hall A", 
     vipRestaurant: "VIP Restaurant",
-    locationsInHanoi: "Locations in Hanoi",
+    locationsInHCM: "Locations in HCM City",
   },
 
   vi: {
@@ -168,7 +168,7 @@ export const translations = {
     heroTitle2: "trong kỷ nguyên vươn mình",
     heroSubtitle: "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
     heroDate: "4-6 tháng 9, 2025",
-    heroLocation: "Hà Nội, Việt Nam", 
+    heroLocation: "TP HCM, Việt Nam", 
     heroRegister: "Đăng ký ngay",
     heroWatchVideo: "Xem video giới thiệu",
 
@@ -322,7 +322,7 @@ export const translations = {
     mainHall: "Hội trường chính",
     hallA: "Hội trường A",
     vipRestaurant: "Nhà hàng VIP", 
-    locationsInHanoi: "Các địa điểm tại Hà Nội",
+    locationsInHCM: "Các địa điểm tại TP HCM",
   }
 };
 

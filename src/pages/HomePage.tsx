@@ -134,7 +134,7 @@ export default function HomePage() {
       subtitle: t("session5Subtitle"),
       type: t("session5Type"),
       time: "08:00 - 17:00",
-      location: t("locationsInHanoi"),
+      location: t("locationsInHCM"),
     },
   ];
 
