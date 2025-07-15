@@ -170,7 +170,7 @@ export const translations = {
     footerActivities: "Activities",
     footerContact: "Contact",
     footerEmail: "anna@vietfas.com",
-    footerPhone: "+84 906 888 888 (Mrs. Anna)",
+    footerPhone: "+84 985340913 (Mrs. Anna)",
     footerAddress: "House 01, 107 Nguyen Chi Thanh, Dong Da, Hanoi",
     footerCopyright: "© 2025 GCBES2025. All rights reserved.",
 
@@ -350,7 +350,7 @@ export const translations = {
     footerActivities: "Hoạt động",
     footerContact: "Liên hệ",
     footerEmail: "anna@vietfas.com",
-    footerPhone: "+84 906 888 888 (Anna)",
+    footerPhone: "+84 985340913 (Anna)",
     footerAddress: "01 ngõ 107 Nguyễn Chí Thanh, Đống Đa, Hà Nội",
     footerCopyright: "© 2025 GCBES2025. Tất cả quyền được bảo lưu.",
 
