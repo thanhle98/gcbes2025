@@ -161,7 +161,7 @@ export default function HomePage() {
       name: t("speaker4Name"),
       title: t("speaker4Title"),
       company: t("speaker4Company"),
-      image: "/speakers/nguyen-ngoc-dung.png",
+      // image: "/speakers/nguyen-ngoc-dung.png",
     },
     {
       name: t("speaker5Name"),
@@ -173,7 +173,7 @@ export default function HomePage() {
       name: t("speaker6Name"),
       title: t("speaker6Title"),
       company: t("speaker6Company"),
-      image: "/speakers/nguyen-lam-thanh.png",
+      // image: "/speakers/nguyen-lam-thanh.png",
     },
   ];
 
@@ -269,7 +269,7 @@ export default function HomePage() {
                 <div className="relative p-6 pt-8">
                   <div className="relative w-40 h-40 mx-auto mb-6">
                     <img
-                      src={speaker.image}
+                      src={speaker.image || "/speakers/default.svg"}
                       alt={speaker.name}
                       className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
                     />
