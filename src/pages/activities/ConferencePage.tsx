@@ -450,13 +450,13 @@ export default function ConferencePage() {
           </div>
 
           {/* Left-Right Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col lg:flex-row gap-8">
             {/* Left Sidebar - Conference List */}
-            <div className="lg:col-span-1">
+            <div className="lg:w-1/4 lg:sticky lg:top-24 lg:self-start lg:max-h-screen lg:overflow-y-auto">
               <h3 className="text-xl font-bold text-gray-800 mb-6">
                 {t("conferenceSessions")}
               </h3>
-              <div className="space-y-4 lg:space-y-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-0">
+              <div className="space-y-4 lg:space-y-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-0">
                 {conferences.map((conference) => (
                   <div
                     key={conference.id}
@@ -514,7 +514,7 @@ export default function ConferencePage() {
             </div>
 
             {/* Right Content - Conference Details */}
-            <div className="lg:col-span-3">
+            <div className="lg:w-3/4">
               {selectedConference !== null && (
                 <div className="space-y-6">
                   {/* Selected Conference Header */}
