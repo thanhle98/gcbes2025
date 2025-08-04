@@ -11,7 +11,7 @@ export default function DirectoryPage() {
       description: t("directoryExhibitorsDesc"),
       icon: Building,
       color: "from-blue-500 to-cyan-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       id: "speakers",
@@ -19,7 +19,7 @@ export default function DirectoryPage() {
       description: t("directorySpeakersDesc"),
       icon: Users,
       color: "from-purple-500 to-indigo-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       id: "sponsors",
@@ -27,7 +27,7 @@ export default function DirectoryPage() {
       description: t("directorySponsorsDesc"),
       icon: Award,
       color: "from-green-500 to-emerald-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       id: "delegates",
@@ -35,7 +35,7 @@ export default function DirectoryPage() {
       description: t("directoryDelegatesDesc"),
       icon: Globe,
       color: "from-orange-500 to-red-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       id: "services",
@@ -43,7 +43,7 @@ export default function DirectoryPage() {
       description: t("directoryServicesDesc"),
       icon: Building,
       color: "from-teal-500 to-cyan-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       id: "startups",
@@ -51,7 +51,7 @@ export default function DirectoryPage() {
       description: t("directoryStartupsDesc"),
       icon: Users,
       color: "from-pink-500 to-rose-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     }
   ];
 

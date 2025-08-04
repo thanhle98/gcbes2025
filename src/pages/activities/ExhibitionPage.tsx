@@ -130,10 +130,10 @@ export default function ExhibitionPage() {
           <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
             <Award className="w-16 h-16 mx-auto mb-4" />
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Join GCBES 2025 Exhibition
+              {t("exhibitionJoinTitle")}
             </h2>
             <p className="text-lg mb-6 opacity-90">
-              Connect with global partners and showcase your products at one of the region's leading trade events.
+              {t("exhibitionJoinDesc")}
             </p>
             <a
               href="https://drive.google.com/drive/folders/1K7KJjeBE8FDl7J_z1qkszOZ8MLtfWCLx?usp=drive_link"
@@ -141,7 +141,7 @@ export default function ExhibitionPage() {
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
-              View Exhibition Images
+              {t("exhibitionViewImages")}
             </a>
           </div>
         </div>

@@ -162,24 +162,24 @@ export default function TourPage() {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
                 <Bus className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Private Transportation</h3>
-              <p className="text-gray-600">Comfortable, private transportation with bilingual guide support</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourFeature1Title")}</h3>
+              <p className="text-gray-600">{t("tourFeature1Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
                 <Building className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Real Business Visits</h3>
-              <p className="text-gray-600">Visit actual operating facilities and meet industry leaders</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourFeature2Title")}</h3>
+              <p className="text-gray-600">{t("tourFeature2Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-green-500 rounded-full flex items-center justify-center">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Networking Opportunities</h3>
-              <p className="text-gray-600">Connect with Vietnam's leading logistics and tech companies</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourFeature3Title")}</h3>
+              <p className="text-gray-600">{t("tourFeature3Desc")}</p>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function TourPage() {
         <div className="max-w-4xl mx-auto text-center">
           <Target className="w-16 h-16 mx-auto mb-6 text-white" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Explore Vietnam's E-commerce Ecosystem
+            {t("tourExploreTitle")}
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
             {t("tourNote")}
@@ -200,19 +200,19 @@ export default function TourPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
               <div>
                 <div className="text-3xl font-bold text-white mb-1">9h</div>
-                <div className="text-white/80 text-sm">Full Day Experience</div>
+                <div className="text-white/80 text-sm">{t("tourFullDayExperience")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">4+</div>
-                <div className="text-white/80 text-sm">Business Locations</div>
+                <div className="text-white/80 text-sm">{t("tourBusinessLocations")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">60+</div>
-                <div className="text-white/80 text-sm">International Delegates</div>
+                <div className="text-white/80 text-sm">{t("tourInternationalDelegates")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">100%</div>
-                <div className="text-white/80 text-sm">Bilingual Support</div>
+                <div className="text-white/80 text-sm">{t("tourBilingualSupport")}</div>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function TourPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-green-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
           >
-            View Tour Gallery
+            {t("tourViewGallery")}
           </a>
         </div>
       </section>

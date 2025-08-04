@@ -175,24 +175,24 @@ export default function TourismPage() {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
                 <Building2 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Historical Architecture</h3>
-              <p className="text-gray-600">Experience French colonial heritage and modern urban development</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourismFeature1Title")}</h3>
+              <p className="text-gray-600">{t("tourismFeature1Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
                 <Coffee className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Local Culture</h3>
-              <p className="text-gray-600">Authentic Vietnamese coffee culture and traditional markets</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourismFeature2Title")}</h3>
+              <p className="text-gray-600">{t("tourismFeature2Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
                 <Anchor className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Saigon River Cruise</h3>
-              <p className="text-gray-600">Panoramic city views and modern skyline from the water</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("tourismFeature3Title")}</h3>
+              <p className="text-gray-600">{t("tourismFeature3Desc")}</p>
             </div>
           </div>
         </div>
@@ -203,30 +203,29 @@ export default function TourismPage() {
         <div className="max-w-4xl mx-auto text-center">
           <Camera className="w-16 h-16 mx-auto mb-6 text-white" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Discover Saigon's Cultural Heart
+            {t("tourismDiscoverTitle")}
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Experience the perfect blend of history, culture, cuisine, and modernity in Ho Chi Minh City. 
-            Our expertly crafted tour showcases the very best of Vietnam's economic capital.
+            {t("tourismDiscoverDesc")}
           </p>
           
           <div className="bg-white/10 rounded-xl p-6 mb-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div>
                 <div className="text-3xl font-bold text-white mb-1">13.5h</div>
-                <div className="text-white/80 text-sm">Full Day</div>
+                <div className="text-white/80 text-sm">{t("tourismFullDay")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">8+</div>
-                <div className="text-white/80 text-sm">Attractions</div>
+                <div className="text-white/80 text-sm">{t("tourismAttractions")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">3</div>
-                <div className="text-white/80 text-sm">Meals Included</div>
+                <div className="text-white/80 text-sm">{t("tourismMealsIncluded")}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-1">2</div>
-                <div className="text-white/80 text-sm">Languages</div>
+                <div className="text-white/80 text-sm">{t("tourismLanguages")}</div>
               </div>
             </div>
           </div>
@@ -237,7 +236,7 @@ export default function TourismPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-amber-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
           >
-            View Tourism Gallery
+            {t("tourismViewGallery")}
           </a>
         </div>
       </section>

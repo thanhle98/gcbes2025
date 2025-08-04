@@ -169,8 +169,8 @@ export const translations = {
     footerForums: "Forums",
     footerActivities: "Activities",
     footerContact: "Contact",
-    footerEmail: "anna@vietfas.com",
-    footerPhone: "+84 985340913 (Mrs. Anna)",
+    footerEmail: "hello@vietfas.com",
+    footerPhone: "0342608182 (Mrs.Hien)",
     footerAddress: "House 01, 107 Nguyen Chi Thanh, Dong Da, Hanoi",
     footerCopyright: "© 2025 GCBES2025. All rights reserved.",
 
@@ -216,6 +216,11 @@ export const translations = {
     conferenceJoinTitle: "Join the Premier Cross-Border E-commerce Conference",
     conferenceJoinDesc: "Gain insights from industry leaders and discover the future of cross-border e-commerce.",
     conferenceViewMaterials: "View Conference Materials",
+
+    // Exhibition Call to Action
+    exhibitionJoinTitle: "Join GCBES 2025 Exhibition",
+    exhibitionJoinDesc: "Connect with global partners and showcase your products at one of the region's leading trade events.",
+    exhibitionViewImages: "View Exhibition Images",
 
     // Conference Schedule
     conferenceOpeningCeremony: "Opening Ceremony",
@@ -291,6 +296,7 @@ export const translations = {
 
     // Matching Page
     matchingTitle: "BUSINESS MATCHING 1:1",
+    matchingDate: "September 4-6, 2025 | SECC, Ho Chi Minh City",
     matchingDescription: "B2B business networking activities organized throughout the 3-day event from September 4-6, 2025, creating opportunities for direct meetings between domestic and international enterprises.",
     matchingSectors: "Main connection areas by schedule:",
     matchingHighLevel: "High-level meetings: Domestic and foreign enterprises can participate in high-level meetings to discuss strategic cooperation opportunities",
@@ -304,6 +310,21 @@ export const translations = {
     matchingParticipant3: "Logistics, fintech, technology service providers",
     matchingParticipant4: "Representatives of investment funds and financial institutions",
     matchingScheduleDesc: "Matching sessions are arranged according to specific schedules, supporting the search for business partners and creating long-term trade cooperation opportunities.",
+    matchingFeature1Title: "1:1 Meetings",
+    matchingFeature1Desc: "Personalized business matching sessions for maximum impact",
+    matchingFeature2Title: "Global Network", 
+    matchingFeature2Desc: "Connect with enterprises from 60+ countries and territories",
+    matchingFeature3Title: "3-Day Event",
+    matchingFeature3Desc: "Comprehensive networking throughout the entire conference",
+    matchingHowItWorks: "How It Works",
+    matchingStep1Title: "Register",
+    matchingStep1Desc: "Submit your business profile and matching preferences",
+    matchingStep2Title: "Match", 
+    matchingStep2Desc: "AI-powered system finds the best potential partners",
+    matchingStep3Title: "Connect",
+    matchingStep3Desc: "Schedule and attend personalized 1:1 meetings",
+    matchingCtaTitle: "Ready to Find Your Perfect Business Partner?",
+    matchingCtaButton: "Learn More About Matching",
 
     // Gala Page
     galaTitle: "NETWORKING & GALA DINNER",
@@ -410,6 +431,64 @@ export const translations = {
     directoryFilter: "Filter by Category",
     directoryContact: "Contact Information",
     directoryNote: "Directory access requires event registration. Contact details are provided for networking purposes.",
+
+    // Common status texts
+    comingSoon: "Coming Soon",
+    underConstruction: "Page under construction...",
+    pageNotFound: "404 - Page Not Found",
+    pageNotFoundDesc: "The page you are looking for does not exist.",
+    toBeUpdated: "To be updated",
+    
+    // Placeholder pages
+    forum59Title: "Forum 5/9",
+    summit59Title: "Summit 5/9",
+    documentsTitle: "Program Documents",
+    introductionTitle: "Introduction",
+
+    // Gala Page additional content
+    galaFeature1Title: "Luxurious Dining",
+    galaFeature1Desc: "Vietnamese and international cuisine buffet in an elegant setting",
+    galaFeature2Title: "Premium Networking", 
+    galaFeature2Desc: "Connect with international delegates and business leaders",
+    galaFeature3Title: "Cultural Performance",
+    galaFeature3Desc: "Traditional Vietnamese art and international music entertainment",
+    galaUnforgettableTitle: "An Unforgettable Evening",
+    galaUnforgettableDesc: "Join us for an elegant evening of fine dining, cultural performances, and meaningful connections. This exclusive networking gala brings together the brightest minds in cross-border e-commerce for an unforgettable celebration of innovation and collaboration.",
+    galaStatsDelgates: "International Delegates",
+    galaStatsCountries: "Countries Represented", 
+    galaStatsExperience: "Premium Experience",
+    galaReserveTitle: "Reserve Your Seat at the Gala Dinner",
+    galaReserveDesc: "Limited seats available for this exclusive networking event. Experience the pinnacle of business hospitality.",
+    galaViewGallery: "View Gala Gallery",
+
+    // Tourism Page additional content
+    tourismFeature1Title: "Historical Architecture",
+    tourismFeature1Desc: "Experience French colonial heritage and modern urban development",
+    tourismFeature2Title: "Local Culture",
+    tourismFeature2Desc: "Authentic Vietnamese coffee culture and traditional markets",
+    tourismFeature3Title: "Saigon River Cruise",
+    tourismFeature3Desc: "Panoramic city views and modern skyline from the water",
+    tourismDiscoverTitle: "Discover Saigon's Cultural Heart",
+    tourismDiscoverDesc: "Experience the perfect blend of history, culture, cuisine, and modernity in Ho Chi Minh City. Our expertly crafted tour showcases the very best of Vietnam's economic capital.",
+    tourismFullDay: "Full Day",
+    tourismAttractions: "Attractions",
+    tourismMealsIncluded: "Meals Included",
+    tourismLanguages: "Languages",
+    tourismViewGallery: "View Tourism Gallery",
+
+    // Tour Page additional content
+    tourFeature1Title: "Private Transportation",
+    tourFeature1Desc: "Comfortable, private transportation with bilingual guide support",
+    tourFeature2Title: "Real Business Visits",
+    tourFeature2Desc: "Visit actual operating facilities and meet industry leaders",
+    tourFeature3Title: "Networking Opportunities",
+    tourFeature3Desc: "Connect with Vietnam's leading logistics and tech companies",
+    tourExploreTitle: "Explore Vietnam's E-commerce Ecosystem",
+    tourFullDayExperience: "Full Day Experience",
+    tourBusinessLocations: "Business Locations",
+    tourInternationalDelegates: "International Delegates",
+    tourBilingualSupport: "Bilingual Support",
+    tourViewGallery: "View Tour Gallery",
   },
 
   vi: {
@@ -580,8 +659,8 @@ export const translations = {
     footerForums: "Diễn đàn",
     footerActivities: "Hoạt động",
     footerContact: "Liên hệ",
-    footerEmail: "anna@vietfas.com",
-    footerPhone: "+84 985340913 (Anna)",
+    footerEmail: "hello@vietfas.com",
+    footerPhone: "0342608182 (Mrs.Hien)",
     footerAddress: "01 ngõ 107 Nguyễn Chí Thanh, Đống Đa, Hà Nội",
     footerCopyright: "© 2025 GCBES2025. Tất cả quyền được bảo lưu.",
 
@@ -627,6 +706,11 @@ export const translations = {
     conferenceJoinTitle: "Tham gia Hội nghị Thương mại điện tử xuyên biên giới hàng đầu",
     conferenceJoinDesc: "Nhận được những hiểu biết từ các nhà lãnh đạo ngành và khám phá tương lai của thương mại điện tử xuyên biên giới.",
     conferenceViewMaterials: "Xem tài liệu Hội nghị",
+
+    // Exhibition Call to Action
+    exhibitionJoinTitle: "Tham gia Triển lãm GCBES 2025",
+    exhibitionJoinDesc: "Kết nối với các đối tác toàn cầu và giới thiệu sản phẩm của bạn tại một trong những sự kiện thương mại hàng đầu trong khu vực.",
+    exhibitionViewImages: "Xem hình ảnh Triển lãm",
 
     // Conference Schedule
     conferenceOpeningCeremony: "Lễ khai mạc",
@@ -702,6 +786,7 @@ export const translations = {
 
     // Matching Page
     matchingTitle: "MATCHING DOANH NGHIỆP 1:1",
+    matchingDate: "04-06/9/2025 | SECC, TP.HCM",
     matchingDescription: "Hoạt động kết nối doanh nghiệp B2B được tổ chức xuyên suốt 3 ngày sự kiện từ 4-6/9/2025, tạo cơ hội gặp gỡ trực tiếp giữa các doanh nghiệp trong nước và quốc tế.",
     matchingSectors: "Các lĩnh vực kết nối chính theo lịch trình:",
     matchingHighLevel: "Phiên họp cấp cao: Các doanh nghiệp trong và ngoài nước có thể tham gia phiên họp cấp cao để thảo luận về các cơ hội hợp tác chiến lược",
@@ -715,6 +800,21 @@ export const translations = {
     matchingParticipant3: "Các nhà cung cấp dịch vụ logistics, fintech, công nghệ",
     matchingParticipant4: "Đại diện các quỹ đầu tư và tổ chức tài chính",
     matchingScheduleDesc: "Các buổi matching được sắp xếp theo lịch trình cụ thể, hỗ trợ tìm kiếm đối tác kinh doanh và tạo cơ hội hợp tác thương mại dài hạn.",
+    matchingFeature1Title: "Phiên họp 1:1",
+    matchingFeature1Desc: "Các buổi kết nối doanh nghiệp cá nhân hóa để đạt hiệu quả tối đa",
+    matchingFeature2Title: "Mạng lưới toàn cầu",
+    matchingFeature2Desc: "Kết nối với các doanh nghiệp từ hơn 60 quốc gia và vùng lãnh thổ",
+    matchingFeature3Title: "Sự kiện 3 ngày",
+    matchingFeature3Desc: "Kết nối toàn diện trong suốt hội nghị",
+    matchingHowItWorks: "Cách thức hoạt động",
+    matchingStep1Title: "Đăng ký",
+    matchingStep1Desc: "Gửi hồ sơ doanh nghiệp và sở thích kết nối của bạn",
+    matchingStep2Title: "Ghép đôi",
+    matchingStep2Desc: "Hệ thống AI tìm ra những đối tác tiềm năng tốt nhất",
+    matchingStep3Title: "Kết nối",
+    matchingStep3Desc: "Lên lịch và tham gia các cuộc họp 1:1 cá nhân hóa",
+    matchingCtaTitle: "Sẵn sàng tìm kiếm đối tác kinh doanh hoàn hảo?",
+    matchingCtaButton: "Tìm hiểu thêm về Matching",
 
     // Gala Page
     galaTitle: "TIỆC GIAO LƯU & TỔNG KẾT",
@@ -821,6 +921,64 @@ export const translations = {
     directoryFilter: "Lọc theo danh mục",
     directoryContact: "Thông tin liên hệ",
     directoryNote: "Truy cập danh bạ yêu cầu đăng ký sự kiện. Thông tin liên hệ được cung cấp cho mục đích networking.",
+
+    // Common status texts
+    comingSoon: "Sắp ra mắt",
+    underConstruction: "Trang đang được xây dựng...",
+    pageNotFound: "404 - Không tìm thấy trang",
+    pageNotFoundDesc: "Trang bạn tìm kiếm không tồn tại.",
+    toBeUpdated: "Sẽ được cập nhật",
+    
+    // Placeholder pages
+    forum59Title: "Diễn đàn 5/9",
+    summit59Title: "Hội nghị thượng đỉnh 5/9",
+    documentsTitle: "Tài liệu chương trình",
+    introductionTitle: "Giới thiệu",
+
+    // Gala Page additional content
+    galaFeature1Title: "Ẩm thực sang trọng",
+    galaFeature1Desc: "Tiệc buffet ẩm thực Việt Nam và quốc tế trong không gian lịch lãm",
+    galaFeature2Title: "Kết nối cao cấp",
+    galaFeature2Desc: "Kết nối với các đại biểu quốc tế và lãnh đạo doanh nghiệp",
+    galaFeature3Title: "Biểu diễn văn hóa",
+    galaFeature3Desc: "Nghệ thuật truyền thống Việt Nam và giải trí âm nhạc quốc tế",
+    galaUnforgettableTitle: "Một buổi tối khó quên",
+    galaUnforgettableDesc: "Tham gia cùng chúng tôi trong một buổi tối thanh lịch với ẩm thực cao cấp, biểu diễn văn hóa và những kết nối ý nghĩa. Gala networking độc quyền này quy tụ những bộ óc sáng giá nhất trong lĩnh vực thương mại điện tử xuyên biên giới cho một lễ kỷ niệm khó quên về đổi mới và hợp tác.",
+    galaStatsDelgates: "Đại biểu quốc tế",
+    galaStatsCountries: "Quốc gia tham dự",
+    galaStatsExperience: "Trải nghiệm cao cấp",
+    galaReserveTitle: "Đặt chỗ tại Gala Dinner",
+    galaReserveDesc: "Số chỗ ngồi có hạn cho sự kiện networking độc quyền này. Trải nghiệm đỉnh cao của sự hiếu khách doanh nghiệp.",
+    galaViewGallery: "Xem thư viện ảnh Gala",
+
+    // Tourism Page additional content
+    tourismFeature1Title: "Kiến trúc lịch sử",
+    tourismFeature1Desc: "Trải nghiệm di sản thuộc địa Pháp và phát triển đô thị hiện đại",
+    tourismFeature2Title: "Văn hóa địa phương",
+    tourismFeature2Desc: "Văn hóa cà phê Việt Nam đích thực và chợ truyền thống",
+    tourismFeature3Title: "Du thuyền sông Sài Gòn",
+    tourismFeature3Desc: "Tầm nhìn toàn cảnh thành phố và đường chân trời hiện đại từ mặt nước",
+    tourismDiscoverTitle: "Khám phá trái tim văn hóa Sài Gòn",
+    tourismDiscoverDesc: "Trải nghiệm sự kết hợp hoàn hảo giữa lịch sử, văn hóa, ẩm thực và hiện đại tại Thành phố Hồ Chí Minh. Tour du lịch được thiết kế tỉ mỉ của chúng tôi giới thiệu những điều tuyệt vời nhất của thủ đô kinh tế Việt Nam.",
+    tourismFullDay: "Cả ngày",
+    tourismAttractions: "Điểm tham quan",
+    tourismMealsIncluded: "Bao gồm bữa ăn",
+    tourismLanguages: "Ngôn ngữ",
+    tourismViewGallery: "Xem thư viện ảnh Du lịch",
+
+    // Tour Page additional content
+    tourFeature1Title: "Phương tiện riêng",
+    tourFeature1Desc: "Phương tiện thoải mái, riêng tư với hỗ trợ hướng dẫn viên song ngữ",
+    tourFeature2Title: "Thăm quan doanh nghiệp thực tế",
+    tourFeature2Desc: "Thăm quan các cơ sở hoạt động thực tế và gặp gỡ lãnh đạo ngành",
+    tourFeature3Title: "Cơ hội kết nối",
+    tourFeature3Desc: "Kết nối với các công ty logistics và công nghệ hàng đầu Việt Nam",
+    tourExploreTitle: "Khám phá Hệ sinh thái Thương mại điện tử Việt Nam",
+    tourFullDayExperience: "Trải nghiệm cả ngày",
+    tourBusinessLocations: "Địa điểm kinh doanh",
+    tourInternationalDelegates: "Đại biểu quốc tế",
+    tourBilingualSupport: "Hỗ trợ song ngữ",
+    tourViewGallery: "Xem thư viện ảnh Tour",
   },
 };
 

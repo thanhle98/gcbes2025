@@ -11,28 +11,28 @@ export default function PresentationsPage() {
       description: t("presentationsKeynoteDesc"),
       icon: Presentation,
       color: "from-blue-500 to-indigo-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       title: t("presentationsTechnical"),
       description: t("presentationsTechnicalDesc"),
       icon: FileText,
       color: "from-green-500 to-emerald-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       title: t("presentationsPanel"),
       description: t("presentationsPanelDesc"),
       icon: Users,
       color: "from-purple-500 to-violet-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     },
     {
       title: t("presentationsWorkshop"),
       description: t("presentationsWorkshopDesc"),
       icon: Folder,
       color: "from-orange-500 to-red-500",
-      count: "To be updated"
+      count: t("toBeUpdated")
     }
   ];
 

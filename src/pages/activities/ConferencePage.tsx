@@ -6,7 +6,6 @@ import {
   Users,
   Presentation,
   ChevronRight,
-  Mic,
 } from "lucide-react";
 
 interface ScheduleItem {
@@ -234,26 +233,19 @@ export default function ConferencePage() {
                             </div>
                           </div>
 
-                          <div className="flex-1 space-y-3">
-                            <h4 className="text-lg font-semibold text-gray-800 leading-snug">
-                              {item.content}
-                            </h4>
+                                                      <div className="flex-1 space-y-3">
+                              <h4 className="text-lg font-semibold text-gray-800 leading-snug">
+                                {item.content}
+                              </h4>
 
-                            {item.speaker && (
-                              <div className="flex items-center gap-2 text-gray-600">
-                                <Mic className="w-4 h-4" />
-                                <span className="text-sm">{item.speaker}</span>
-                              </div>
-                            )}
-
-                            {item.topics && (
-                              <div className="mt-3 p-4 bg-gray-50 rounded-lg">
-                                <p className="text-sm text-gray-600 leading-relaxed">
-                                  "{item.topics}"
-                                </p>
-                              </div>
-                            )}
-                          </div>
+                              {item.topics && (
+                                <div className="mt-3 p-4 bg-gray-50 rounded-lg">
+                                  <p className="text-sm text-gray-600 leading-relaxed">
+                                    "{item.topics}"
+                                  </p>
+                                </div>
+                              )}
+                            </div>
 
                           <ChevronRight className="w-5 h-5 text-gray-400 flex-shrink-0 mt-1" />
                         </div>

@@ -146,24 +146,24 @@ export default function GalaPage() {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-rose-500 to-purple-500 rounded-full flex items-center justify-center">
                 <Utensils className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Luxurious Dining</h3>
-              <p className="text-gray-600">Vietnamese and international cuisine buffet in an elegant setting</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("galaFeature1Title")}</h3>
+              <p className="text-gray-600">{t("galaFeature1Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Premium Networking</h3>
-              <p className="text-gray-600">Connect with international delegates and business leaders</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("galaFeature2Title")}</h3>
+              <p className="text-gray-600">{t("galaFeature2Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-indigo-500 to-rose-500 rounded-full flex items-center justify-center">
                 <Music className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Cultural Performance</h3>
-              <p className="text-gray-600">Traditional Vietnamese art and international music entertainment</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("galaFeature3Title")}</h3>
+              <p className="text-gray-600">{t("galaFeature3Desc")}</p>
             </div>
           </div>
         </div>
@@ -174,26 +174,24 @@ export default function GalaPage() {
         <div className="max-w-4xl mx-auto text-center">
           <Sparkles className="w-16 h-16 mx-auto mb-6 text-white" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            An Unforgettable Evening
+            {t("galaUnforgettableTitle")}
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Join us for an elegant evening of fine dining, cultural performances, and meaningful connections. 
-            This exclusive networking gala brings together the brightest minds in cross-border e-commerce for 
-            an unforgettable celebration of innovation and collaboration.
+            {t("galaUnforgettableDesc")}
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">200+</div>
-              <div className="text-white/80">International Delegates</div>
+              <div className="text-white/80">{t("galaStatsDelgates")}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">60+</div>
-              <div className="text-white/80">Countries Represented</div>
+              <div className="text-white/80">{t("galaStatsCountries")}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">3.5h</div>
-              <div className="text-white/80">Premium Experience</div>
+              <div className="text-white/80">{t("galaStatsExperience")}</div>
             </div>
           </div>
         </div>
@@ -205,10 +203,10 @@ export default function GalaPage() {
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <Sparkles className="w-16 h-16 mx-auto mb-4 text-rose-600" />
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Reserve Your Seat at the Gala Dinner
+              {t("galaReserveTitle")}
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Limited seats available for this exclusive networking event. Experience the pinnacle of business hospitality.
+              {t("galaReserveDesc")}
             </p>
             <a
               href="https://drive.google.com/drive/folders/1jXbWah9OVAHbTDOz-awYSXVpMpHWYmy-?usp=drive_link"
@@ -216,7 +214,7 @@ export default function GalaPage() {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-rose-600 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow duration-300"
             >
-              View Gala Gallery
+              {t("galaViewGallery")}
             </a>
           </div>
         </div>

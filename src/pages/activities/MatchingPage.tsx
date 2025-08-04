@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, Users, Handshake, Building2, TrendingUp, Globe, Target, Clock } from "lucide-react";
+import { REGISTRATION_FORM_URL } from "../../constants/urls";
 
 export default function MatchingPage() {
   const { t } = useTranslation();
@@ -54,7 +55,7 @@ export default function MatchingPage() {
             
             <div className="flex justify-center items-center gap-2 text-gray-600 mb-8">
               <Calendar className="w-5 h-5 text-purple-600" />
-              <span className="font-medium">September 4-6, 2025 | SECC, Ho Chi Minh City</span>
+              <span className="font-medium">{t("matchingDate")}</span>
             </div>
             
             <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
@@ -118,24 +119,24 @@ export default function MatchingPage() {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center">
                 <Handshake className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">1:1 Meetings</h3>
-              <p className="text-gray-600">Personalized business matching sessions for maximum impact</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("matchingFeature1Title")}</h3>
+              <p className="text-gray-600">{t("matchingFeature1Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
                 <Globe className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Global Network</h3>
-              <p className="text-gray-600">Connect with enterprises from 60+ countries and territories</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("matchingFeature2Title")}</h3>
+              <p className="text-gray-600">{t("matchingFeature2Desc")}</p>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">3-Day Event</h3>
-              <p className="text-gray-600">Comprehensive networking throughout the entire conference</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{t("matchingFeature3Title")}</h3>
+              <p className="text-gray-600">{t("matchingFeature3Desc")}</p>
             </div>
           </div>
         </div>
@@ -145,7 +146,7 @@ export default function MatchingPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-indigo-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-            How It Works
+            {t("matchingHowItWorks")}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,24 +154,24 @@ export default function MatchingPage() {
               <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
                 <span className="text-white text-2xl font-bold">1</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Register</h3>
-              <p className="text-white/90">Submit your business profile and matching preferences</p>
+              <h3 className="text-xl font-bold text-white mb-2">{t("matchingStep1Title")}</h3>
+              <p className="text-white/90">{t("matchingStep1Desc")}</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
                 <span className="text-white text-2xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Match</h3>
-              <p className="text-white/90">AI-powered system finds the best potential partners</p>
+              <h3 className="text-xl font-bold text-white mb-2">{t("matchingStep2Title")}</h3>
+              <p className="text-white/90">{t("matchingStep2Desc")}</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
                 <span className="text-white text-2xl font-bold">3</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Connect</h3>
-              <p className="text-white/90">Schedule and attend personalized 1:1 meetings</p>
+              <h3 className="text-xl font-bold text-white mb-2">{t("matchingStep3Title")}</h3>
+              <p className="text-white/90">{t("matchingStep3Desc")}</p>
             </div>
           </div>
         </div>
@@ -183,18 +184,19 @@ export default function MatchingPage() {
             <div className="text-center">
               <Handshake className="w-16 h-16 mx-auto mb-4 text-purple-600" />
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                Ready to Find Your Perfect Business Partner?
+                {t("matchingCtaTitle")}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 {t("matchingScheduleDesc")}
               </p>
               <a
-                href="https://drive.google.com/drive/folders/1K7KJjeBE8FDl7J_z1qkszOZ8MLtfWCLx?usp=drive_link"
+                href={REGISTRATION_FORM_URL}
+                // href="https://drive.google.com/drive/folders/1K7KJjeBE8FDl7J_z1qkszOZ8MLtfWCLx?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow duration-300"
               >
-                Learn More About Matching
+                {t("matchingCtaButton")}
               </a>
             </div>
           </div>
