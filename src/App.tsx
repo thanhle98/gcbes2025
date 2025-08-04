@@ -52,6 +52,7 @@ function App() {
           
           <Route path="activities/exhibition" element={<ExhibitionPage />} />
           <Route path="activities/conference" element={<ConferencePage />} />
+          <Route path="activities/conference/:conferenceId" element={<ConferencePage />} />
           <Route path="activities/matching" element={<MatchingPage />} />
           <Route path="activities/gala" element={<GalaPage />} />
           <Route path="activities/tour" element={<TourPage />} />

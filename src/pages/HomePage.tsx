@@ -103,6 +103,7 @@ export default function HomePage() {
       type: t("session1Type"),
       time: "12:00 - 18:00",
       location: t("mainHall"),
+      link: "/activities/conference/1"
     },
     {
       date: "5/9",
@@ -111,6 +112,7 @@ export default function HomePage() {
       type: t("session2Type"),
       time: "09:00 - 12:00",
       location: t("hallA"),
+      link: "/activities/conference/2"
     },
     {
       date: "5/9",
@@ -119,6 +121,7 @@ export default function HomePage() {
       type: t("session3Type"),
       time: "14:00 - 17:30",
       location: t("mainHall"),
+      link: "/activities/conference/3"
     },
     {
       date: "5/9",
@@ -127,6 +130,7 @@ export default function HomePage() {
       type: t("session4Type"),
       time: "19:00 - 22:00",
       location: t("vipRestaurant"),
+      link: "/activities/gala"
     },
     {
       date: "6/9",
@@ -135,6 +139,7 @@ export default function HomePage() {
       type: t("session5Type"),
       time: "08:00 - 17:00",
       location: t("locationsInHCM"),
+      link: "/activities/tour"
     },
   ];
 
@@ -356,7 +361,12 @@ export default function HomePage() {
             {dynamicSessions.map((session, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
+                onClick={() => {
+                  if (session.link) {
+                    window.location.href = session.link;
+                  }
+                }}
               >
                 <div className="p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">

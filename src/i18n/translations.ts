@@ -203,10 +203,112 @@ export const translations = {
 
     // Conference Page
     conferenceTitle: "FORUM - CONFERENCE",
-    conferenceSubtitle: "September 4-6, 2025",
+    conferenceSubtitle: "September 4-5, 2025",
     conferenceLocation: "SECC Conference Room",
-    conferenceDescription: "Series of forums and specialized conferences organized over 3 days with main contents:",
+    conferenceDescription: "Three specialized conference sessions over September 4-5, 2025, covering digital transformation, export market diversification, and comprehensive cross-border e-commerce strategies:",
     conferenceScheduleTitle: "Conference Schedule",
+    conferenceDetailedSchedule: "Detailed Schedule",
+    
+    // Conference Session 1 - September 4 Afternoon
+    conference1Date: "Afternoon of September 4, 2025",
+    conference1Theme: "Digital Technology Application Forum in the Ascendant Era – Digital Transformation Solutions for Manufacturing and Export Enterprises",
+    conference1Venue: "Small Conference Hall",
+    conference1Capacity: "100-120 attendees",
+    
+    // Conference Session 2 - September 5 Morning  
+    conference2Date: "Morning of September 5, 2025",
+    conference2Theme: "Diversifying Export Markets through Cross-Border E-commerce",
+    conference2Venue: "Small Hall",
+    conference2Capacity: "100-120 guests",
+    
+    // Conference Session 3 - September 5 Afternoon
+    conference3Date: "Afternoon of September 5, 2025", 
+    conference3Theme: "The 2025 Cross-border E-commerce Landscape Summit – A Strategic Roadmap for Export Globally",
+    conference3Venue: "Main Conference Hall (Building A - SECC)",
+    conference3Capacity: "250-300 attendees",
+    
+    // Sidebar labels
+    conferenceSessions: "Conference Sessions",
+    detailedScheduleComingSoon: "Detailed Schedule Coming Soon",
+    detailedScheduleComingSoonDesc: "Detailed schedule for this conference session will be available soon.",
+    
+    // Short titles for sidebar
+    conference1ShortTitle: "Digital Tech Forum",
+    conference2ShortTitle: "Export Diversification", 
+    conference3ShortTitle: "CBEC Summit",
+    
+    // Conference 1 Schedule Data
+    conf1HighLevelMeeting: "High-Level Meeting",
+    conf1HighLevelContent: "High-Level Meeting\n- Welcome Speech\n- Introduction of Representatives from Agencies, Associations, and Key Enterprises\n- Overall Summit Orientation",
+    conf1HighLevelSpeaker: "Government Authority - Associations - Enterprises",
+    
+    conf1OpeningCeremony: "Opening Ceremony",
+    conf1DelegateReception: "Delegate Reception and Networking",
+    conf1OpeningSpeech: "Opening Speech",
+    conf1OpeningSpeaker: "Government Authority",
+    
+    conf1Session1Title: "Session 1: Global Experiences – Advanced Models of Applying Technology in Manufacturing & Export",
+    conf1Session1Item1: "An Ecosystem Supporting Manufacturers and Businesses in Digital Transformation",
+    conf1Session1Speaker1: "Vietnamese Technology Enterprise",
+    conf1Session1Item2: "Application of Big Data and Robotics in the Export Manufacturing Supply Chain",
+    conf1Session1Speaker2: "International High-tech Enterprise (est.American)",
+    conf1Session1Item3: "\"Smart Manufacturing\" Model & E-commerce Platform Integrating Domestic and International Logistics",
+    conf1Session1Speaker3: "International High-tech Enterprise (est.Chinese)",
+    conf1Session1Item4: "Lean Digital Factory Model & Digital Traceability",
+    conf1Session1Speaker4: "International High-tech Enterprise (est.Japanese)",
+    
+    conf1Session2Title: "Session 2: Technology & AI Solutions for Operational Optimization – Enhancing Efficiency",
+    conf1Session2Item1: "ERP – MES – WMS Solution: Full Integration of Production, Inventory, and Order Processes",
+    conf1Session2Speaker1: "Vietnamese Technology Enterprise",
+    conf1Session2Item2: "AI & IoT in Production Monitoring – Quality Control – Consumption Forecasting",
+    conf1Session2Speaker2: "International High-tech Enterprise (est.Australian)",
+    conf1Session2Item3: "Blockchain in Traceability and Value Chain Transparency",
+    conf1Session2Speaker3: "Vietnamese Technology Enterprise",
+    conf1Session2Item4: "Smart Logistics Routing & Management System (TMS, eLSP, Shipping API Integration)",
+    conf1Session2Speaker4: "International High-tech Enterprise",
+    
+    conf1Session3Title: "Session 3: Round Table Discussion",
+    conf1Session3Content: "Multinational Roundtable – Comprehensive Digital Transformation Collaboration for Vietnam's Exports, Enhancing Production Capacity and Traceability",
+    
+    conf1Session4Title: "Session 4: Networking Session – Development Commitment",
+    conf1Session4Item1: "Cooperation Signing Ceremony: Government – Technology Enterprise – Manufacturing Association",
+    conf1Session4Item2: "Opening ceremony the \"Digital Transformation Support Center for Local Exports\"",
+    
+    // Conference 2 Schedule Data
+    conf2OpeningCeremony: "Opening",
+    conf2DelegateWelcome: "Delegate Welcome and Networking\n\nVisit the Digital Transformation & E-commerce Technology Experience Zone",
+    conf2OpeningSpeech: "Opening Speech",
+    conf2OpeningSpeaker: "Government Authority",
+    
+    conf2Session1Title: "Session 1: GLOBAL EXPORT TRENDS & HIGH-POTENTIAL MARKETS",
+    conf2Session1Item1: "Global Cross-Border E-commerce Overview 2025 & Opportunities for Vietnamese Goods",
+    conf2Session1Speaker1: "International Alliances, Associations",
+    conf2Session1Item2: "Exporting Agricultural & Consumer Products to the US – Logistics & Standardization Lessons learning",
+    conf2Session1Speaker2: "Amazon Global Selling Expert / Representative of the Trade Office in the US",
+    conf2Session1Item3: "Leveraging the \"Unique Local Products\" Trend in the EU and Japan",
+    conf2Session1Speaker3: "International Trade Expert (EU / JETRO / Embassy)",
+    conf2Session1Item4: "China: Breakthrough Growth driven by Livestream & Domestic Cross-Border E-commerce (CBEC)",
+    conf2Session1Speaker4: "Alibaba / Douyin E-commerce Expert",
+    conf2Session1Item5: "BROADER PERSPECTIVE – Less Explored but High-Potential Markets:\n\nRussia – A market hungry for food products and handicrafts, easily convertible to e-commerce thanks to platforms like Ozon and Wildberries - (Representative of the Vietnamese Trade Office in the Russian Federation or Ozon.ru platform)\n\nMiddle East – High standards but significant demand for Halal, organic, and high-end handicraft products - (Representative of Noon.com platform or expert from Dubai E-Commerce Zone)\n\nSoutheast Asia – A high-potential \"home ground\" market: Indonesia, Thailand, Philippines - (Representative of Shopee/Lazada Global or logistics expert in the region)",
+    conf2Session1Speaker5: "Vietnam E-commerce Association (VECOM)",
+    
+    conf2Session2Title: "Session 2: SOLUTIONS FOR MARKET PENETRATION",
+    conf2Session2Item1: "General steps to standardize Vietnamese products for cross-border e-commerce export to international markets",
+    conf2Session2Speaker1: "Vietnamese Businesses Serving Cross-Border E-commerce Exports",
+    conf2Session2Item2: "How to open a Global Store, list products, and optimize content",
+    conf2Session2Speaker2: "Cross-Border E-commerce Platforms (Shopee Global or Lazada/Tiktok...)",
+    conf2Session2Item3: "Logistics – Fulfillment – Payment Solutions tailored to Each Market",
+    conf2Session2Speaker3: "Logistics service providers: Cainiao, Boxme, J&T Express, DHL...",
+    conf2Session2Item4: "Traceability, HS Codes, Halal Certification – Barriers to Overcome for the Middle East and EU",
+    conf2Session2Speaker4: "",
+    
+    conf2Session3Title: "Session 3: ROUNDTABLE DISCUSSION",
+    conf2Session3Content: "Open Talk: Market Diversification - Mindset Diversification",
+    conf2Session3Topics: "How can small businesses avoid relying on a single market?\n\nWhere to start when exporting to the Middle East?\n\nWhat are the barriers in the Russian market? Currency? Payment? Legal?\n\nSoutheast Asia is close, but why aren't many businesses exploiting it effectively?\n\nWho can provide support? Associations? The State? Platforms?",
+    
+    conf2Session4Title: "Session 4: CONNECTION SESSION – COMMITMENT TO DEVELOPMENT",
+    conf2Session4Item1: "Signing support agreements between provinces – businesses – international platforms",
+    conf2Session4Item2: "Launching ecosystems to support cross-border e-commerce exports.",
     conferenceExpertSpeakers: "Expert Speakers",
     conferenceExpertSpeakersDesc: "Leading industry experts from Vietnam and internationally",
     conferenceNetworking: "Networking",
@@ -693,10 +795,112 @@ export const translations = {
 
     // Conference Page
     conferenceTitle: "DIỄN ĐÀN - HỘI NGHỊ",
-    conferenceSubtitle: "Thời gian: 04 – 06/9/2025",
+    conferenceSubtitle: "Thời gian: 04 – 05/9/2025",
     conferenceLocation: "Địa điểm: Phòng hội nghị SECC",
-    conferenceDescription: "Chuỗi diễn đàn và hội nghị chuyên đề được tổ chức trong 3 ngày với các nội dung chính:",
+    conferenceDescription: "Ba phiên hội nghị chuyên đề trong 2 ngày 4-5/9/2025, bao gồm chuyển đổi số, đa dạng hóa thị trường xuất khẩu và chiến lược thương mại điện tử xuyên biên giới toàn diện:",
     conferenceScheduleTitle: "Lịch trình Hội nghị",
+    conferenceDetailedSchedule: "Lịch trình chi tiết",
+    
+    // Conference Session 1 - September 4 Afternoon
+    conference1Date: "Chiều 04/09/2025",
+    conference1Theme: "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+    conference1Venue: "Hội trường nhỏ",
+    conference1Capacity: "100-120 khách",
+    
+    // Conference Session 2 - September 5 Morning
+    conference2Date: "Sáng 05/09/2025",
+    conference2Theme: "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
+    conference2Venue: "Hội trường nhỏ",
+    conference2Capacity: "100-120 khách",
+    
+    // Conference Session 3 - September 5 Afternoon
+    conference3Date: "Chiều 05/09/2025",
+    conference3Theme: "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025 – Hướng đi cho doanh nghiệp xuất khẩu Việt Nam", 
+    conference3Venue: "Hội trường chính (Conference Hall Nhà A - SECC)",
+    conference3Capacity: "250-300 khách",
+    
+    // Sidebar labels
+    conferenceSessions: "Phiên Hội nghị",
+    detailedScheduleComingSoon: "Lịch trình chi tiết sắp có",
+    detailedScheduleComingSoonDesc: "Lịch trình chi tiết cho phiên hội nghị này sẽ được cập nhật sớm.",
+    
+    // Short titles for sidebar
+    conference1ShortTitle: "Diễn đàn Công nghệ số",
+    conference2ShortTitle: "Đa dạng hóa xuất khẩu",
+    conference3ShortTitle: "Hội nghị thượng đỉnh TMĐT",
+    
+    // Conference 1 Schedule Data
+    conf1HighLevelMeeting: "Phiên họp cấp cao",
+    conf1HighLevelContent: "Phiên họp cấp cao\n- Phát biểu chào mừng\n- Giới thiệu đại diện Cục, các tổ chức hiệp hội, Doanh nghiệp tiêu biểu\n- Định hướng chung chương trình",
+    conf1HighLevelSpeaker: "Quản lý nhà nước Việt Nam - Hiệp hội - Doanh nghiệp",
+    
+    conf1OpeningCeremony: "Lễ khai mạc",
+    conf1DelegateReception: "Đón tiếp đại biểu và kết nối giao lưu",
+    conf1OpeningSpeech: "Phát biểu khai mạc",
+    conf1OpeningSpeaker: "Quản lý nhà nước Việt Nam",
+    
+    conf1Session1Title: "Phiên 1: KINH NGHIỆM TOÀN CẦU – MÔ HÌNH TIÊN TIẾN ỨNG DỤNG CÔNG NGHỆ TRONG SẢN XUẤT & XUẤT KHẨU",
+    conf1Session1Item1: "Hệ sinh thái hỗ trợ nhà sản xuất và doanh nghiệp chuyển đổi số",
+    conf1Session1Speaker1: "Tập đoàn công nghệ nhà nước Việt Nam",
+    conf1Session1Item2: "Ứng dụng dữ liệu lớn và robot trong chuỗi sản xuất xuất khẩu",
+    conf1Session1Speaker2: "Tập đoàn công nghệ Mỹ",
+    conf1Session1Item3: "Mô hình \"Smart Manufacturing\" & sàn thương mại điện tử tích hợp logistics nội địa – quốc tế",
+    conf1Session1Speaker3: "Tập đoàn công nghệ Trung Quốc",
+    conf1Session1Item4: "Mô hình lean digital factory & truy xuất nguồn gốc số hoá",
+    conf1Session1Speaker4: "Tập đoàn công nghệ Nhật Bản",
+    
+    conf1Session2Title: "Phiên 2: GIẢI PHÁP CÔNG NGHỆ & AI TỐI ƯU VẬN HÀNH – TĂNG HIỆU SUẤT",
+    conf1Session2Item1: "Giải pháp ERP – MES – WMS tích hợp toàn bộ quy trình sản xuất – tồn kho – đơn hàng",
+    conf1Session2Speaker1: "Doanh nghiệp công nghệ Việt",
+    conf1Session2Item2: "AI & IoT trong giám sát sản xuất – kiểm soát chất lượng – dự báo tiêu hao",
+    conf1Session2Speaker2: "Doanh nghiệp công nghệ Úc",
+    conf1Session2Item3: "Blockchain trong truy xuất nguồn gốc và minh bạch chuỗi giá trị",
+    conf1Session2Speaker3: "Doanh nghiệp công nghệ Việt",
+    conf1Session2Item4: "Hệ thống định tuyến & quản trị logistics thông minh (TMS, eLSP, API kết nối vận chuyển)",
+    conf1Session2Speaker4: "Doanh nghiệp công nghệ Mỹ/Trung",
+    
+    conf1Session3Title: "Phiên 3: TỌA ĐÀM BÀN TRÒN",
+    conf1Session3Content: "Toạ đàm đa quốc gia - Hợp tác chuyển đổi số toàn diện cho Xuất khẩu Việt Nam, nâng cao năng lực sản xuất và truy xuất nguồn gốc",
+    
+    conf1Session4Title: "Phiên 4: PHIÊN KẾT NỐI – CAM KẾT PHÁT TRIỂN",
+    conf1Session4Item1: "Ký kết hợp tác 3 bên: tỉnh – công ty công nghệ – hiệp hội sản xuất",
+    conf1Session4Item2: "Công bố \"Trung tâm hỗ trợ chuyển đổi số cho xuất khẩu địa phương\"",
+    
+    // Conference 2 Schedule Data
+    conf2OpeningCeremony: "Khai mạc",
+    conf2DelegateWelcome: "Đón tiếp đại biểu và kết nối giao lưu\n\nThăm quan Trưng bày khu trải nghiệm chuyển đổi số & công nghệ thương mại điện tử",
+    conf2OpeningSpeech: "Phát biểu khai mạc",
+    conf2OpeningSpeaker: "Quản lý nhà nước Việt Nam",
+    
+    conf2Session1Title: "Phiên 1: XU THẾ XUẤT KHẨU TOÀN CẦU & NHỮNG THỊ TRƯỜNG ĐẦY TIỀM NĂNG",
+    conf2Session1Item1: "Tổng quan thương mại điện tử xuyên biên giới toàn cầu 2025 & cơ hội cho hàng Việt",
+    conf2Session1Speaker1: "Liên minh, Hiệp hội quốc tế",
+    conf2Session1Item2: "Xuất khẩu nông sản & tiêu dùng sang Mỹ – bài học logistics & chuẩn hóa",
+    conf2Session1Speaker2: "Chuyên gia Amazon Global Selling / Đại diện thương vụ tại Mỹ",
+    conf2Session1Item3: "Tận dụng xu hướng \"Sản phẩm bản địa độc đáo\" tại EU và Nhật Bản",
+    conf2Session1Speaker3: "Chuyên gia thương mại quốc tế (EU / JETRO / đại sứ quán)",
+    conf2Session1Item4: "Trung Quốc: Tăng trưởng đột phá nhờ livestream & thương mại điện tử nội địa xuyên biên giới (CBEC)",
+    conf2Session1Speaker4: "Chuyên gia Alibaba / Douyin E-commerce",
+    conf2Session1Item5: "GÓC NHÌN MỞ RỘNG – Thị trường ít được khai thác sâu nhưng tiềm năng lớn:\n\nNga – Thị trường khát hàng thực phẩm, hàng thủ công & dễ chuyển đổi sang thương mại điện tử nhờ nền tảng Ozon, Wildberries- (Đại diện Thương vụ Việt Nam tại Liên bang Nga hoặc sàn Ozon.ru)\n\nTrung Đông – Tiêu chuẩn cao nhưng nhu cầu lớn với sản phẩm Halal, organic, thủ công cao cấp- Đại diện sàn Noon.com hoặc chuyên gia Dubai E-Commerce Zone\n\nĐông Nam Á – Thị trường \"sân nhà\" giàu tiềm năng: Indonesia, Thái Lan, Philippines - (Đại diện Shopee/X Lazada Global hoặc chuyên gia logistics trong khu vực)",
+    conf2Session1Speaker5: "Hiệp hội thương mại điện tử Việt Nam VECOM",
+    
+    conf2Session2Title: "Phiên 2: GIẢI PHÁP THÂM NHẬP CÁC THỊ TRƯỜNG",
+    conf2Session2Item1: "Các bước chung chuẩn hoá hàng Việt Nam chuẩn bị xuất khẩu thương mại điện tử xuyên biên giới ra quốc tế",
+    conf2Session2Speaker1: "Doanh nghiệp Việt phục vụ xuất khẩu hàng thương mại điện tử xuyên biên giới",
+    conf2Session2Item2: "Cách mở gian hàng Global, list sản phẩm, tối ưu nội dung",
+    conf2Session2Speaker2: "Sàn thương mại điện tử xuyên biên giới (Shopee Global hoặc Lazada/Tiktok...)",
+    conf2Session2Item3: "Giải pháp logistics – fulfillment – thanh toán phù hợp từng thị trường",
+    conf2Session2Speaker3: "doanh nghiệp vận hành logistics: Cainiao, Boxme, J&T Express, DHL...",
+    conf2Session2Item4: "Truy xuất nguồn gốc, mã HS, giấy phép Halal – các rào cản cần vượt cho Trung Đông và EU",
+    conf2Session2Speaker4: "",
+    
+    conf2Session3Title: "Phiên 3: TỌA ĐÀM BÀN TRÒN",
+    conf2Session3Content: "Toạ đàm mở: Đa dạng hoá thị trường - Đa dạng hoá tư duy",
+    conf2Session3Topics: "Làm thế nào để doanh nghiệp nhỏ không chỉ phụ thuộc vào một thị trường duy nhất?\n\nBắt đầu từ đâu để xuất khẩu sang Trung Đông?\n\nThị trường Nga có rào cản gì? Tiền tệ? Thanh toán? Pháp lý?\n\nĐông Nam Á gần gũi, nhưng vì sao chưa nhiều doanh nghiệp khai thác hiệu quả?\n\nAi có thể hỗ trợ? Hiệp hội? Nhà nước? Nền tảng?",
+    
+    conf2Session4Title: "Phiên 4: PHIÊN KẾT NỐI – CAM KẾT PHÁT TRIỂN",
+    conf2Session4Item1: "Ký kết hỗ trợ giữa tỉnh – doanh nghiệp – nền tảng quốc tế",
+    conf2Session4Item2: "Ra mắt các hệ sinh thái hỗ trợ xuất khẩu thương mại điện tử xuyên biên giới",
     conferenceExpertSpeakers: "Diễn giả chuyên gia",
     conferenceExpertSpeakersDesc: "Các chuyên gia hàng đầu trong ngành từ Việt Nam và quốc tế",
     conferenceNetworking: "Kết nối",
