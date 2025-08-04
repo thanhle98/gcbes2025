@@ -36,12 +36,15 @@ export default function ConferencePage() {
   // Handle conference selection with scroll to top
   const handleConferenceSelect = (conferenceId: number) => {
     setSelectedConference(conferenceId);
-    // Scroll to the right content area
+    // Scroll to the right content area with 40px offset
     const rightContent = document.querySelector('[data-conference-content]');
     if (rightContent) {
-      rightContent.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start' 
+      const elementTop = rightContent.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementTop - 100;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
     }
   };
