@@ -33,6 +33,19 @@ export default function ConferencePage() {
     conferenceId ? parseInt(conferenceId) - 1 : 0
   );
 
+  // Handle conference selection with scroll to top
+  const handleConferenceSelect = (conferenceId: number) => {
+    setSelectedConference(conferenceId);
+    // Scroll to the right content area
+    const rightContent = document.querySelector('[data-conference-content]');
+    if (rightContent) {
+      rightContent.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
+
   // Conference sessions data
   const conferences = [
     {
@@ -460,7 +473,7 @@ export default function ConferencePage() {
                 {conferences.map((conference) => (
                   <div
                     key={conference.id}
-                    onClick={() => setSelectedConference(conference.id)}
+                    onClick={() => handleConferenceSelect(conference.id)}
                     className={`cursor-pointer rounded-xl p-4 transition-all duration-300 border-2 ${
                       selectedConference === conference.id
                         ? `bg-gradient-to-r ${conference.color} text-white border-transparent shadow-lg`
@@ -514,7 +527,7 @@ export default function ConferencePage() {
             </div>
 
             {/* Right Content - Conference Details */}
-            <div className="lg:w-3/4">
+            <div className="lg:w-3/4" data-conference-content>
               {selectedConference !== null && (
                 <div className="space-y-6">
                   {/* Selected Conference Header */}
