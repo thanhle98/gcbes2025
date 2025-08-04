@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useTranslation } from './contexts/LanguageContext';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import SponsorsPage from './pages/SponsorsPage';

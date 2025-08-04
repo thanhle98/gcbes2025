@@ -10,19 +10,23 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en'); // Default to English
-
-  // Load language from localStorage on mount
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') as Language;
-    if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'vi')) {
-      setLanguage(savedLanguage);
+  // Initialize language from localStorage, fallback to 'en'
+  const [language, setLanguage] = useState<Language>(() => {
+    try {
+      const savedLanguage = localStorage.getItem('language') as Language;
+      return (savedLanguage === 'en' || savedLanguage === 'vi') ? savedLanguage : 'en';
+    } catch {
+      return 'en';
     }
-  }, []);
+  });
 
   // Save language to localStorage when it changes
   useEffect(() => {
-    localStorage.setItem('language', language);
+    try {
+      localStorage.setItem('language', language);
+    } catch (error) {
+      console.warn('Failed to save language to localStorage:', error);
+    }
   }, [language]);
 
   const t = (key: TranslationKey): string => {
