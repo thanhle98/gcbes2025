@@ -166,7 +166,7 @@ export default function HomePage() {
       name: t("speaker4Name"),
       title: t("speaker4Title"),
       company: t("speaker4Company"),
-      // image: "/speakers/nguyen-ngoc-dung.png",
+      image: "/speakers/nguyen-duy-toan.png",
     },
     {
       name: t("speaker5Name"),
@@ -178,7 +178,7 @@ export default function HomePage() {
       name: t("speaker6Name"),
       title: t("speaker6Title"),
       company: t("speaker6Company"),
-      // image: "/speakers/nguyen-lam-thanh.png",
+      image: "/speakers/pham-tan-dat.png",
     },
   ];
 
