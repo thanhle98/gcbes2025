@@ -1,9 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
-import { Calendar, MapPin, Clock, Bus, Users, Target, Building, Truck, Cpu, Factory } from "lucide-react";
+import { Calendar, MapPin, Clock, Bus, Users, Target, Building, Truck, Cpu, Factory, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function TourPage() {
   const { t } = useTranslation();
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const tourImages: string[] = [
+    "5d54257466296616b0440aa3ec4f879b",
+    "IMG_3992",
+    "IMG_3993",
+    "IMG_3994",
+    "IMG_3996",
+    "IMG_3997",
+    "IMG_4993",
+    "IMG_4994",
+    "IMG_4998",
+    "IMG_5009",
+    "IMG_5010",
+    "IMG_5016",
+    "IMG_5024",
+  ];
+  const openLightbox = (index: number) => { setCurrentImageIndex(index); setIsLightboxOpen(true); };
+  const closeLightbox = () => setIsLightboxOpen(false);
+  const showPrev = () => setCurrentImageIndex((p) => (p - 1 + tourImages.length) % tourImages.length);
+  const showNext = () => setCurrentImageIndex((p) => (p + 1) % tourImages.length);
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   const objectives = [
     t("tourObjective1"),
@@ -185,46 +215,57 @@ export default function TourPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-blue-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <Target className="w-16 h-16 mx-auto mb-6 text-white" />
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            {t("tourExploreTitle")}
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            {t("tourNote")}
-          </p>
-          
-          <div className="bg-white/10 rounded-xl p-6 mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">9h</div>
-                <div className="text-white/80 text-sm">{t("tourFullDayExperience")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">4+</div>
-                <div className="text-white/80 text-sm">{t("tourBusinessLocations")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">60+</div>
-                <div className="text-white/80 text-sm">{t("tourInternationalDelegates")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">100%</div>
-                <div className="text-white/80 text-sm">{t("tourBilingualSupport")}</div>
-              </div>
-            </div>
+      {/* Image Gallery */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <Target className="w-16 h-16 mx-auto mb-4 text-green-600" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+              {t("tourViewGallery")}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t("tourNote")}</p>
           </div>
-          
-          <a
-            href="https://drive.google.com/drive/folders/1ojYdoJjKFqAnisrUpiXw0LCeHNWzvuPD?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-green-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
-          >
-            {t("tourViewGallery")}
-          </a>
+
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]">
+            {tourImages.map((name, index) => (
+              <button
+                key={name}
+                type="button"
+                onClick={() => openLightbox(index)}
+                className="group relative mb-4 w-full overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                style={{ breakInside: "avoid" }}
+              >
+                <img
+                  loading="lazy"
+                  src={`/tour-tham-quan/${name}.webp`}
+                  alt={`Tour image ${index + 1}`}
+                  className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+              </button>
+            ))}
+          </div>
+
+          {isLightboxOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true">
+              <button onClick={closeLightbox} aria-label="Close" className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <X className="w-6 h-6" />
+              </button>
+              <button onClick={showPrev} aria-label="Previous" className="absolute left-4 md:left-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+              <div className="max-w-5xl w-full">
+                <img
+                  src={`/tour-tham-quan/${tourImages[currentImageIndex]}.webp`}
+                  alt={`Tour ${currentImageIndex + 1}`}
+                  className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+              <button onClick={showNext} aria-label="Next" className="absolute right-4 md:right-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronRight className="w-7 h-7" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
