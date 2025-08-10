@@ -1,5 +1,5 @@
 import { useTranslation } from "../../contexts/LanguageContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Calendar,
   MapPin,
@@ -8,6 +8,8 @@ import {
   Presentation,
   ChevronRight,
   ArrowRight,
+  X,
+  ChevronLeft,
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 
@@ -32,6 +34,46 @@ export default function ConferencePage() {
   const [selectedConference, setSelectedConference] = useState(
     conferenceId ? parseInt(conferenceId) - 1 : 0
   );
+
+  // Image gallery state (filenames without extension)
+  const galleryImages: string[] = [
+    "1DX35641",
+    "1DX36570",
+    "HBM_2801",
+    "HBM_3416",
+    "HBM_3528",
+  ];
+
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setIsLightboxOpen(false);
+
+  const showPrev = () =>
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+
+  const showNext = () =>
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+
+  // Close on Escape
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsLightboxOpen(false);
+      } else if (e.key === "ArrowLeft") {
+        showPrev();
+      } else if (e.key === "ArrowRight") {
+        showNext();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   // Handle conference selection with scroll to top
   const handleConferenceSelect = (conferenceId: number) => {
@@ -724,24 +766,92 @@ export default function ConferencePage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Image Gallery (replaces previous CTA button) */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-indigo-600 to-blue-600 rounded-2xl p-8 text-white">
-            <Presentation className="w-16 h-16 mx-auto mb-4" />
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <Presentation className="w-16 h-16 mx-auto mb-4 text-indigo-600" />
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
               {t("conferenceJoinTitle")}
             </h2>
-            <p className="text-lg mb-6 opacity-90">{t("conferenceJoinDesc")}</p>
-            <a
-              href="https://drive.google.com/drive/folders/1geJqSTMcwB-036Y1lkJm1pionaH5KBit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
-            >
-              {t("conferenceViewMaterials")}
-            </a>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              {t("conferenceJoinDesc")}
+            </p>
           </div>
+
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]
+          ">
+            {galleryImages.map((name, index) => {
+              const webpSrc = `/dien-dan-hoi-nghi/${name}.webp`;
+              return (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => openLightbox(index)}
+                  className="group relative mb-4 w-full overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{ breakInside: "avoid" }}
+                >
+                  <img
+                    loading="lazy"
+                    src={webpSrc}
+                    alt={`Conference gallery image ${index + 1}`}
+                    className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Lightbox Modal */}
+          {isLightboxOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+              role="dialog"
+              aria-modal="true"
+            >
+              <button
+                type="button"
+                aria-label="Close"
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white"
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <button
+                type="button"
+                onClick={showPrev}
+                aria-label="Previous image"
+                className="absolute left-4 md:left-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white"
+              >
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+
+              <div className="max-w-5xl w-full">
+                {(() => {
+                  const baseName = galleryImages[currentImageIndex];
+                  const webpSrc = `/dien-dan-hoi-nghi/${baseName}.webp`;
+                  return (
+                    <img
+                      src={webpSrc}
+                      alt={`Conference ${currentImageIndex + 1}`}
+                      className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                    />
+                  );
+                })()}
+              </div>
+
+              <button
+                type="button"
+                onClick={showNext}
+                aria-label="Next image"
+                className="absolute right-4 md:right-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white"
+              >
+                <ChevronRight className="w-7 h-7" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
