@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
-import { Calendar, Users, Handshake, Building2, TrendingUp, Globe, Target, Clock } from "lucide-react";
+import { Calendar, Users, Handshake, Building2, TrendingUp, Globe, Target, Clock, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { REGISTRATION_FORM_URL } from "../../constants/urls";
 
 export default function MatchingPage() {
   const { t } = useTranslation();
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const matchingImages: string[] = [
+    "HBM_2653",
+    "HBM_3311",
+    "HBM_3352",
+    "HBM_3394",
+    "HBM_3405",
+  ];
+  const openLightbox = (index: number) => { setCurrentImageIndex(index); setIsLightboxOpen(true); };
+  const closeLightbox = () => setIsLightboxOpen(false);
+  const showPrev = () => setCurrentImageIndex((p) => (p - 1 + matchingImages.length) % matchingImages.length);
+  const showNext = () => setCurrentImageIndex((p) => (p + 1) % matchingImages.length);
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   const matchingSectors = [
     {
@@ -139,6 +161,60 @@ export default function MatchingPage() {
               <p className="text-gray-600">{t("matchingFeature3Desc")}</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <Handshake className="w-16 h-16 mx-auto mb-4 text-purple-600" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+              {t("matchingGallery")}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t("matchingScheduleDesc")}</p>
+          </div>
+
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]">
+            {matchingImages.map((name, index) => (
+              <button
+                key={name}
+                type="button"
+                onClick={() => openLightbox(index)}
+                className="group relative mb-4 w-full overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                style={{ breakInside: "avoid" }}
+              >
+                <img
+                  loading="lazy"
+                  src={`/matching-doanh-nghiep/${name}.webp`}
+                  alt={`Matching image ${index + 1}`}
+                  className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+              </button>
+            ))}
+          </div>
+
+          {isLightboxOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true">
+              <button onClick={closeLightbox} aria-label="Close" className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <X className="w-6 h-6" />
+              </button>
+              <button onClick={showPrev} aria-label="Previous" className="absolute left-4 md:left-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+              <div className="max-w-5xl w-full">
+                <img
+                  src={`/matching-doanh-nghiep/${matchingImages[currentImageIndex]}.webp`}
+                  alt={`Matching ${currentImageIndex + 1}`}
+                  className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+              <button onClick={showNext} aria-label="Next" className="absolute right-4 md:right-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronRight className="w-7 h-7" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

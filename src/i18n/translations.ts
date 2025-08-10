@@ -493,6 +493,7 @@ export const translations = {
     matchingFeature3Title: "3-Day Event",
     matchingFeature3Desc:
       "Comprehensive networking throughout the entire conference",
+    matchingGallery: "Matching Gallery", 
     matchingHowItWorks: "How It Works",
     matchingStep1Title: "Register",
     matchingStep1Desc: "Submit your business profile and matching preferences",
@@ -1231,6 +1232,7 @@ export const translations = {
       "Kết nối với các doanh nghiệp từ hơn 60 quốc gia và vùng lãnh thổ",
     matchingFeature3Title: "Sự kiện 3 ngày",
     matchingFeature3Desc: "Kết nối toàn diện trong suốt hội nghị",
+    matchingGallery: "Thư viện ảnh của buổi ký MOU", 
     matchingHowItWorks: "Cách thức hoạt động",
     matchingStep1Title: "Đăng ký",
     matchingStep1Desc: "Gửi hồ sơ doanh nghiệp và sở thích kết nối của bạn",
