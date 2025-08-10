@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
-import { Calendar, MapPin, Clock, Camera, Coffee, Utensils, Building2, Palette, Anchor } from "lucide-react";
+import { Calendar, MapPin, Clock, Camera, Coffee, Utensils, Building2, Palette, Anchor, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function TourismPage() {
   const { t } = useTranslation();
+  // Tourism gallery state
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const tourismImages: string[] = ["1", "2", "3", "4", "5"];
+  const openLightbox = (index: number) => { setCurrentImageIndex(index); setIsLightboxOpen(true); };
+  const closeLightbox = () => setIsLightboxOpen(false);
+  const showPrev = () => setCurrentImageIndex((p) => (p - 1 + tourismImages.length) % tourismImages.length);
+  const showNext = () => setCurrentImageIndex((p) => (p + 1) % tourismImages.length);
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   const scheduleItems = [
     {
@@ -198,46 +215,57 @@ export default function TourismPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-600 to-orange-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <Camera className="w-16 h-16 mx-auto mb-6 text-white" />
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            {t("tourismDiscoverTitle")}
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            {t("tourismDiscoverDesc")}
-          </p>
-          
-          <div className="bg-white/10 rounded-xl p-6 mb-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">13.5h</div>
-                <div className="text-white/80 text-sm">{t("tourismFullDay")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">8+</div>
-                <div className="text-white/80 text-sm">{t("tourismAttractions")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">3</div>
-                <div className="text-white/80 text-sm">{t("tourismMealsIncluded")}</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1">2</div>
-                <div className="text-white/80 text-sm">{t("tourismLanguages")}</div>
-              </div>
-            </div>
+      {/* Image Gallery */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <Camera className="w-16 h-16 mx-auto mb-4 text-amber-600" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+              {t("tourismViewGallery")}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t("tourismDiscoverDesc")}</p>
           </div>
-          
-          <a
-            href="https://drive.google.com/drive/folders/1lJeAcCGyA1BMc5ENQd_mT0vMbR48nUrP?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-amber-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
-          >
-            {t("tourismViewGallery")}
-          </a>
+
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]">
+            {tourismImages.map((name, index) => (
+              <button
+                key={name}
+                type="button"
+                onClick={() => openLightbox(index)}
+                className="group relative mb-4 w-full overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                style={{ breakInside: "avoid" }}
+              >
+                <img
+                  loading="lazy"
+                  src={`/du-lich/${name}.webp`}
+                  alt={`Tourism image ${index + 1}`}
+                  className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+              </button>
+            ))}
+          </div>
+
+          {isLightboxOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true">
+              <button onClick={closeLightbox} aria-label="Close" className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <X className="w-6 h-6" />
+              </button>
+              <button onClick={showPrev} aria-label="Previous" className="absolute left-4 md:left-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+              <div className="max-w-5xl w-full">
+                <img
+                  src={`/du-lich/${tourismImages[currentImageIndex]}.webp`}
+                  alt={`Tourism ${currentImageIndex + 1}`}
+                  className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+              <button onClick={showNext} aria-label="Next" className="absolute right-4 md:right-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronRight className="w-7 h-7" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
