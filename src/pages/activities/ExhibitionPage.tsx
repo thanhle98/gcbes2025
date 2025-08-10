@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, MapPin, Users, Building, Package, Globe, Zap, Award } from "lucide-react";
+import { REGISTRATION_FORM_URL } from "../../constants/urls";
 
 export default function ExhibitionPage() {
   const { t } = useTranslation();
@@ -136,12 +137,12 @@ export default function ExhibitionPage() {
               {t("exhibitionJoinDesc")}
             </p>
             <a
-              href="https://drive.google.com/drive/folders/1K7KJjeBE8FDl7J_z1qkszOZ8MLtfWCLx?usp=drive_link"
+              href={REGISTRATION_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300"
+              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-sm"
             >
-              {t("exhibitionViewImages")}
+              {t("heroRegister")}
             </a>
           </div>
         </div>
