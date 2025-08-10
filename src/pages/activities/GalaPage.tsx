@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
-import { Calendar, MapPin, Clock, Utensils, Music, Camera, Users, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Clock, Utensils, Music, Camera, Users, Sparkles, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function GalaPage() {
   const { t } = useTranslation();
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const dinnerImages: string[] = [
+    "HBM_3621",
+    "HBM_3637",
+    "HBM_3657",
+    "HBM_3661",
+  ];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsLightboxOpen(true);
+  };
+  const closeLightbox = () => setIsLightboxOpen(false);
+  const showPrev = () => setCurrentImageIndex((p) => (p - 1 + dinnerImages.length) % dinnerImages.length);
+  const showNext = () => setCurrentImageIndex((p) => (p + 1) % dinnerImages.length);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   const programSchedule = [
     {
@@ -197,26 +223,60 @@ export default function GalaPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Image Gallery */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
             <Sparkles className="w-16 h-16 mx-auto mb-4 text-rose-600" />
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              {t("galaReserveTitle")}
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              {t("galaReserveDesc")}
-            </p>
-            <a
-              href="https://drive.google.com/drive/folders/1jXbWah9OVAHbTDOz-awYSXVpMpHWYmy-?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-rose-600 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow duration-300"
-            >
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
               {t("galaViewGallery")}
-            </a>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t("galaReserveDesc")}</p>
           </div>
+
+          <div className="columns-1 sm:columns-2 md:columns-2 gap-4 md:gap-6 [column-fill:_balance]">
+            {dinnerImages.map((name, index) => {
+              const webpSrc = `/dinner/${name}.webp`;
+              return (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => openLightbox(index)}
+                  className="group relative mb-4 w-full overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-rose-500"
+                  style={{ breakInside: "avoid" }}
+                >
+                  <img
+                    loading="lazy"
+                    src={webpSrc}
+                    alt={`Gala dinner image ${index + 1}`}
+                    className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                </button>
+              );
+            })}
+          </div>
+
+          {isLightboxOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true">
+              <button onClick={closeLightbox} aria-label="Close" className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <X className="w-6 h-6" />
+              </button>
+              <button onClick={showPrev} aria-label="Previous" className="absolute left-4 md:left-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+              <div className="max-w-5xl w-full">
+                <img
+                  src={`/dinner/${dinnerImages[currentImageIndex]}.webp`}
+                  alt={`Gala dinner ${currentImageIndex + 1}`}
+                  className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+              <button onClick={showNext} aria-label="Next" className="absolute right-4 md:right-8 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <ChevronRight className="w-7 h-7" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
