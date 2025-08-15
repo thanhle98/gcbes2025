@@ -182,6 +182,39 @@ export default function HomePage() {
     },
   ];
 
+  const dynamicSponsors = [
+    {
+      name: "VietFAS",
+      image: "/partners/vietfas_logo.png",
+    },
+    
+    {
+      name: "Fado",
+      image: "/partners/fado_logo.jpg",
+    },
+    
+    {
+      name: "Flash",
+      image: "/partners/flash_logo.jpg",
+    },
+    {
+      name: "Happy",
+      image: "/partners/happy_logo.png",
+    },
+    {
+      name: "JingDong Logistics",
+      image: "/partners/jingdong_logistics_logo.png",
+    },
+    {
+      name: "Metrang",
+      image: "/partners/metrang_logo.jpg",
+    },
+    {
+      name: "Proship",
+      image: "/partners/proship_logo.png",
+    },
+  ];
+
   return (
     <div>
       <HeroSection onOpenPopup={() => setIsPopupOpen(true)} />
@@ -345,6 +378,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Logo Nhà tài trợ */}
+      <section className="py-16 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
+              {t("sponsorsTitle")}
+            </h2>
+          </div>
+
+          {/* Partner Logos Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll whitespace-nowrap">
+              {/* First set of logos */}
+              <div className="flex items-center space-x-12 mr-12 flex-shrink-0">
+                {[...dynamicSponsors, ...dynamicSponsors, ...dynamicSponsors].map((sponsor, index) => (
+                  <img src={sponsor.image} alt={sponsor.name} className="w-32 h-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 flex-shrink-0 filter grayscale hover:grayscale-0" />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Các phiên tham luận & hoạt động */}
       <section id="sessions" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -421,70 +477,7 @@ export default function HomePage() {
         />
       )}
 
-      {/* Logo Nhà tài trợ */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
-              {t("sponsorsTitle")}
-            </h2>
-            <p className="text-xl text-gray-600 font-medium">
-              {t("sponsorsUpdating")}
-            </p>
-          </div>
 
-          {/* Commented out for future use */}
-          {/* 
-          <p className="text-gray-600">
-            Được hỗ trợ bởi những tổ chức hàng đầu trong ngành
-          </p>
-
-          <div className="mb-12">
-            <div className="flex items-center justify-center mb-6">
-              <Star className="w-6 h-6 text-yellow-500 mr-2" />
-              <h3 className="text-xl font-bold text-gray-800">
-                Nhà tài trợ Kim cương
-              </h3>
-              <Star className="w-6 h-6 text-yellow-500 ml-2" />
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-              <div className="bg-gray-100 rounded-lg p-6 w-full aspect-square flex items-center justify-center">
-                <span className="text-gray-500 font-medium">Logo 1</span>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-6 w-full aspect-square flex items-center justify-center">
-                <span className="text-gray-500 font-medium">Logo 2</span>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-6 w-full aspect-square flex items-center justify-center">
-                <span className="text-gray-500 font-medium">Logo 3</span>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-6 w-full aspect-square flex items-center justify-center">
-                <span className="text-gray-500 font-medium">Logo 4</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-center mb-6">
-              <Award className="w-5 h-5 text-gray-400 mr-2" />
-              <h3 className="text-lg font-bold text-gray-700">
-                Nhà tài trợ Bạch kim
-              </h3>
-              <Award className="w-5 h-5 text-gray-400 ml-2" />
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
-                  key={i}
-                  className="bg-gray-50 rounded-lg p-4 w-full aspect-square flex items-center justify-center"
-                >
-                  <span className="text-gray-400 text-sm">Logo {i}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          */}
-        </div>
-      </section>
     </div>
   );
 }
