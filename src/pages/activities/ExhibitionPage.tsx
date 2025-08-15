@@ -22,6 +22,14 @@ export default function ExhibitionPage() {
     t("exhibitionSector6"),
   ];
 
+  const galleryImages: string[] = [
+    "/trien-lam-gian-hang/1DX34934.webp",
+    "/trien-lam-gian-hang/1DX34938.webp",
+    "/trien-lam-gian-hang/1DX35667.webp",
+    "/trien-lam-gian-hang/1DX35986.webp",
+    "/trien-lam-gian-hang/1DX36508.webp",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       {/* Hero Section */}
@@ -144,6 +152,31 @@ export default function ExhibitionPage() {
             >
               {t("heroRegister")}
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+            {t("exhibitionViewImages")}
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {galleryImages.map((src, index) => (
+              <div
+                key={src}
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src={src}
+                  alt={`${t("exhibitionTitle")} - ${index + 1}`}
+                  loading="lazy"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
