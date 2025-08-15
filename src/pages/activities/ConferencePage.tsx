@@ -12,6 +12,7 @@ import {
   ChevronLeft,
 } from "lucide-react";
 import { useParams } from "react-router-dom";
+import RegisterCTA from "../../components/common/RegisterCTA";
 
 interface ScheduleItem {
   time: string;
@@ -854,6 +855,8 @@ export default function ConferencePage() {
           )}
         </div>
       </section>
+
+      <RegisterCTA />
     </div>
   );
 }

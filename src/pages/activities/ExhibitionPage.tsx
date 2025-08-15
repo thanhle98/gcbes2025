@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, MapPin, Users, Building, Package, Globe, Zap, Award } from "lucide-react";
 import { REGISTRATION_FORM_URL } from "../../constants/urls";
+import RegisterCTA from "../../components/common/RegisterCTA";
 
 export default function ExhibitionPage() {
   const { t } = useTranslation();
@@ -180,6 +181,8 @@ export default function ExhibitionPage() {
           </div>
         </div>
       </section>
+
+      <RegisterCTA />
     </div>
   );
 }

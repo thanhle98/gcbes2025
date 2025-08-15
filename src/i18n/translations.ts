@@ -157,6 +157,11 @@ export const translations = {
     navDocDirectory: "Business Directory",
     navRegister: "Register Now",
 
+    // Generic CTA
+    ctaRegisterTitle: "Join GCBES 2025",
+    ctaRegisterDesc:
+      "Register now to secure your seat and receive program updates.",
+
     // Footer
     footerTitle: "GCBES - 2025",
     footerDescription: "Global Cross-Border E-commerce Summit 2025",
@@ -904,6 +909,11 @@ export const translations = {
     navDocPresentations: "Tham luận",
     navDocDirectory: "Danh bạ Doanh nghiệp",
     navRegister: "Đăng ký tham dự",
+
+    // Generic CTA
+    ctaRegisterTitle: "Đăng ký tham dự sự kiện",
+    ctaRegisterDesc:
+      "Đăng ký ngay để giữ chỗ và nhận cập nhật chương trình.",
 
     // Footer
     footerTitle: "GCBES - 2025",

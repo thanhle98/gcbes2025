@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, MapPin, Clock, Bus, Users, Target, Building, Truck, Cpu, Factory, X, ChevronLeft, ChevronRight } from "lucide-react";
+import RegisterCTA from "../../components/common/RegisterCTA";
 
 export default function TourPage() {
   const { t } = useTranslation();
@@ -250,6 +251,8 @@ export default function TourPage() {
           )}
         </div>
       </section>
+
+      <RegisterCTA />
     </div>
   );
 }

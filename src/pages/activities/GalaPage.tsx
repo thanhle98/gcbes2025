@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, MapPin, Clock, Utensils, Music, Camera, Users, Sparkles, X, ChevronLeft, ChevronRight } from "lucide-react";
+import RegisterCTA from "../../components/common/RegisterCTA";
 
 export default function GalaPage() {
   const { t } = useTranslation();
@@ -279,6 +280,8 @@ export default function GalaPage() {
           )}
         </div>
       </section>
+
+      <RegisterCTA />
     </div>
   );
 }

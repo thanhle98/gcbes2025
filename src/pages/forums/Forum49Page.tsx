@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Users, Clock, ChevronRight, Brain, Lightbulb, Target } from 'lucide-react';
 import { REGISTRATION_FORM_URL } from '../../constants/urls';
+import RegisterCTA from '../../components/common/RegisterCTA';
 
 export default function Forum49Page() {
   const agenda = [
@@ -231,28 +232,7 @@ export default function Forum49Page() {
         </div>
       </section>
 
-      {/* Registration CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Đừng bỏ lỡ cơ hội học hỏi!</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Tham gia diễn đàn để cập nhật những xu hướng công nghệ mới nhất và kết nối với cộng đồng chuyên gia
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href={REGISTRATION_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 text-center"
-            >
-              Đăng ký ngay
-            </a>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
-              Tải tài liệu
-            </button>
-          </div>
-        </div>
-      </section>
+      <RegisterCTA />
     </div>
   );
 } 

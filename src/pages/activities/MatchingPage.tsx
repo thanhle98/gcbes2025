@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/LanguageContext";
 import { Calendar, Users, Handshake, Building2, TrendingUp, Globe, Target, Clock, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { REGISTRATION_FORM_URL } from "../../constants/urls";
+import RegisterCTA from "../../components/common/RegisterCTA";
 
 export default function MatchingPage() {
   const { t } = useTranslation();
@@ -253,31 +254,7 @@ export default function MatchingPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="text-center">
-              <Handshake className="w-16 h-16 mx-auto mb-4 text-purple-600" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                {t("matchingCtaTitle")}
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                {t("matchingScheduleDesc")}
-              </p>
-              <a
-                href={REGISTRATION_FORM_URL}
-                // href="https://drive.google.com/drive/folders/1K7KJjeBE8FDl7J_z1qkszOZ8MLtfWCLx?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow duration-300"
-              >
-                {t("matchingCtaButton")}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RegisterCTA />
     </div>
   );
 }
