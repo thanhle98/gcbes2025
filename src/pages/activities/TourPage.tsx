@@ -44,45 +44,28 @@ export default function TourPage() {
 
   const scheduleItems = [
     {
-      time: "08:00 – 08:15",
-      title: t("tourSchedule1"),
+      title: t("tourMorningTitle"),
+      details: t("tourMorningDetails"),
       icon: Bus,
       color: "from-green-500 to-emerald-500"
     },
     {
-      time: "08:45 – 10:00",
-      title: t("tourSchedule2"),
-      details: t("tourSchedule2Details"),
-      icon: Truck,
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      time: "10:30 – 11:45",
-      title: t("tourSchedule3"),
-      details: t("tourSchedule3Details"),
-      icon: Cpu,
-      color: "from-purple-500 to-indigo-500"
-    },
-    {
-      time: "12:00 – 13:30",
-      title: t("tourSchedule4"),
-      details: t("tourSchedule4Details"),
+      title: t("tourNoonTitle"),
+      details: t("tourNoonDetails"),
       icon: Users,
       color: "from-orange-500 to-red-500"
     },
     {
-      time: "13:45 – 15:15",
-      title: t("tourSchedule5"),
-      details: t("tourSchedule5Details"),
+      title: t("tourAfternoonTitle"),
+      details: t("tourAfternoonDetails"),
       icon: Factory,
       color: "from-teal-500 to-green-500"
     },
     {
-      time: "15:30 – 17:00",
-      title: t("tourSchedule6"),
-      details: t("tourSchedule6Details"),
-      icon: Target,
-      color: "from-pink-500 to-rose-500"
+      title: t("tourEveningTitle"),
+      details: t("tourEveningDetails"),
+      icon: Clock,
+      color: "from-purple-500 to-indigo-500"
     }
   ];
 
@@ -160,7 +143,6 @@ export default function TourPage() {
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="text-white/80 text-sm font-medium">{item.time}</div>
                       <h3 className="text-white font-bold text-lg">{item.title}</h3>
                     </div>
                   </div>

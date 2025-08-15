@@ -534,7 +534,7 @@ export const translations = {
       "Theme: Exploring successful business models and modern logistics centers",
     tourParticipants:
       "Participants: Enterprise delegates, international investors, specialized organizations who have registered in advance",
-    tourTime: "Time: 08:00 – 17:00, September 6, 2025",
+    tourTime: "September 6, 2025",
     tourTarget:
       "Target: International enterprises, investors, partners attending the event",
     tourFormat:
@@ -733,6 +733,19 @@ export const translations = {
     tourInternationalDelegates: "International Delegates",
     tourBilingualSupport: "Bilingual Support",
     tourViewGallery: "View Tour Gallery",
+
+    // Tour Schedule (new format without specific times)
+    tourMorningTitle: "Morning of September 6",
+    tourMorningDetails:
+      "Hotel breakfast\nDepart to visit Vietnam CBEC ecosystem and meetings:\nGovernment agency: HCMC Investment Promotion Center\nEnterprise: Shopee",
+    tourNoonTitle: "Noon of September 6",
+    tourNoonDetails:
+      "Lunch & networking at restaurant\nEnjoy Vietnamese specialties in an elegant, private setting\nRelaxation & informal networking between international and Vietnamese enterprises",
+    tourAfternoonTitle: "Afternoon of September 6",
+    tourAfternoonDetails:
+      "Travel for visits and meetings:\nHappy Nest Factory: Experience real production line\nFADO Technology Group\nB2B matching at FADO meeting room\nDiscussion with leadership on D2C strategy and cross-border e-commerce exports\nTour wrap-up & cooperation orientation\nBusiness card exchange – discuss business proposals\nCommemorative photos – organize post-tour networking",
+    tourEveningTitle: "Evening of September 6",
+    tourEveningDetails: "Dinner\nReturn to hotel and rest",
   },
 
   vi: {
@@ -1273,7 +1286,7 @@ export const translations = {
       "Chủ đề: Khám phá các mô hình kinh doanh thành công và trung tâm logistics hiện đại",
     tourParticipants:
       "Đối tượng: Đại biểu doanh nghiệp, nhà đầu tư quốc tế, tổ chức chuyên ngành đã đăng ký trước",
-    tourTime: "Thời gian: 08:00 – 17:00, ngày 06/9/2025",
+    tourTime: "Ngày 06/9/2025",
     tourTarget:
       "Đối tượng: Doanh nghiệp quốc tế, nhà đầu tư, đối tác tham dự sự kiện",
     tourFormat:
@@ -1287,7 +1300,7 @@ export const translations = {
       "Kết nối trực tiếp với doanh nghiệp đầu ngành – startup công nghệ – đơn vị chuyển phát",
     tourObjective4:
       "Tăng cường hiểu biết, hợp tác giữa doanh nghiệp Việt Nam và quốc tế",
-    tourSchedule: "LỊCH TRÌNH CHI TIẾT – 06/9/2025",
+    tourSchedule: "Lịch trình dự kiến chi tiết ngày 06/9/2025",
     tourSchedule1: "08:00 – 08:15 | Đón đoàn tại SECC – Bắt đầu hành trình",
     tourSchedule2:
       "08:45 – 10:00 | VNPost Logistics – Trung tâm khai thác & phân phối",
@@ -1471,6 +1484,19 @@ export const translations = {
     tourInternationalDelegates: "Đại biểu quốc tế",
     tourBilingualSupport: "Hỗ trợ song ngữ",
     tourViewGallery: "Xem thư viện ảnh Tour",
+
+    // Tour Schedule (new format without specific times)
+    tourMorningTitle: "Sáng 6/9",
+    tourMorningDetails:
+      "Ăn sáng khách sạn\nDi chuyển đi tham quan hệ sinh thái TMĐT XBG Việt Nam và làm việc:\nCơ quan nhà nước: Trung tâm Xúc tiến Đầu tư TP.HCM\nDoanh nghiệp: Shopee",
+    tourNoonTitle: "Trưa 6/9",
+    tourNoonDetails:
+      "Ăn trưa & Networking tại nhà hàng\nThưởng thức đặc sản Việt Nam trong không gian sang trọng, riêng tư\nThời gian thư giãn & kết nối không chính thức giữa các doanh nghiệp Quốc tế và Việt Nam",
+    tourAfternoonTitle: "Chiều 6/9",
+    tourAfternoonDetails:
+      "Di chuyển đi tham quan và làm việc:\nNhà máy Yến Happy: Trải nghiệm dây chuyền sản xuất thực tế\nTập đoàn công nghệ FADO\nB2B matching tại Phòng họp FADO\nGiao lưu với các ban lãnh đạo về chiến lược D2C và xuất khẩu qua TMĐT\nTổng kết chuyến đi & định hướng hợp tác\nĐổi danh thiếp – trao đổi đề xuất kinh doanh\nChụp ảnh lưu niệm – tổ chức kết nối sau tour",
+    tourEveningTitle: "Tối 6/9",
+    tourEveningDetails: "Ăn tối\nTrở về khách sạn nghỉ ngơi",
   },
 };
 
