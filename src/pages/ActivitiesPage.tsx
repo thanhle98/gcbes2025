@@ -1,4 +1,5 @@
 import React from 'react';
+import RegisterCTA from '../components/common/RegisterCTA';
 import { Calendar, MapPin, Users, Clock, ArrowRight, Building2, Handshake, PartyPopper, Camera, Plane } from 'lucide-react';
 
 export default function ActivitiesPage() {
@@ -189,23 +190,7 @@ export default function ActivitiesPage() {
         </div>
       </section>
 
-      {/* Registration CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Tham gia các hoạt động</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Đăng ký tham dự để không bỏ lỡ những trải nghiệm thú vị
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
-              Đăng ký tham dự
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
-              Tải lịch trình
-            </button>
-          </div>
-        </div>
-      </section>
+      <RegisterCTA />
     </div>
   );
 } 
