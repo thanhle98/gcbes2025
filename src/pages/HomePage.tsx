@@ -389,7 +389,11 @@ export default function HomePage() {
 
           {/* Partner Logos Carousel */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll whitespace-nowrap">
+            {/* Edge gradient fades */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10" />
+
+            <div className="flex animate-scroll-right whitespace-nowrap">
               {/* First set of logos */}
               <div className="flex items-center space-x-12 mr-12 flex-shrink-0">
                 {[...dynamicSponsors, ...dynamicSponsors, ...dynamicSponsors].map((sponsor, index) => (

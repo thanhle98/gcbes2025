@@ -15,11 +15,16 @@ export default {
       },
       animation: {
         'scroll': 'scroll 40s linear infinite',
+        'scroll-right': 'scroll-right 40s linear infinite',
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-33.333%)' },
+        },
+        'scroll-right': {
+          '0%': { transform: 'translateX(-33.333%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
     },
