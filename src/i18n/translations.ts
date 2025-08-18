@@ -1526,7 +1526,144 @@ export const translations = {
     tourEveningTitle: "Tối 6/9",
     tourEveningDetails: "Ăn tối\nTrở về khách sạn nghỉ ngơi",
   },
+
+  zh: {
+    // Hero Section
+    heroTitle: "电子商务与数字技术应用论坛",
+    heroTitle2: "2025",
+    heroSubtitle: "为越南制造与出口企业提供数字化转型方案",
+    heroDate: "2025年9月4-6日",
+    heroLocation: "胡志明市西贡会展中心 SECC (799 Nguyễn Văn Linh, 第七郡)",
+    heroRegister: "立即报名",
+    heroWatchVideo: "观看介绍视频",
+
+    // Navigation
+    navHome: "首页",
+    navAbout: "简介",
+    navSpeakers: "演讲嘉宾",
+    navTopics: "主题",
+    navSessions: "议程",
+    navSponsors: "合作伙伴",
+    navActivities: "活动",
+    navDocuments: "资料",
+    navForums: "论坛",
+
+    // Stats
+    statsProducts: "标准产品与服务",
+    statsEvents: "研讨会与活动",
+    statsCountries: "国家与地区",
+    statsBooths: "展位",
+    statsVisitors: "国际观众与采购团",
+
+    // About Section
+    aboutTitle: "关于 GCBES2025",
+    aboutDescription:
+      "由越南工贸部电子商务与数字经济局主办、国内市场司协同举办的专业活动。\n\nGCBES 2025 – 电子商务与数字技术应用论坛是区域内领先活动之一，汇聚制造商、电商平台、技术平台、物流企业及越南与国际顶尖专家。目标是通过跨境电子商务（CBEC）与AI技术应用，为全球商品出口开启新纪元。",
+    aboutWhyJoinTitle: "为何参与？",
+    aboutReason1:
+      "与60+国家的卖家与买家直接对接，学习来自美国、中国、日本、东盟的电商治理模式",
+    aboutReason2: "把握政策，更新最新趋势",
+    aboutReason3: "全球链接——以国际视角理解越南",
+    aboutReason4: "让本土产品走向世界——无需中间商",
+
+    // Header Navigation (extended)
+    navIntroduction: "介绍",
+    navExplore: "探索",
+    navForumSessions: "论坛议程",
+    navForum49: "论坛 4/9",
+    navForum59: "论坛 5/9",
+    navSummit59: "峰会 5/9",
+    navEventActivities: "活动",
+    navExhibition: "展览·展位",
+    navConference: "论坛·会议",
+    navMatching: "企业对接 1:1",
+    navGala: "联谊晚宴",
+    navTour: "生态参访",
+    navTourism: "本地旅游",
+    navProgramDocs: "会议资料",
+    navDocIntro: "简介",
+    navDocPresentations: "演讲资料",
+    navDocDirectory: "企业名录",
+    navRegister: "立即报名",
+
+    // Footer
+    footerTitle: "GCBES - 2025",
+    footerDescription: "2025 跨境电子商务全景峰会",
+    footerLinks: "链接",
+    footerHome: "首页",
+    footerSponsors: "合作伙伴",
+    footerDocuments: "资料",
+    footerEvents: "活动",
+    footerForums: "论坛",
+    footerActivities: "活动",
+    footerContact: "联系",
+    footerEmail: "hello@vietfas.com",
+    footerPhone: "0342608182 (Mrs.Hien)",
+    footerAddress: "01 巷 107 Nguyễn Chí Thanh, Đống Đa, Hà Nội",
+    footerCopyright: "© 2025 GCBES2025. 保留所有权利。",
+
+    // Common
+    mainHall: "主会场",
+    hallA: "A 厅",
+    vipRestaurant: "VIP 餐厅",
+    locationsInHCM: "胡志明市各地点",
+
+    // Sections titles
+    topicsTitle: "主要议题",
+    topicsSubtitle: "探索跨境电商的6大关键领域",
+    topicCrossBorder: "跨境电子商务",
+    topicCrossBorderDesc: "通过数字平台打破壁垒、拓展全球市场",
+    topicTechAI: "技术与AI",
+    topicTechAIDesc: "AI 改变游戏规则，谁将引领？",
+    topicTraining: "人才培养",
+    topicTrainingDesc: "提升专业能力，构建可持续基础",
+    topicLogistics: "物流",
+    topicLogisticsDesc: "优化系统，提升经营效率",
+    topicPolicy: "国家管理政策",
+    topicPolicyDesc: "全新法规框架，助推新突破",
+    topicSustainable: "可持续发展",
+    topicSustainableDesc: "绿色经营，长期收益",
+    topicLearnMore: "了解更多",
+
+    // Sessions Section
+    sessionsTitle: "活动日程",
+    sessionsSubtitle: "三天活动的详细安排",
+    session1Title:
+      "电子商务与数字技术应用论坛 2025——为越南制造与出口企业提供数字化转型方案",
+    session1Subtitle:
+      "为越南制造与出口企业提供数字化转型方案",
+    session1Type: "论坛",
+    session2Title: "通过跨境电子商务实现出口市场多元化",
+    session2Subtitle: "全球市场拓展战略",
+    session2Type: "论坛",
+    session3Title: "2025 跨境电子商务全景峰会——越南企业的出海方向",
+    session3Subtitle: "越南出口企业的发展方向",
+    session3Type: "峰会",
+    session4Title: "联谊晚宴",
+    session4Subtitle: "与国际专家交流与分享",
+    session4Type: "活动",
+    session5Title: "生态参访",
+    session5Subtitle: "走进成功企业与现代物流中心",
+    session5Type: "活动",
+
+    // Generic CTA
+    ctaRegisterTitle: "加入 GCBES 2025",
+    ctaRegisterDesc: "立即报名，锁定席位并获取最新更新。",
+
+    // Documents
+    documentsTitle: "会议资料",
+    introductionTitle: "介绍",
+    forum59Title: "论坛 5/9",
+    summit59Title: "峰会 5/9",
+
+    // Status
+    comingSoon: "敬请期待",
+    underConstruction: "页面建设中…",
+    pageNotFound: "404 - 未找到页面",
+    pageNotFoundDesc: "您访问的页面不存在。",
+    toBeUpdated: "即将更新",
+  },
 };
 
-export type Language = "en" | "vi";
+export type Language = "en" | "vi" | "zh";
 export type TranslationKey = keyof typeof translations.en;

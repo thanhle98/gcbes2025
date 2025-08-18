@@ -14,7 +14,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [language, setLanguage] = useState<Language>(() => {
     try {
       const savedLanguage = localStorage.getItem('language') as Language;
-      return (savedLanguage === 'en' || savedLanguage === 'vi') ? savedLanguage : 'en';
+      return (savedLanguage === 'en' || savedLanguage === 'vi' || savedLanguage === 'zh') ? savedLanguage : 'en';
     } catch {
       return 'en';
     }
@@ -30,7 +30,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [language]);
 
   const t = (key: TranslationKey): string => {
-    return translations[language][key] || key;
+    // Fallback chain: current -> vi -> en -> key
+    return (
+      translations[language][key] ||
+      translations.vi[key] ||
+      translations.en[key] ||
+      key
+    );
   };
 
   const value = {

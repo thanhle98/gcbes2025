@@ -6,7 +6,10 @@ const LanguageSwitcher: React.FC = () => {
   const { language, setLanguage } = useTranslation();
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'vi' : 'en');
+    const order: Array<'en' | 'vi' | 'zh'> = ['en', 'vi', 'zh'];
+    const currentIndex = order.indexOf(language as 'en' | 'vi' | 'zh');
+    const next = order[(currentIndex + 1) % order.length];
+    setLanguage(next);
   };
 
   return (
@@ -17,7 +20,7 @@ const LanguageSwitcher: React.FC = () => {
     >
       <Globe className="w-4 h-4" />
       <span className="uppercase font-semibold">
-        {language === 'en' ? 'EN' : 'VI'}
+        {language === 'en' ? 'EN' : language === 'vi' ? 'VI' : 'ZH'}
       </span>
     </button>
   );
