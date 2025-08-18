@@ -21,6 +21,16 @@ export default function TourPage() {
     "IMG_5010",
     "IMG_5016",
     "IMG_5024",
+    // Newly added images (converted to .webp)
+    "New1",
+    "new13",
+    "new16",
+    "new17_",
+    "new18",
+    "New2",
+    "new3",
+    "new4",
+    "new9",
   ];
   const openLightbox = (index: number) => { setCurrentImageIndex(index); setIsLightboxOpen(true); };
   const closeLightbox = () => setIsLightboxOpen(false);

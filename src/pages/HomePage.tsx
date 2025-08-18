@@ -213,6 +213,10 @@ export default function HomePage() {
       name: "Proship",
       image: "/partners/proship_logo.png",
     },
+    {
+      name: "ACBC",
+      image: "/partners/acbc_logo.png",
+    },
   ];
 
   return (
@@ -397,7 +401,7 @@ export default function HomePage() {
               {/* First set of logos */}
               <div className="flex items-center space-x-12 mr-12 flex-shrink-0">
                 {[...dynamicSponsors, ...dynamicSponsors, ...dynamicSponsors].map((sponsor, index) => (
-                  <img src={sponsor.image} alt={sponsor.name} className="w-32 h-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 flex-shrink-0 filter" />
+                  <img src={sponsor.image} alt={sponsor.name} className="w-32 h-auto object-contain transition-all duration-300 flex-shrink-0 filter" />
                 ))}
               </div>
             </div>

@@ -43,6 +43,20 @@ export default function ConferencePage() {
     "HBM_2801",
     "HBM_3416",
     "HBM_3528",
+    // Newly added images
+    "New1",
+    "new10",
+    "new11",
+    "new13",
+    "new14",
+    "new2",
+    "New3",
+    "new4",
+    "new5",
+    "new6",
+    "new7",
+    "new8",
+    "new9",
   ];
 
   const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);

@@ -29,6 +29,12 @@ export default function ExhibitionPage() {
     "/trien-lam-gian-hang/1DX35667.webp",
     "/trien-lam-gian-hang/1DX35986.webp",
     "/trien-lam-gian-hang/1DX36508.webp",
+    // Newly added images
+    "/trien-lam-gian-hang/new14934.webp",
+    "/trien-lam-gian-hang/new19.webp",
+    "/trien-lam-gian-hang/new2.webp",
+    "/trien-lam-gian-hang/new37.webp",
+    "/trien-lam-gian-hang/new4.webp",
   ];
 
   return (
@@ -164,7 +170,7 @@ export default function ExhibitionPage() {
             {t("exhibitionViewImages")}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {galleryImages.map((src, index) => (
               <div
                 key={src}
@@ -174,7 +180,7 @@ export default function ExhibitionPage() {
                   src={src}
                   alt={`${t("exhibitionTitle")} - ${index + 1}`}
                   loading="lazy"
-                  className="w-full h-48 object-cover"
+                  className="w-full object-cover"
                 />
               </div>
             ))}

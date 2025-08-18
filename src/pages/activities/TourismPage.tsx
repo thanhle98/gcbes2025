@@ -8,7 +8,27 @@ export default function TourismPage() {
   // Tourism gallery state
   const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  const tourismImages: string[] = ["1", "2", "3", "4", "5"];
+  const tourismImages: string[] = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    // Newly added images
+    "new1",
+    "new2",
+    "new4",
+    "new5",
+    "new6",
+    "new7",
+    "new8",
+    "new9",
+    "new10",
+    "new11",
+    "new12",
+    "new13",
+    "new14",
+  ];
   const openLightbox = (index: number) => { setCurrentImageIndex(index); setIsLightboxOpen(true); };
   const closeLightbox = () => setIsLightboxOpen(false);
   const showPrev = () => setCurrentImageIndex((p) => (p - 1 + tourismImages.length) % tourismImages.length);

@@ -12,6 +12,18 @@ export default function GalaPage() {
     "HBM_3637",
     "HBM_3657",
     "HBM_3661",
+    // Newly added images
+    "new1",
+    "new10",
+    "new2",
+    "New3",
+    "new4",
+    "new5",
+    "new6",
+    "new6(1)",
+    "new7",
+    "new8",
+    "new9",
   ];
 
   const openLightbox = (index: number) => {
