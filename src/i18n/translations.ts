@@ -586,7 +586,16 @@ export const translations = {
     tourismDate: "Time: 07/09/2025",
     tourismDuration: "Duration: 1 day | Time: 08:00 - 21:30",
     tourismFormat: "Format: Group/Private tour (with bilingual guide)",
-    tourismSchedule: "EXPECTED SCHEDULE:",
+    tourismSchedule: "DETAILED SCHEDULE – 07/09/2025",
+    tourismMorningTitle: "Morning of September 7",
+    tourismMorningDetails:
+      "Hotel breakfast\nVisit Notre Dame Cathedral – classical French architectural symbol in the heart of the city\nVisit Ho Chi Minh Museum – urban history, aesthetics and culture\nBen Thanh Market – explore local products, souvenirs, brocade\nFree time for shopping, explore Saigon",
+    tourismNoonTitle: "Noon of September 7",
+    tourismNoonDetails:
+      "Lunch in the city center with local specialties\nRelaxation & informal networking time between international and Vietnamese enterprises",
+    tourismAfternoonTitle: "Afternoon of September 7",
+    tourismAfternoonDetails: "End of trip\nReturn to China",
+    
     tourismSchedule1:
       "08:00 – 08:30 | Pick up guests at hotel, start sightseeing",
     tourismSchedule2:
@@ -1342,7 +1351,16 @@ export const translations = {
     tourismDuration: "Thời lượng: 1 ngày | Thời gian: 08:00 - 21:30",
     tourismFormat:
       "Hình thức: Ghép đoàn/Đoàn riêng (có hướng dẫn viên song ngữ)",
-    tourismSchedule: "LỊCH TRÌNH DỰ KIẾN:",
+    tourismSchedule: "Lịch trình dự kiến chi tiết ngày 07/9/2025",
+    tourismMorningTitle: "Sáng 7/9",
+    tourismMorningDetails:
+      "Ăn sáng tại khách sạn\nThăm quan Nhà Thờ Đức Bà – biểu tượng kiến trúc Pháp cổ điển giữa lòng đô thị\nThăm quan Bảo Tàng Hồ Chí Minh – lịch sử, mỹ học và văn hóa đô thị\nChợ Bến Thành – khám phá sản vật địa phương, quà lưu niệm, thổ cẩm\nTự do mua sắm, khám phá Sài Gòn",
+    tourismNoonTitle: "Trưa 7/9",
+    tourismNoonDetails:
+      "Ăn trưa tại khu vực trung tâm với các món đặc sản địa phương\nThời gian thư giãn & kết nối không chính thức giữa các doanh nghiệp Quốc Tế và Việt Nam",
+    tourismAfternoonTitle: "Chiều 7/9",
+    tourismAfternoonDetails: "Kết thúc chuyến đi\nQuay về Trung Quốc",
+    
     tourismSchedule1:
       "08:00 – 08:30 | Đón khách tại khách sạn, khởi hành tham quan",
     tourismSchedule2:

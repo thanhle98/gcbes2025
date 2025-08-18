@@ -25,58 +25,26 @@ export default function TourismPage() {
 
   const scheduleItems = [
     {
-      time: "08:00 – 08:30",
-      title: t("tourismSchedule1"),
-      icon: Clock,
-      color: "from-amber-500 to-orange-500"
-    },
-    {
-      time: "08:30 – 10:30",
-      title: t("tourismSchedule2"),
-      details: t("tourismSchedule2Details"),
-      icon: Building2,
-      color: "from-blue-500 to-indigo-500"
-    },
-    {
-      time: "10:30 – 12:00",
-      title: t("tourismSchedule3"),
-      details: t("tourismSchedule3Details"),
+      time: t("tourismMorningTitle"),
+      title: t("tourismMorningTitle"),
+      details: t("tourismMorningDetails"),
       icon: Coffee,
-      color: "from-green-500 to-emerald-500"
+      color: "from-amber-500 to-orange-500",
     },
     {
-      time: "12:00 – 13:30",
-      title: t("tourismSchedule4"),
-      details: t("tourismSchedule4Details"),
+      time: t("tourismNoonTitle"),
+      title: t("tourismNoonTitle"),
+      details: t("tourismNoonDetails"),
       icon: Utensils,
-      color: "from-red-500 to-pink-500"
+      color: "from-red-500 to-pink-500",
     },
     {
-      time: "14:00 – 15:30",
-      title: t("tourismSchedule5"),
-      details: t("tourismSchedule5Details"),
-      icon: Palette,
-      color: "from-purple-500 to-violet-500"
-    },
-    {
-      time: "16:00 – 17:30",
-      title: t("tourismSchedule6"),
-      details: t("tourismSchedule6Details"),
+      time: t("tourismAfternoonTitle"),
+      title: t("tourismAfternoonTitle"),
+      details: t("tourismAfternoonDetails"),
       icon: Anchor,
-      color: "from-cyan-500 to-blue-500"
+      color: "from-cyan-500 to-blue-500",
     },
-    {
-      time: "18:00 - 21:30",
-      title: t("tourismSchedule7"),
-      icon: Utensils,
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      time: "22:00",
-      title: t("tourismSchedule8"),
-      icon: Clock,
-      color: "from-gray-500 to-slate-500"
-    }
   ];
 
   const advantages = [
