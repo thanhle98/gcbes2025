@@ -38,7 +38,7 @@ Các chủ đề
 - Phát triển bền vững 
 
 Các phiên tham luận & hoạt động 
-- Diễn đàn 4/9 (Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam)
+- Diễn đàn 4/9 (DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ 2025 – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam)
 - Diễn đàn 5/9 (Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới)
 - Hội nghị thượng đỉnh 5/9 (Toàn cảnh Diễn đàn quốc tế thương mại điện tử xuyên biên giới năm 2025 – Hướng đi cho doanh nghiệp xuất khẩu Việt Nam)
 - Gala dinner giao lưu 

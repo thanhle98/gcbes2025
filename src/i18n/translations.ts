@@ -764,8 +764,8 @@ export const translations = {
 
   vi: {
     // Hero Section
-    heroTitle: "Diễn đàn ứng dụng Công nghệ số",
-    heroTitle2: "trong kỷ nguyên vươn mình",
+    heroTitle: "DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ",
+    heroTitle2: "VÀ CÔNG NGHỆ SỐ 2025",
     heroSubtitle:
       "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
     heroDate: "4-6 tháng 9, 2025",
@@ -868,7 +868,7 @@ export const translations = {
     sessionsSubtitle: "Lịch trình chi tiết cho 3 ngày sự kiện đầy ý nghĩa",
 
     session1Title:
-      "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+      "DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ 2025 – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
     session1Subtitle:
       "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
     session1Type: "Diễn đàn",
@@ -984,7 +984,7 @@ export const translations = {
     // Conference Session 1 - September 4 Afternoon
     conference1Date: "Chiều 04/09/2025",
     conference1Theme:
-      "Diễn đàn ứng dụng Công nghệ số trong kỷ nguyên vươn mình – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+      "DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ 2025 – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
     conference1Venue: "Hội trường nhỏ",
     conference1Capacity: "100-120 khách",
 

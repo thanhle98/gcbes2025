@@ -101,8 +101,8 @@ export default function Forum49Page() {
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Diễn đàn ứng dụng Công nghệ số<br />
-              <span className="text-blue-300">trong kỷ nguyên vươn mình</span>
+              DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ<br />
+              <span className="text-blue-300">2025</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">
               Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam
