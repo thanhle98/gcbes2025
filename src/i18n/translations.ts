@@ -218,26 +218,19 @@ export const translations = {
     conferenceScheduleTitle: "Conference Schedule",
     conferenceDetailedSchedule: "Detailed Schedule",
 
-    // Conference Session 1 - September 4 Afternoon
-    conference1Date: "Afternoon of September 4, 2025",
+    // Conference Session 1 - Morning September 5, 2025
+    conference1Date: "Morning September 5, 2025 (08:30 - 11:45)",
     conference1Theme:
-      "Digital Technology Application Forum in the Ascendant Era – Digital Transformation Solutions for Manufacturing and Export Enterprises",
-    conference1Venue: "Small Conference Hall",
-    conference1Capacity: "100-120 attendees",
+      "Digital Commerce Conference - Export Market Diversification and Digital Technology Applications for Businesses",
+    conference1Venue: "Ruby Room, 1st Floor, Adora Premium Conference Center, 803 Nguyen Van Linh Street, Tan My Ward, District 7, Ho Chi Minh City",
+    conference1Capacity: "Organized by: Department of E-commerce and Digital Economy, Ministry of Industry and Trade",
 
-    // Conference Session 2 - September 5 Morning
-    conference2Date: "Morning of September 5, 2025",
+    // Conference Session 2 - Afternoon September 5, 2025
+    conference2Date: "Afternoon September 5, 2025 (13:30 - 17:00)",
     conference2Theme:
-      "Diversifying Export Markets through Cross-Border E-commerce",
-    conference2Venue: "Small Hall",
-    conference2Capacity: "100-120 guests",
-
-    // Conference Session 3 - September 5 Afternoon
-    conference3Date: "Afternoon of September 5, 2025",
-    conference3Theme:
-      "The 2025 Cross-border E-commerce Landscape Summit – A Strategic Roadmap for Export Globally",
-    conference3Venue: "Main Conference Hall (Building A - SECC)",
-    conference3Capacity: "250-300 attendees",
+      "E-commerce and Cross-border E-commerce Landscape Forum - Strategic Direction for Vietnamese Export Enterprises",
+    conference2Venue: "Ruby Room, 1st Floor, Adora Premium Conference Center, 803 Nguyen Van Linh Street, Tan My Ward, District 7, Ho Chi Minh City",
+    conference2Capacity: "Organized by: Department of E-commerce and Digital Economy, Ministry of Industry and Trade",
 
     // Sidebar labels
     conferenceSessions: "Conference Sessions",
@@ -246,9 +239,8 @@ export const translations = {
       "Detailed schedule for this conference session will be available soon.",
 
     // Short titles for sidebar
-    conference1ShortTitle: "Digital Tech Forum",
-    conference2ShortTitle: "Export Diversification",
-    conference3ShortTitle: "CBEC Summit",
+    conference1ShortTitle: "Digital Commerce & Export Diversification",
+    conference2ShortTitle: "E-commerce Landscape Forum",
 
     // Conference 1 Schedule Data
     conf1HighLevelMeeting: "High-Level Meeting",
@@ -377,92 +369,136 @@ export const translations = {
     exhibitionViewImages: "View Exhibition Images",
 
     // Conference Schedule
-    conferenceOpeningCeremony: "Opening Ceremony",
-    conferenceOpeningTime: "13:30 - 13:45",
+    conferenceOpeningCeremony: "MC Program Introduction",
+    conferenceOpeningTime: "08:30 - 08:40",
     conferenceOpeningContent: "Program Overview & Dignitary Introduction",
     conferenceOpeningSpeaker: "MC",
 
-    conferenceOpeningRemarksTime: "13:45-13:55",
-    conferenceOpeningRemarksContent: "Opening Remarks",
-    conferenceOpeningRemarksSpeaker: "Government Authority",
+    conferenceOpeningRemarksTime: "08:40 - 08:50",
+    conferenceOpeningRemarksContent: "Opening remarks and program direction overview",
+    conferenceOpeningRemarksSpeaker: "VietFAS",
 
-    conferenceOverviewTime: "13:55-14:00",
-    conferenceOverviewTitle: "THE 2025 CROSS-BORDER E-COMMERCE OUTLOOK",
-    conferenceOverviewContent: "The 2025 Cross-Border E-commerce Outlook",
-    conferenceOverviewNote: "(5-minute Video Presentation)",
+    conferenceOverviewTime: "08:50 - 09:00",
+    conferenceOverviewTitle: "Cross-border E-commerce Development Context",
+    conferenceOverviewContent: "Overview of global cross-border e-commerce development trends and opportunities for Vietnamese export enterprises",
+    conferenceOverviewNote: "(10-minute overview)",
 
     conferenceSession1Title:
-      "Session 1: Government Perspective – Policies Shaping a Sustainable Development Environment",
-    conferenceSession1Time1: "14:00-14:15",
+      "SESSION 1: CROSS-BORDER E-COMMERCE FORUM – SUSTAINABLE EXPORT STRATEGY FOR VIETNAMESE ENTERPRISES",
+    conferenceSession1Time1: "09:00-09:05",
     conferenceSession1Content1:
-      "Cross-border E-commerce: From Management to Building a Comprehensive Digital Ecosystem (E-commerce & Digital Technology – New Impetus for Economic Growth)",
-    conferenceSession1Speaker1: "Government Authority",
+      "Cross-border E-commerce Forum – Sustainable Export Strategy for Vietnamese Enterprises",
+    conferenceSession1Speaker1: "Mr. Bui Huy Hoang (VietFAS)",
 
-    conferenceSession1Time2: "14:15-14:30",
-    conferenceSession1Content2:
-      "State Management Policies on Cross-border E-commerce",
-    conferenceSession1Speaker2: "Government Authority",
-
-    conferenceSession1Time3: "14:30-14:45",
-    conferenceSession1Content3:
-      "Cross-border E-commerce Development Models & Experiences of Other Nations – Lessons for Vietnam",
-    conferenceSession1Speaker3: "International Organization/Association",
-
-    conferenceSession1Time4: "14:45-15:00",
-    conferenceSession1Content4:
-      "Developing Green & Sustainable Cross-border E-commerce",
-    conferenceSession1Speaker4: "Vietnamese/International Enterprises",
-
-    conferenceSession2Title: "Session 2: INFRASTRUCTURE & GLOBAL VALUE CHAIN",
-    conferenceSession2Time1: "15:00-15:15",
+    conferenceSession2Title: "SESSION 1: CROSS-BORDER E-COMMERCE DEVELOPMENT FORUM - SUSTAINABLE EXPORT APPROACH",
+    conferenceSession2Time1: "09:05-09:15",
     conferenceSession2Content1:
-      "OCOP & International Experiences in Local Product Development",
-    conferenceSession2Speaker1: "Vietnam Organization/Association",
+      "Cross-border E-commerce Development Forum - Sustainable Export Approach",
+    conferenceSession2Speaker1: "Government Representative",
 
-    conferenceSession2Time2: "15:15-15:30",
+    conferenceSession2Time2: "09:15-09:35",
     conferenceSession2Content2:
-      "O2O Global Logistics Supply Chain: Vietnam's Edge as Southeast Asia's Cross-border E-commerce Logistics Hub",
-    conferenceSession2Speaker2: "Cross-border E-commerce Logistics Enterprises",
-
-    conferenceSession2Time3: "15:30-15:45",
-    conferenceSession2Content3:
-      "Cross-border Payments (Alternatively: Comprehensive development of industrial zones)",
-    conferenceSession2Speaker3: "Vietnam Financial Institutions",
-
-    conferenceSession2Time4: "15:45-16:00",
-    conferenceSession2Content4:
-      "The Role of Free Trade Zones in Global Cross-border E-commerce Development",
-    conferenceSession2Speaker4: "Free Trade Zone (FTZ) Expert",
+      "Current development situation, challenges and development direction of Vietnamese export enterprises through cross-border e-commerce",
+    conferenceSession2Speaker2: "Speakers from businesses, associations, and organizations",
 
     conferenceSession3Title:
-      "Session 3: Human Resources Strategy & Optimization Tools for Global Cross-border E-commerce",
-    conferenceSession3Time1: "16:00-16:15",
-    conferenceSession3Content1:
-      "Vietnam & Human Resource Training Strategy for Global Cross-border E-commerce",
-    conferenceSession3Speaker1: "Vietnamese Education & Training Enterprises",
+      "Note: Detailed schedule for other conference sessions will be updated soon",
 
-    conferenceSession3Time2: "16:15-16:30",
-    conferenceSession3Content2:
-      "Cross-border E-commerce Multi-channel Management Application",
-    conferenceSession3Speaker2: "Global Platform Operator (GGBingo)",
+    // Morning Conference Detailed Schedule
+    morningConf1Title: "MC Program Introduction",
+    morningConf1Content: "MC Program Introduction",
+    morningConf1Speaker: "MC",
 
-    conferenceSession3Time3: "16:30-16:45",
-    conferenceSession3Content3:
-      "Applying AI Technology for Cross-border E-commerce",
-    conferenceSession3Speaker3: "International Technology Enterprise",
+    morningConf2Title: "Opening Remarks",
+    morningConf2Content: "Opening remarks and program direction overview",
+    morningConf2Speaker: "Department of E-commerce and Digital Economy",
 
-    conferenceSession4Title: "Session 4: Round Table Discussion",
-    conferenceSession4Time: "16:45-17:15",
-    conferenceSession4Content:
-      "Reshaping Vietnam's Exports: From OEM to D2C and Building Global Brands via Cross-border E-commerce",
-    conferenceSession4Speaker:
-      "Government Authority - Associations - Enterprises",
-    conferenceSession4Topics:
-      "How to Start When You Know Nothing About Cross-border E-commerce? The Reality Behind the Glamour: Practical Barriers and How to Overcome Them. Advice for New Businesses/Startups.",
+    morningConf3Title: "Export Market Overview",
+    morningConf3Content: "Export overview for key markets (projected: US, China, ASEAN)",
+    morningConf3Speaker: "Department of Foreign Markets",
 
-    conferenceSession5Title: "Session 5: MOU Signing Ceremony",
-    conferenceSession5Time: "17:15-17:30",
-    conferenceSession5Content: "Strategic Cooperation Agreement",
+    morningConf4Title: "Video Introduction",
+    morningConf4Content: "Video Introduction",
+    morningConf4Speaker: "(Video)",
+
+    morningSession1Title: "SESSION 1: EXPORT MARKET DIVERSIFICATION IN CROSS-BORDER E-COMMERCE",
+    morningSession1Item1: "Cross-border e-commerce - Gateway to market diversification for businesses",
+    morningSession1Speaker1: "Global Cross-border E-commerce Alliance (ACBC)",
+    morningSession1Item2: "Building and developing Vietnamese brand value chains for e-commerce exports",
+    morningSession1Speaker2: "Amazon Global Selling",
+    morningSession1Item3: "Export market diversification for Vietnamese businesses - Experience in taking national products global through multi-channel e-commerce",
+    morningSession1Speaker3: "GGBingo",
+    morningSession1Item4: "ASEAN Market - Exports for small businesses, cooperatives, and households through cross-border e-commerce",
+    morningSession1Speaker4: "Shopee",
+    morningSession1Item5: "Optimizing international logistics to support Vietnamese export businesses in market diversification through cross-border e-commerce",
+    morningSession1Speaker5: "JD Logistics",
+
+    morningSession2Title: "SESSION 2: DIGITAL TECHNOLOGY APPLICATIONS FOR VIETNAMESE BUSINESSES",
+    morningSession2Item1: "Technology applications and digital transformation in business production and operations",
+    morningSession2Speaker1: "Vietnam Software and Information Technology Association (VINASA)",
+    morningSession2Item2: "AI in product promotion and distribution in online environments in international markets",
+    morningSession2Speaker2: "SmartSkill (CRO Representative)",
+    morningSession2Item3: "AI technology applications to help businesses enhance product quality management",
+    morningSession2Speaker3: "SVDCA (Southern Digital Communication Association)",
+    morningSession2Item4: "Q&A: Discussion on Challenges and Opportunities for digital transformation in export market diversification",
+    morningSession2Speaker4: "",
+
+    morningClosingTitle: "Closing & Afternoon Program Direction",
+    morningClosingContent: "Closing & Afternoon Program Direction",
+    morningClosingSpeaker: "",
+
+    // Afternoon Conference Detailed Schedule
+    afternoonConf1Title: "Program Introduction & Delegates",
+    afternoonConf1Content: "Program Introduction & Delegates",
+    afternoonConf1Speaker: "MC",
+
+    afternoonConf2Title: "Opening Remarks",
+    afternoonConf2Content: "Opening remarks for program direction",
+    afternoonConf2Speaker: "Ministry of Industry and Trade Leadership - Department of E-commerce and Digital Economy",
+
+    afternoonConf3Title: "Vietnam & Global E-commerce Landscape 2025",
+    afternoonConf3Content: "Overview of scale, trends, opportunities and challenges of global and Vietnamese e-commerce as a foundation for business strategy formulation",
+    afternoonConf3Speaker: "(Video)",
+
+    afternoonConf4Title: "Vietnamese E-commerce Development Trends",
+    afternoonConf4Content: "E-commerce development trends in Vietnam - Advantages, difficulties and solutions",
+    afternoonConf4Speaker: "Vietnam E-commerce Association (VECOM)",
+
+    afternoonConf5Title: "Cross-border E-commerce: Creating Global Connections",
+    afternoonConf5Content: "Cross-border e-commerce: Creating connections and global competitiveness",
+    afternoonConf5Speaker: "Global Cross-border E-commerce Alliance (ACBC)",
+
+    afternoonConf6Title: "Online Export via Amazon",
+    afternoonConf6Content: "Online export via Amazon - Promoting e-commerce in the new context",
+    afternoonConf6Speaker: "Amazon Global Selling",
+
+    afternoonConf7Title: "SME Support & ASEAN Export",
+    afternoonConf7Content: "Supporting Vietnamese SMEs and households in Vietnam market and direct export to ASEAN markets",
+    afternoonConf7Speaker: "Shopee Vietnam",
+
+    afternoonConf8Title: "Global Logistics Supply Chain",
+    afternoonConf8Content: "Global logistics supply chain - Direction to build Vietnam as a logistics center supporting e-commerce development",
+    afternoonConf8Speaker: "ViettelPost",
+
+    afternoonConf9Title: "From Platform to Ecosystem",
+    afternoonConf9Content: "From platform to ecosystem: The e-commerce Hub operation revolution",
+    afternoonConf9Speaker: "YUGEEKS",
+
+    afternoonConf10Title: "AI Applications in European E-commerce",
+    afternoonConf10Content: "AI applications in e-commerce and B2C in the European market",
+    afternoonConf10Speaker: "Taureau AI (France)",
+
+    afternoonConf11Title: "Free Trade Zones Role",
+    afternoonConf11Content: "The role of Free Trade Zones in cross-border e-commerce development",
+    afternoonConf11Speaker: "CT Strategies (USA)",
+
+    afternoonConf12Title: "ROUND TABLE: E-commerce Trends & OEM to D2C Transformation",
+    afternoonConf12Content: "New e-commerce trends in Vietnam and shaping the transition from OEM to D2C, building global Vietnamese brands through e-commerce",
+    afternoonConf12Speaker: "E-commerce platforms, Logistics, leading manufacturing enterprises",
+
+    afternoonConf13Title: "Strategic Cooperation Agreement Signing",
+    afternoonConf13Content: "Affirming commitment to cooperation between parties to jointly develop cross-border e-commerce",
+    afternoonConf13Speaker: "",
 
     // Matching Page
     matchingTitle: "BUSINESS MATCHING 1:1",
@@ -981,26 +1017,19 @@ export const translations = {
     conferenceScheduleTitle: "Lịch trình Hội nghị",
     conferenceDetailedSchedule: "Lịch trình chi tiết",
 
-    // Conference Session 1 - September 4 Afternoon
-    conference1Date: "Chiều 04/09/2025",
+    // Conference Session 1 - Morning September 5, 2025
+    conference1Date: "Sáng 05/09/2025 (08:30 - 11:45)",
     conference1Theme:
-      "DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ 2025 – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
-    conference1Venue: "Hội trường nhỏ",
-    conference1Capacity: "100-120 khách",
+      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỜ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
+    conference1Venue: "Tầng 1 Phòng Ruby, Trung tâm hội nghị Adora Premium, 803 Đường Nguyễn Văn Linh, Phường Tân Mỹ, Quận 7, Hồ Chí Minh",
+    conference1Capacity: "ĐV Tổ chức: Cục Thương mại điện tử và Kinh tế số, Bộ Công Thương",
 
-    // Conference Session 2 - September 5 Morning
-    conference2Date: "Sáng 05/09/2025",
+    // Conference Session 2 - Afternoon September 5, 2025
+    conference2Date: "Chiều 05/09/2025 (13:30 - 17:00)",
     conference2Theme:
-      "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
-    conference2Venue: "Hội trường nhỏ",
-    conference2Capacity: "100-120 khách",
-
-    // Conference Session 3 - September 5 Afternoon
-    conference3Date: "Chiều 05/09/2025",
-    conference3Theme:
-      "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025 – Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-    conference3Venue: "Hội trường chính (Conference Hall Nhà A - SECC)",
-    conference3Capacity: "250-300 khách",
+      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỜ VÀ THƯƠNG MẠI ĐIỆN TỜ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
+    conference2Venue: "Tầng 1 Phòng Ruby, Trung tâm hội nghị Adora Premium, 803 Đường Nguyễn Văn Linh, Phường Tân Mỹ, Quận 7, Hồ Chí Minh",
+    conference2Capacity: "ĐV Tổ chức: Cục Thương mại điện tử và Kinh tế số, Bộ Công Thương",
 
     // Sidebar labels
     conferenceSessions: "Phiên Hội nghị",
@@ -1009,9 +1038,8 @@ export const translations = {
       "Lịch trình chi tiết cho phiên hội nghị này sẽ được cập nhật sớm.",
 
     // Short titles for sidebar
-    conference1ShortTitle: "Diễn đàn Công nghệ số",
-    conference2ShortTitle: "Đa dạng hóa xuất khẩu",
-    conference3ShortTitle: "Hội nghị thượng đỉnh TMĐT",
+    conference1ShortTitle: "TMĐT & Đa dạng hóa xuất khẩu",
+    conference2ShortTitle: "Diễn đàn Toàn cảnh TMĐT",
 
     // Conference 1 Schedule Data
     conf1HighLevelMeeting: "Phiên họp cấp cao",
@@ -1142,94 +1170,139 @@ export const translations = {
     exhibitionViewImages: "Xem hình ảnh Triển lãm",
 
     // Conference Schedule
-    conferenceOpeningCeremony: "Lễ khai mạc",
-    conferenceOpeningTime: "13:30 - 13:45",
+    conferenceOpeningCeremony: "MC giới thiệu chương trình",
+    conferenceOpeningTime: "08:30 - 08:40",
     conferenceOpeningContent: "Giới thiệu chương trình & Đại biểu",
     conferenceOpeningSpeaker: "MC",
 
-    conferenceOpeningRemarksTime: "13:45-13:55",
-    conferenceOpeningRemarksContent: "Phát biểu khai mạc",
-    conferenceOpeningRemarksSpeaker: "Quản lý nhà nước Việt Nam",
+    conferenceOpeningRemarksTime: "08:40 - 08:50",
+    conferenceOpeningRemarksContent: "Phát biểu khai mạc và hướng chương trình",
+    conferenceOpeningRemarksSpeaker: "VietFAS",
 
-    conferenceOverviewTime: "13:55-14:00",
+    conferenceOverviewTime: "08:50 - 09:00",
     conferenceOverviewTitle:
-      "TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI 2025",
+      "Bối cảnh phát triển thương mại điện tử xuyên biên giới",
     conferenceOverviewContent:
-      "Bức tranh toàn cảnh thương mại điện tử xuyên biên giới 2025",
-    conferenceOverviewNote: "(Chiếu Video 5ph)",
+      "Tổng quan xu hướng phát triển thương mại điện tử xuyên biên giới toàn cầu và cơ hội cho doanh nghiệp xuất khẩu Việt Nam",
+    conferenceOverviewNote: "(Tổng quan 10 phút)",
 
     conferenceSession1Title:
-      "Phiên 1: (Tham luận Quản lý nhà nước) CHÍNH SÁCH – ĐỊNH HÌNH MÔI TRƯỜNG PHÁT TRIỂN BỀN VỮNG",
-    conferenceSession1Time1: "14:00-14:15",
+      "PHIÊN 1: DIỄN ĐÀN HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI - CHIẾN LƯỢC XUẤT KHẨU BỀN VỮNG CỦA DOANH NGHIỆP VIỆT NAM",
+    conferenceSession1Time1: "09:00-09:05",
     conferenceSession1Content1:
-      "Thương mại điện tử xuyên biên giới: Từ quản lý sang kiến tạo hệ sinh thái số toàn diện (thương mại điện tử & Công nghệ số - Động lực mới cho Tăng trưởng kinh tế)",
-    conferenceSession1Speaker1: "Quản lý nhà nước Việt Nam",
+      "Diễn đàn hội nghị thương mại điện tử xuyên biên giới - Chiến lược xuất khẩu bền vững của doanh nghiệp Việt Nam",
+    conferenceSession1Speaker1: "Ông Bùi Huy Hoàng (VietFAS)",
 
-    conferenceSession1Time2: "14:15-14:30",
-    conferenceSession1Content2:
-      "Chính sách quản lý nhà nước về thương mại điện tử xuyên biên giới",
-    conferenceSession1Speaker2: "Quản lý nhà nước Việt Nam",
-
-    conferenceSession1Time3: "14:30-14:45",
-    conferenceSession1Content3:
-      "Mô hình & kinh nghiệm phát triển thương mại điện tử xuyên biên giới của các quốc gia-Bài học nào cho Việt Nam",
-    conferenceSession1Speaker3: "Tổ chức quốc tế",
-
-    conferenceSession1Time4: "14:45-15:00",
-    conferenceSession1Content4:
-      "Phát triển thương mại điện tử xuyên biên giới xanh & bền vững",
-    conferenceSession1Speaker4: "Doanh nghiệp Việt Nam/Quốc tế",
-
-    conferenceSession2Title: "Phiên 2: HẠ TẦNG & CHUỖI GIÁ TRỊ TOÀN CẦU",
-    conferenceSession2Time1: "15:00-15:15",
+    conferenceSession2Title: "PHIÊN 1: DIỄN ĐÀN PHÁT TRIỂN THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI - HƯỚNG TIẾP CẬN XUẤT KHẨU BỀN VỮNG",
+    conferenceSession2Time1: "09:05-09:15",
     conferenceSession2Content1:
-      "OCOP & Kinh nghiệm phát triển sản phẩm địa phương từ các quốc gia",
-    conferenceSession2Speaker1: "Hiệp hội Việt Nam",
+      "Diễn đàn phát triển thương mại điện tử xuyên biên giới - Hướng tiếp cận xuất khẩu bền vững",
+    conferenceSession2Speaker1: "Đại diện chính phủ",
 
-    conferenceSession2Time2: "15:15-15:30",
+    conferenceSession2Time2: "09:15-09:35",
     conferenceSession2Content2:
-      "Chuỗi cung ứng logistics toàn cầu O2O - Việt Nam & lợi thế logistics Hub thương mại điện tử xuyên biên giới của Đông Nam Á",
+      "Tình hình phát triển hiện tại, thách thức và hướng phát triển của doanh nghiệp xuất khẩu Việt Nam qua thương mại điện tử xuyên biên giới",
     conferenceSession2Speaker2:
-      "Doanh nghiệp Logistics thương mại điện tử xuyên biên giới",
-
-    conferenceSession2Time3: "15:30-15:45",
-    conferenceSession2Content3:
-      "Thanh toán xuyên biên giới (Hoặc Phát triển khu công nghiệp toàn diện)",
-    conferenceSession2Speaker3: "Tổ chức tài chính tại Việt Nam",
-
-    conferenceSession2Time4: "15:45-16:00",
-    conferenceSession2Content4:
-      "Vai trò của Khu thương mại tự do trong phát triển Thương mại điện tử xuyên biên giới toàn cầu",
-    conferenceSession2Speaker4: "Chuyên gia khu Thương mại tự do",
+      "Diễn giả từ doanh nghiệp, hiệp hội, tổ chức",
 
     conferenceSession3Title:
-      "Phiên 3: CHIẾN LƯỢC NHÂN SỰ VÀ CÔNG CỤ TỐI ƯU HOÁ THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI TOÀN CẦU",
-    conferenceSession3Time1: "16:00-16:15",
-    conferenceSession3Content1:
-      "Việt Nam & chiến lược đào tạo nguồn nhân lực cho thương mại điện tử xuyên biên giới toàn cầu",
-    conferenceSession3Speaker1: "Doanh nghiệp đào tạo Việt Nam",
+      "Lưu ý: Lịch trình chi tiết cho các phiên hội nghị khác sẽ được cập nhật sớm",
 
-    conferenceSession3Time2: "16:15-16:30",
-    conferenceSession3Content2:
-      "Ứng dụng Quản trị đa kênh thương mại điện tử xuyên biên giới",
-    conferenceSession3Speaker2: "Doanh nghiệp vận hành sàn toàn cầu (GGBingo)",
+    // Lịch trình chi tiết Hội nghị Buổi sáng
+    morningConf1Title: "MC giới thiệu chương trình",
+    morningConf1Content: "MC giới thiệu chương trình",
+    morningConf1Speaker: "MC",
 
-    conferenceSession3Time3: "16:30-16:45",
-    conferenceSession3Content3:
-      "Ứng dụng Công nghệ AI cho thương mại điện tử xuyên biên giới",
-    conferenceSession3Speaker3: "Doanh nghiệp công nghệ quốc tế",
+    morningConf2Title: "Phát biểu khai mạc",
+    morningConf2Content: "Phát biểu khai mạc và định hướng Chương trình",
+    morningConf2Speaker: "Cục thương mại điện tử và Kinh tế số",
 
-    conferenceSession4Title: "Phiên 4: TOẠ ĐÀM BÀN TRÒN",
-    conferenceSession4Time: "16:45-17:15",
-    conferenceSession4Content:
-      "Tái định hình xuất khẩu Việt Nam: Từ OEM sang D2C và xây dựng thương hiệu toàn cầu qua thương mại điện tử xuyên biên giới",
-    conferenceSession4Speaker: "Quản lý nhà nước-Hiệp hội-Doanh nghiệp",
-    conferenceSession4Topics:
-      "Làm sao bắt đầu khi bạn không biết gì về thương mại điện tử xuyên biên giới? Sự thật sau ánh hào quang: Rào cản thực tế và cách vượt qua. Lời khuyên cho doanh nghiệp mới bắt đầu",
+    morningConf3Title: "Tổng quan xuất khẩu thị trường trọng điểm",
+    morningConf3Content: "Tổng quan xuất khẩu một số thị trường trọng điểm (dự kiến: Hoa Kỳ, Trung Quốc, ASEAN)",
+    morningConf3Speaker: "Vụ Thị trường nước ngoài",
 
-    conferenceSession5Title: "Phiên 5: KÝ MOU",
-    conferenceSession5Time: "17:15-17:30",
-    conferenceSession5Content: "Thoả thuận hợp tác chiến lược",
+    morningConf4Title: "Video giới thiệu",
+    morningConf4Content: "Video giới thiệu",
+    morningConf4Speaker: "(Video)",
+
+    morningSession1Title: "PHIÊN 1: ĐA DẠNG HÓA THỊ TRƯỜNG TRONG THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI",
+    morningSession1Item1: "Thương mại điện tử xuyên biên giới - Cánh cửa đa dạng hoá thị trường cho doanh nghiệp",
+    morningSession1Speaker1: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
+    morningSession1Item2: "Xây dựng và phát triển chuỗi giá trị thương hiệu Việt xuất khẩu qua thương mại điện tử",
+    morningSession1Speaker2: "Amazon Global Selling",
+    morningSession1Item3: "Đa dạng hoá thị trường xuất khẩu cho doanh nghiệp Việt Nam - Kinh nghiệm đưa sản phẩm quốc gia vươn ra thế giới qua thương mại điện tử đa kênh",
+    morningSession1Speaker3: "GGBingo",
+    morningSession1Item4: "Thị trường ASEAN – Xuất khẩu cho doanh nghiệp nhỏ, HTX, hộ kinh doanh qua thương mại điện tử xuyên biên giới",
+    morningSession1Speaker4: "Shopee",
+    morningSession1Item5: "Tối ưu hóa logistics quốc tế hỗ trợ doanh nghiệp xuất khẩu Việt Nam đa dạng hóa thị trường qua Thương mại điện tử xuyên biên giới",
+    morningSession1Speaker5: "JD Logistics",
+
+    morningSession2Title: "PHIÊN 2: ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP VIỆT NAM",
+    morningSession2Item1: "Ứng dụng Công nghệ và chuyển đổi số trong hoạt động sản xuất và kinh doanh của doanh nghiệp",
+    morningSession2Speaker1: "Hiệp hội Phần mềm và Công nghệ thông tin Việt Nam (VINASA)",
+    morningSession2Item2: "AI trong quảng bá và phân phối hàng hoá trên môi trường trực tuyến ở thị trường quốc tế",
+    morningSession2Speaker2: "Đại diện Doanh nghiệp (SmartSkill) - CRO",
+    morningSession2Item3: "Ứng dụng Công nghệ AI hỗ trợ doanh nghiệp tăng cường quản lý chất lượng hàng hóa",
+    morningSession2Speaker3: "SVDCA (Hội truyền thông số phía Nam)",
+    morningSession2Item4: "Q&A: Trao đổi và thảo luận: Thách thức và Cơ hội chuyển đổi số trong trong đa dạng hóa thị trường xuất khẩu",
+    morningSession2Speaker4: "",
+
+    morningClosingTitle: "Kết thúc & Định hướng chương trình chiều",
+    morningClosingContent: "Kết thúc & Định hướng chương trình chiều",
+    morningClosingSpeaker: "",
+
+    // Lịch trình chi tiết Hội nghị Buổi chiều
+    afternoonConf1Title: "Giới thiệu chương trình & Đại biểu",
+    afternoonConf1Content: "Giới thiệu chương trình & Đại biểu",
+    afternoonConf1Speaker: "MC",
+
+    afternoonConf2Title: "Phát biểu khai mạc",
+    afternoonConf2Content: "Phát biểu khai mạc định hướng Chương trình",
+    afternoonConf2Speaker: "Lãnh đạo Bộ Công Thương – Cục TMĐT và KTS",
+
+    afternoonConf3Title: "Bức tranh toàn cảnh thương mại điện tử Việt Nam và thế giới năm 2025",
+    afternoonConf3Content: "Cung cấp cái nhìn tổng quan về quy mô, xu hướng, cơ hội và thách thức của TMĐT toàn cầu và Việt Nam, làm cơ sở cho doanh nghiệp định hình chiến lược kinh doanh",
+    afternoonConf3Speaker: "(Video)",
+
+    afternoonConf4Title: "Xu hướng phát triển của thương mại điện tử tại Việt Nam",
+    afternoonConf4Content: "Xu hướng phát triển của thương mại điện tử tại Việt Nam - Thuận lợi, khó khăn và giải pháp",
+    afternoonConf4Speaker: "Hiệp hội TMĐT Việt Nam VECOM",
+
+    afternoonConf5Title: "Thương mại điện tử xuyên biên giới: Kiến tạo kết nối toàn cầu",
+    afternoonConf5Content: "Thương mại điện tử xuyên biên giới: Kiến tạo kết nối và năng lực cạnh tranh toàn cầu",
+    afternoonConf5Speaker: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
+
+    afternoonConf6Title: "Xuất khẩu trực tuyến qua Amazon",
+    afternoonConf6Content: "Xuất khẩu trực tuyến qua Amazon - Thúc đẩy thương mại điện tử trong bối cảnh mới",
+    afternoonConf6Speaker: "Amazon Global Selling",
+
+    afternoonConf7Title: "Hỗ trợ DNVVN & xuất khẩu ASEAN",
+    afternoonConf7Content: "Hỗ trợ doanh nghiệp nhỏ và vừa, hộ kinh doanh Việt Nam tại thị trường Việt Nam và xuất khẩu trực tiếp qua một số thị trường ASEAN",
+    afternoonConf7Speaker: "Shopee Việt Nam",
+
+    afternoonConf8Title: "Chuỗi cung ứng logistics toàn cầu",
+    afternoonConf8Content: "Chuỗi cung ứng logistics toàn cầu - Định hướng xây dựng Việt Nam thành trung tâm logistics hỗ trợ thương mại điện tử phát triển",
+    afternoonConf8Speaker: "ViettelPost",
+
+    afternoonConf9Title: "Từ nền tảng đến hệ sinh thái",
+    afternoonConf9Content: "Từ nền tảng đến hệ sinh thái: Cuộc cách mạng vận hành Hub TMĐT",
+    afternoonConf9Speaker: "YUGEEKS",
+
+    afternoonConf10Title: "Ứng dụng AI trong thương mại điện tử châu Âu",
+    afternoonConf10Content: "Ứng dụng AI trong thương mại điện tử và B2C tại thị trường châu Âu",
+    afternoonConf10Speaker: "Taureau AI (Pháp)",
+
+    afternoonConf11Title: "Vai trò của Khu thương mại tự do",
+    afternoonConf11Content: "Vai trò của Khu thương mại tự do trong phát triển Thương mại điện tử xuyên biên giới",
+    afternoonConf11Speaker: "CT Strategies (Mỹ)",
+
+    afternoonConf12Title: "TOẠ ĐÀM BÀN TRÒN: Xu hướng TMĐT & chuyển đổi OEM sang D2C",
+    afternoonConf12Content: "Xu hướng thương mại điện tử mới tại Việt Nam và định hình phương thức OEM sang D2C, xây dựng thương hiệu Việt toàn cầu qua thương mại điện tử",
+    afternoonConf12Speaker: "Sàn TMĐT, Logistics, doanh nghiệp sản xuất tiêu biểu",
+
+    afternoonConf13Title: "Ký thoả thuận hợp tác chiến lược",
+    afternoonConf13Content: "Khẳng định cam kết hợp tác giữa các bên để cùng phát triển TMĐT XBG, mở ra các dự án và chương trình hỗ trợ thiết thực cho doanh nghiệp Việt Nam",
+    afternoonConf13Speaker: "",
 
     // Matching Page
     matchingTitle: "MATCHING DOANH NGHIỆP 1:1",
@@ -1727,23 +1800,17 @@ export const translations = {
     conferenceScheduleTitle: "会议安排",
     conferenceDetailedSchedule: "详细安排",
 
-    // Conference Session 1 - September 4 Afternoon
-    conference1Date: "2025年9月4日下午",
-    conference1Theme: "电子商务与数字技术应用论坛 2025 – 为越南制造与出口企业提供数字化转型方案",
-    conference1Venue: "小会议厅",
-    conference1Capacity: "100-120位嘉宾",
+    // Conference Session 1 - Morning September 5, 2025
+    conference1Date: "2025年9月5日上午 (08:30 - 11:45)",
+    conference1Theme: "数字商务会议 - 出口市场多元化与企业数字技术应用",
+    conference1Venue: "Adora Premium会议中心1楼 Ruby厅，803 Nguyen Van Linh街，胡志明市第7郡Tan My坊",
+    conference1Capacity: "主办单位：工贸部电子商务与数字经济局",
 
-    // Conference Session 2 - September 5 Morning
-    conference2Date: "2025年9月5日上午",
-    conference2Theme: "通过跨境电子商务实现出口市场多元化",
-    conference2Venue: "小会议厅",
-    conference2Capacity: "100-120位嘉宾",
-
-    // Conference Session 3 - September 5 Afternoon
-    conference3Date: "2025年9月5日下午",
-    conference3Theme: "2025跨境电子商务全景峰会 – 越南出口企业发展方向",
-    conference3Venue: "主会议厅（SECC A座会议厅）",
-    conference3Capacity: "250-300位嘉宾",
+    // Conference Session 2 - Afternoon September 5, 2025
+    conference2Date: "2025年9月5日下午 (13:30 - 17:00)",
+    conference2Theme: "电子商务与跨境电子商务全景论坛 - 越南出口企业的发展方向",
+    conference2Venue: "Adora Premium会议中心1楼 Ruby厅，803 Nguyen Van Linh街，胡志明市第7郡Tan My坊",
+    conference2Capacity: "主办单位：工贸部电子商务与数字经济局",
 
     // Sidebar labels
     conferenceSessions: "会议环节",
@@ -1751,9 +1818,8 @@ export const translations = {
     detailedScheduleComingSoonDesc: "本会议环节的详细安排将很快发布。",
 
     // Short titles for sidebar
-    conference1ShortTitle: "数字技术论坛",
-    conference2ShortTitle: "出口多元化",
-    conference3ShortTitle: "跨境电商峰会",
+    conference1ShortTitle: "数字商务与出口多元化",
+    conference2ShortTitle: "电商全景论坛",
 
     // Conference 1 Schedule Data
     conf1HighLevelMeeting: "高级别会议",
@@ -1857,62 +1923,117 @@ export const translations = {
     conferenceOverviewContent: "2025跨境电子商务全景图",
     conferenceOverviewNote: "（5分钟视频展示）",
 
-    conferenceSession1Title: "环节1：（国家管理部门发言）政策 – 塑造可持续发展环境",
-    conferenceSession1Time1: "14:00-14:15",
-    conferenceSession1Content1: "跨境电子商务：从管理到构建全面数字生态系统（电子商务与数字技术 - 经济增长新动力）",
-    conferenceSession1Speaker1: "越南国家管理部门",
+    conferenceSession1Title: "环节1：跨境电子商务会议论坛 - 越南企业可持续出口战略",
+    conferenceSession1Time1: "09:00-09:05",
+    conferenceSession1Content1: "跨境电子商务会议论坛 - 越南企业可持续出口战略",
+    conferenceSession1Speaker1: "裴辉煌先生（VietFAS）",
 
-    conferenceSession1Time2: "14:15-14:30",
-    conferenceSession1Content2: "跨境电子商务国家管理政策",
-    conferenceSession1Speaker2: "越南国家管理部门",
+    conferenceSession2Title: "环节1：跨境电子商务发展论坛 - 可持续出口方式",
+    conferenceSession2Time1: "09:05-09:15",
+    conferenceSession2Content1: "跨境电子商务发展论坛 - 可持续出口方式",
+    conferenceSession2Speaker1: "政府代表",
 
-    conferenceSession1Time3: "14:30-14:45",
-    conferenceSession1Content3: "各国跨境电子商务发展模式与经验 - 对越南的启示",
-    conferenceSession1Speaker3: "国际组织",
+    conferenceSession2Time2: "09:15-09:35",
+    conferenceSession2Content2: "越南出口企业通过跨境电子商务的当前发展状况、挑战和发展方向",
+    conferenceSession2Speaker2: "来自企业、协会和组织的演讲者",
 
-    conferenceSession1Time4: "14:45-15:00",
-    conferenceSession1Content4: "发展绿色可持续跨境电子商务",
-    conferenceSession1Speaker4: "越南/国际企业",
+    conferenceSession3Title: "注意：其他会议环节的详细时间安排将很快更新",
 
-    conferenceSession2Title: "环节2：基础设施与全球价值链",
-    conferenceSession2Time1: "15:00-15:15",
-    conferenceSession2Content1: "OCOP与各国地方产品发展经验",
-    conferenceSession2Speaker1: "越南协会",
+    // 上午会议详细时间安排
+    morningConf1Title: "主持人项目介绍",
+    morningConf1Content: "主持人项目介绍",
+    morningConf1Speaker: "主持人",
 
-    conferenceSession2Time2: "15:15-15:30",
-    conferenceSession2Content2: "O2O全球物流供应链：越南作为东南亚跨境电商物流枢纽的优势",
-    conferenceSession2Speaker2: "跨境电商物流企业",
+    morningConf2Title: "开幕致辞",
+    morningConf2Content: "开幕致辞和项目方向概述",
+    morningConf2Speaker: "电子商务与数字经济局",
 
-    conferenceSession2Time3: "15:30-15:45",
-    conferenceSession2Content3: "跨境支付（或工业区全面发展）",
-    conferenceSession2Speaker3: "越南金融机构",
+    morningConf3Title: "重点市场出口概述",
+    morningConf3Content: "重点市场出口概述（预期：美国、中国、东盟）",
+    morningConf3Speaker: "对外市场司",
 
-    conferenceSession2Time4: "15:45-16:00",
-    conferenceSession2Content4: "自由贸易区在全球跨境电商发展中的作用",
-    conferenceSession2Speaker4: "自由贸易区专家",
+    morningConf4Title: "视频介绍",
+    morningConf4Content: "视频介绍",
+    morningConf4Speaker: "（视频）",
 
-    conferenceSession3Title: "环节3：全球跨境电商人力战略与优化工具",
-    conferenceSession3Time1: "16:00-16:15",
-    conferenceSession3Content1: "越南与全球跨境电商人才培养战略",
-    conferenceSession3Speaker1: "越南教育培训企业",
+    morningSession1Title: "环节1：跨境电子商务中的出口市场多元化",
+    morningSession1Item1: "跨境电子商务 - 企业市场多元化的门户",
+    morningSession1Speaker1: "全球跨境电子商务联盟（ACBC）",
+    morningSession1Item2: "构建和发展越南品牌电商出口价值链",
+    morningSession1Speaker2: "Amazon Global Selling",
+    morningSession1Item3: "越南企业出口市场多元化 - 通过多渠道电子商务将国家产品带入全球的经验",
+    morningSession1Speaker3: "GGBingo",
+    morningSession1Item4: "东盟市场 – 通过跨境电子商务为小企业、合作社和家庭出口",
+    morningSession1Speaker4: "Shopee",
+    morningSession1Item5: "优化国际物流支持越南出口企业通过跨境电子商务多元化市场",
+    morningSession1Speaker5: "JD Logistics",
 
-    conferenceSession3Time2: "16:15-16:30",
-    conferenceSession3Content2: "跨境电商多渠道管理应用",
-    conferenceSession3Speaker2: "全球平台运营商（GGBingo）",
+    morningSession2Title: "环节2：越南企业数字技术应用",
+    morningSession2Item1: "技术应用和企业生产经营中的数字化转型",
+    morningSession2Speaker1: "越南软件与信息技术协会（VINASA）",
+    morningSession2Item2: "AI在国际市场在线环境中的产品推广和分销",
+    morningSession2Speaker2: "企业代表（SmartSkill）- CRO",
+    morningSession2Item3: "AI技术应用帮助企业加强产品质量管理",
+    morningSession2Speaker3: "SVDCA（南方数字传播协会）",
+    morningSession2Item4: "Q&A：交流讨论：出口市场多元化数字化转型的挑战与机遇",
+    morningSession2Speaker4: "",
 
-    conferenceSession3Time3: "16:30-16:45",
-    conferenceSession3Content3: "AI技术在跨境电商中的应用",
-    conferenceSession3Speaker3: "国际技术企业",
+    morningClosingTitle: "结束与下午项目定向",
+    morningClosingContent: "结束与下午项目定向",
+    morningClosingSpeaker: "",
 
-    conferenceSession4Title: "环节4：圆桌讨论",
-    conferenceSession4Time: "16:45-17:15",
-    conferenceSession4Content: "重塑越南出口：从OEM到D2C，通过跨境电商建设全球品牌",
-    conferenceSession4Speaker: "国家管理部门-协会-企业",
-    conferenceSession4Topics: "对跨境电商一无所知时如何开始？光环背后的现实：实际壁垒及克服方法。对新企业/初创企业的建议。",
+    // 下午会议详细时间安排
+    afternoonConf1Title: "项目介绍与代表",
+    afternoonConf1Content: "项目介绍与代表",
+    afternoonConf1Speaker: "主持人",
 
-    conferenceSession5Title: "环节5：MOU签约仪式",
-    conferenceSession5Time: "17:15-17:30",
-    conferenceSession5Content: "战略合作协议",
+    afternoonConf2Title: "开幕致辞",
+    afternoonConf2Content: "开幕致辞定向项目",
+    afternoonConf2Speaker: "工贸部领导 - 电子商务与数字经济局",
+
+    afternoonConf3Title: "越南与全球电子商务全景2025",
+    afternoonConf3Content: "提供全球和越南电子商务的规模、趋势、机遇和挑战概览，作为企业制定商业战略的基础",
+    afternoonConf3Speaker: "（视频）",
+
+    afternoonConf4Title: "越南电子商务发展趋势",
+    afternoonConf4Content: "越南电子商务发展趋势 - 优势、困难和解决方案",
+    afternoonConf4Speaker: "越南电子商务协会（VECOM）",
+
+    afternoonConf5Title: "跨境电子商务：构建全球连接",
+    afternoonConf5Content: "跨境电子商务：构建连接和全球竞争力",
+    afternoonConf5Speaker: "全球跨境电子商务联盟（ACBC）",
+
+    afternoonConf6Title: "通过Amazon在线出口",
+    afternoonConf6Content: "通过Amazon在线出口 - 在新背景下推进电子商务",
+    afternoonConf6Speaker: "Amazon Global Selling",
+
+    afternoonConf7Title: "中小企业支持与东盟出口",
+    afternoonConf7Content: "支持越南中小企业和家庭在越南市场及直接出口到东盟市场",
+    afternoonConf7Speaker: "Shopee越南",
+
+    afternoonConf8Title: "全球物流供应链",
+    afternoonConf8Content: "全球物流供应链 - 定向将越南建设成支持电子商务发展的物流中心",
+    afternoonConf8Speaker: "ViettelPost",
+
+    afternoonConf9Title: "从平台到生态系统",
+    afternoonConf9Content: "从平台到生态系统：电子商务Hub运营革命",
+    afternoonConf9Speaker: "YUGEEKS",
+
+    afternoonConf10Title: "欧洲电子商务中AI应用",
+    afternoonConf10Content: "欧洲市场电子商务和B2C中的AI应用",
+    afternoonConf10Speaker: "Taureau AI（法国）",
+
+    afternoonConf11Title: "自由贸易区作用",
+    afternoonConf11Content: "自由贸易区在跨境电子商务发展中的作用",
+    afternoonConf11Speaker: "CT Strategies（美国）",
+
+    afternoonConf12Title: "圆桌讨论：电商趋势与OEM到D2C转型",
+    afternoonConf12Content: "越南新的电子商务趋势和塑造OEM到D2C的转型，通过电子商务构建全球越南品牌",
+    afternoonConf12Speaker: "电子商务平台、物流、领先制造企业",
+
+    afternoonConf13Title: "战略合作协议签约",
+    afternoonConf13Content: "确认各方合作承诺，共同发展跨境电子商务，为越南企业开启项目和实用支持计划",
+    afternoonConf13Speaker: "",
 
     // Matching Page
     matchingTitle: "企业对接 1:1",

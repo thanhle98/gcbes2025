@@ -70,7 +70,9 @@ export default function ConferencePage() {
   const closeLightbox = () => setIsLightboxOpen(false);
 
   const showPrev = () =>
-    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + galleryImages.length) % galleryImages.length
+    );
 
   const showNext = () =>
     setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
@@ -94,14 +96,15 @@ export default function ConferencePage() {
   const handleConferenceSelect = (conferenceId: number) => {
     setSelectedConference(conferenceId);
     // Scroll to the right content area with 40px offset
-    const rightContent = document.querySelector('[data-conference-content]');
+    const rightContent = document.querySelector("[data-conference-content]");
     if (rightContent) {
-      const elementTop = rightContent.getBoundingClientRect().top + window.pageYOffset;
+      const elementTop =
+        rightContent.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementTop - 100;
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -115,7 +118,7 @@ export default function ConferencePage() {
       venue: "conference1Venue",
       capacity: "conference1Capacity",
       color: "from-purple-600 to-indigo-600",
-      badge: "Day 1",
+      badge: "Morning",
       shortTitle: "conference1ShortTitle",
     },
     {
@@ -125,378 +128,291 @@ export default function ConferencePage() {
       venue: "conference2Venue",
       capacity: "conference2Capacity",
       color: "from-blue-600 to-cyan-600",
-      badge: "Day 2 AM",
+      badge: "Afternoon",
       shortTitle: "conference2ShortTitle",
-    },
-    {
-      id: 2,
-      date: "conference3Date",
-      theme: "conference3Theme",
-      venue: "conference3Venue",
-      capacity: "conference3Capacity",
-      color: "from-indigo-600 to-blue-600",
-      badge: "Day 2 PM",
-      shortTitle: "conference3ShortTitle",
     },
   ];
 
   // Function to get schedule data for each conference
   const getScheduleData = (conferenceId: number): SessionData[] => {
     if (conferenceId === 0) {
-      // Conference 1 Schedule Data
+      // Morning Conference - Digital Commerce and Export Market Diversification
       return [
         {
-          title: t("conf1HighLevelMeeting"),
-          time: "12:45-13:45",
+          title: t("morningConf1Title"),
+          time: "08:30-08:40",
           items: [
             {
-              time: "12:45-13:45",
-              content: t("conf1HighLevelContent"),
-              speaker: t("conf1HighLevelSpeaker"),
+              time: "08:30-08:40",
+              content: t("morningConf1Content"),
+              speaker: t("morningConf1Speaker"),
             },
           ],
           color: "from-purple-500 to-purple-600",
         },
         {
-          title: t("conf1OpeningCeremony"),
-          time: "13:45-14:30",
+          title: t("morningConf2Title"),
+          time: "08:40-08:50",
           items: [
             {
-              time: "13:45-14:15",
-              content: t("conf1DelegateReception"),
-              speaker: "",
-            },
-            {
-              time: "14:15-14:30",
-              content: t("conf1OpeningSpeech"),
-              speaker: t("conf1OpeningSpeaker"),
+              time: "08:40-08:50",
+              content: t("morningConf2Content"),
+              speaker: t("morningConf2Speaker"),
             },
           ],
           color: "from-blue-500 to-blue-600",
         },
         {
-          title: t("conf1Session1Title"),
-          time: "14:30-15:30",
+          title: t("morningConf3Title"),
+          time: "08:50-09:00",
           items: [
             {
-              time: "14:30-14:45",
-              content: t("conf1Session1Item1"),
-              speaker: t("conf1Session1Speaker1"),
-            },
-            {
-              time: "14:45-15:00",
-              content: t("conf1Session1Item2"),
-              speaker: t("conf1Session1Speaker2"),
-            },
-            {
-              time: "15:00-15:15",
-              content: t("conf1Session1Item3"),
-              speaker: t("conf1Session1Speaker3"),
-            },
-            {
-              time: "15:15-15:30",
-              content: t("conf1Session1Item4"),
-              speaker: t("conf1Session1Speaker4"),
+              time: "08:50-09:00",
+              content: t("morningConf3Content"),
+              speaker: t("morningConf3Speaker"),
             },
           ],
           color: "from-green-500 to-green-600",
         },
         {
-          title: t("conf1Session2Title"),
-          time: "15:30-16:30",
+          title: t("morningConf4Title"),
+          time: "09:00-09:05",
           items: [
             {
-              time: "15:30-15:45",
-              content: t("conf1Session2Item1"),
-              speaker: t("conf1Session2Speaker1"),
+              time: "09:00-09:05",
+              content: t("morningConf4Content"),
+              speaker: t("morningConf4Speaker"),
+            },
+          ],
+          color: "from-yellow-500 to-yellow-600",
+        },
+        {
+          title: t("morningSession1Title"),
+          time: "09:05-10:30",
+          items: [
+            {
+              time: "09:05-09:15",
+              content: t("morningSession1Item1"),
+              speaker: t("morningSession1Speaker1"),
             },
             {
-              time: "15:45-16:00",
-              content: t("conf1Session2Item2"),
-              speaker: t("conf1Session2Speaker2"),
+              time: "09:15-09:35",
+              content: t("morningSession1Item2"),
+              speaker: t("morningSession1Speaker2"),
             },
             {
-              time: "16:00-16:15",
-              content: t("conf1Session2Item3"),
-              speaker: t("conf1Session2Speaker3"),
+              time: "09:35-09:50",
+              content: t("morningSession1Item3"),
+              speaker: t("morningSession1Speaker3"),
             },
             {
-              time: "16:15-16:30",
-              content: t("conf1Session2Item4"),
-              speaker: t("conf1Session2Speaker4"),
+              time: "09:50-10:15",
+              content: t("morningSession1Item4"),
+              speaker: t("morningSession1Speaker4"),
+            },
+            {
+              time: "10:15-10:30",
+              content: t("morningSession1Item5"),
+              speaker: t("morningSession1Speaker5"),
             },
           ],
           color: "from-orange-500 to-orange-600",
         },
         {
-          title: t("conf1Session3Title"),
-          time: "16:30-17:00",
+          title: t("morningSession2Title"),
+          time: "10:30-11:35",
           items: [
             {
-              time: "16:30-17:00",
-              content: t("conf1Session3Content"),
-              speaker: "",
+              time: "10:30-10:45",
+              content: t("morningSession2Item1"),
+              speaker: t("morningSession2Speaker1"),
+            },
+            {
+              time: "10:45-11:00",
+              content: t("morningSession2Item2"),
+              speaker: t("morningSession2Speaker2"),
+            },
+            {
+              time: "11:00-11:15",
+              content: t("morningSession2Item3"),
+              speaker: t("morningSession2Speaker3"),
+            },
+            {
+              time: "11:15-11:35",
+              content: t("morningSession2Item4"),
+              speaker: t("morningSession2Speaker4"),
             },
           ],
           color: "from-cyan-500 to-cyan-600",
         },
         {
-          title: t("conf1Session4Title"),
-          time: "17:00-17:30",
+          title: t("morningClosingTitle"),
+          time: "11:35-11:45",
           items: [
             {
-              time: "17:00-17:15",
-              content: t("conf1Session4Item1"),
-              speaker: "",
-            },
-            {
-              time: "17:15-17:30",
-              content: t("conf1Session4Item2"),
-              speaker: "",
+              time: "11:35-11:45",
+              content: t("morningClosingContent"),
+              speaker: t("morningClosingSpeaker"),
             },
           ],
           color: "from-indigo-500 to-indigo-600",
         },
       ];
     } else if (conferenceId === 1) {
-      // Conference 2 Schedule Data
+      // Afternoon Conference - E-commerce Landscape Forum
       return [
         {
-          title: t("conf2OpeningCeremony"),
-          time: "8:00-8:45",
+          title: t("afternoonConf1Title"),
+          time: "13:30-13:40",
           items: [
             {
-              time: "8:00-8:30",
-              content: t("conf2DelegateWelcome"),
-              speaker: "",
-            },
-            {
-              time: "8:30-8:45",
-              content: t("conf2OpeningSpeech"),
-              speaker: t("conf2OpeningSpeaker"),
-            },
-          ],
-          color: "from-blue-500 to-blue-600",
-        },
-        {
-          title: t("conf2Session1Title"),
-          time: "9:00-10:15",
-          items: [
-            {
-              time: "9:00-9:15",
-              content: t("conf2Session1Item1"),
-              speaker: t("conf2Session1Speaker1"),
-            },
-            {
-              time: "9:15-9:30",
-              content: t("conf2Session1Item2"),
-              speaker: t("conf2Session1Speaker2"),
-            },
-            {
-              time: "9:30-9:45",
-              content: t("conf2Session1Item3"),
-              speaker: t("conf2Session1Speaker3"),
-            },
-            {
-              time: "9:45-10:00",
-              content: t("conf2Session1Item4"),
-              speaker: t("conf2Session1Speaker4"),
-            },
-            {
-              time: "10:00-10:15",
-              content: t("conf2Session1Item5"),
-              speaker: t("conf2Session1Speaker5"),
-            },
-          ],
-          color: "from-green-500 to-green-600",
-        },
-        {
-          title: t("conf2Session2Title"),
-          time: "10:15-11:15",
-          items: [
-            {
-              time: "10:15-10:30",
-              content: t("conf2Session2Item1"),
-              speaker: t("conf2Session2Speaker1"),
-            },
-            {
-              time: "10:30-10:45",
-              content: t("conf2Session2Item2"),
-              speaker: t("conf2Session2Speaker2"),
-            },
-            {
-              time: "11:00-11:15",
-              content: t("conf2Session2Item3"),
-              speaker: t("conf2Session2Speaker3"),
-            },
-            {
-              time: "11:00-11:15",
-              content: t("conf2Session2Item4"),
-              speaker: t("conf2Session2Speaker4"),
-            },
-          ],
-          color: "from-orange-500 to-orange-600",
-        },
-        {
-          title: t("conf2Session3Title"),
-          time: "11:15-11:45",
-          items: [
-            {
-              time: "11:15-11:45",
-              content: t("conf2Session3Content"),
-              speaker: "",
-              topics: t("conf2Session3Topics"),
-            },
-          ],
-          color: "from-cyan-500 to-cyan-600",
-        },
-        {
-          title: t("conf2Session4Title"),
-          time: "11:45-12:00",
-          items: [
-            {
-              time: "11:45-11:55",
-              content: t("conf2Session4Item1"),
-              speaker: "",
-            },
-            {
-              time: "11:55-12:00",
-              content: t("conf2Session4Item2"),
-              speaker: "",
-            },
-          ],
-          color: "from-indigo-500 to-indigo-600",
-        },
-      ];
-    } else if (conferenceId === 2) {
-      // Conference 3 Schedule Data (existing)
-      return [
-        {
-          title: t("conferenceOpeningCeremony"),
-          time: t("conferenceOpeningTime"),
-          items: [
-            {
-              time: t("conferenceOpeningTime"),
-              content: t("conferenceOpeningContent"),
-              speaker: t("conferenceOpeningSpeaker"),
-            },
-            {
-              time: t("conferenceOpeningRemarksTime"),
-              content: t("conferenceOpeningRemarksContent"),
-              speaker: t("conferenceOpeningRemarksSpeaker"),
+              time: "13:30-13:40",
+              content: t("afternoonConf1Content"),
+              speaker: t("afternoonConf1Speaker"),
             },
           ],
           color: "from-purple-500 to-purple-600",
         },
         {
-          title: t("conferenceOverviewTitle"),
-          time: t("conferenceOverviewTime"),
+          title: t("afternoonConf2Title"),
+          time: "13:40-13:55",
           items: [
             {
-              time: t("conferenceOverviewTime"),
-              content: t("conferenceOverviewContent"),
-              speaker: t("conferenceOverviewNote"),
+              time: "13:40-13:55",
+              content: t("afternoonConf2Content"),
+              speaker: t("afternoonConf2Speaker"),
             },
           ],
           color: "from-blue-500 to-blue-600",
         },
         {
-          title: t("conferenceSession1Title"),
-          time: "14:00-15:00",
+          title: t("afternoonConf3Title"),
+          time: "13:55-14:00",
           items: [
             {
-              time: t("conferenceSession1Time1"),
-              content: t("conferenceSession1Content1"),
-              speaker: t("conferenceSession1Speaker1"),
-            },
-            {
-              time: t("conferenceSession1Time2"),
-              content: t("conferenceSession1Content2"),
-              speaker: t("conferenceSession1Speaker2"),
-            },
-            {
-              time: t("conferenceSession1Time3"),
-              content: t("conferenceSession1Content3"),
-              speaker: t("conferenceSession1Speaker3"),
-            },
-            {
-              time: t("conferenceSession1Time4"),
-              content: t("conferenceSession1Content4"),
-              speaker: t("conferenceSession1Speaker4"),
+              time: "13:55-14:00",
+              content: t("afternoonConf3Content"),
+              speaker: t("afternoonConf3Speaker"),
             },
           ],
           color: "from-green-500 to-green-600",
         },
         {
-          title: t("conferenceSession2Title"),
-          time: "15:00-16:00",
+          title: t("afternoonConf4Title"),
+          time: "14:00-14:15",
           items: [
             {
-              time: t("conferenceSession2Time1"),
-              content: t("conferenceSession2Content1"),
-              speaker: t("conferenceSession2Speaker1"),
+              time: "14:00-14:15",
+              content: t("afternoonConf4Content"),
+              speaker: t("afternoonConf4Speaker"),
             },
+          ],
+          color: "from-yellow-500 to-yellow-600",
+        },
+        {
+          title: t("afternoonConf5Title"),
+          time: "14:15-14:30",
+          items: [
             {
-              time: t("conferenceSession2Time2"),
-              content: t("conferenceSession2Content2"),
-              speaker: t("conferenceSession2Speaker2"),
-            },
-            {
-              time: t("conferenceSession2Time3"),
-              content: t("conferenceSession2Content3"),
-              speaker: t("conferenceSession2Speaker3"),
-            },
-            {
-              time: t("conferenceSession2Time4"),
-              content: t("conferenceSession2Content4"),
-              speaker: t("conferenceSession2Speaker4"),
+              time: "14:15-14:30",
+              content: t("afternoonConf5Content"),
+              speaker: t("afternoonConf5Speaker"),
             },
           ],
           color: "from-orange-500 to-orange-600",
         },
         {
-          title: t("conferenceSession3Title"),
-          time: "16:00-16:45",
+          title: t("afternoonConf6Title"),
+          time: "14:30-14:50",
           items: [
             {
-              time: t("conferenceSession3Time1"),
-              content: t("conferenceSession3Content1"),
-              speaker: t("conferenceSession3Speaker1"),
-            },
-            {
-              time: t("conferenceSession3Time2"),
-              content: t("conferenceSession3Content2"),
-              speaker: t("conferenceSession3Speaker2"),
-            },
-            {
-              time: t("conferenceSession3Time3"),
-              content: t("conferenceSession3Content3"),
-              speaker: t("conferenceSession3Speaker3"),
+              time: "14:30-14:50",
+              content: t("afternoonConf6Content"),
+              speaker: t("afternoonConf6Speaker"),
             },
           ],
           color: "from-red-500 to-red-600",
         },
         {
-          title: t("conferenceSession4Title"),
-          time: t("conferenceSession4Time"),
+          title: t("afternoonConf7Title"),
+          time: "14:50-15:10",
           items: [
             {
-              time: t("conferenceSession4Time"),
-              content: t("conferenceSession4Content"),
-              speaker: t("conferenceSession4Speaker"),
-              topics: t("conferenceSession4Topics"),
+              time: "14:50-15:10",
+              content: t("afternoonConf7Content"),
+              speaker: t("afternoonConf7Speaker"),
+            },
+          ],
+          color: "from-pink-500 to-pink-600",
+        },
+        {
+          title: t("afternoonConf8Title"),
+          time: "15:10-15:25",
+          items: [
+            {
+              time: "15:10-15:25",
+              content: t("afternoonConf8Content"),
+              speaker: t("afternoonConf8Speaker"),
+            },
+          ],
+          color: "from-teal-500 to-teal-600",
+        },
+        {
+          title: t("afternoonConf9Title"),
+          time: "15:25-15:40",
+          items: [
+            {
+              time: "15:25-15:40",
+              content: t("afternoonConf9Content"),
+              speaker: t("afternoonConf9Speaker"),
+            },
+          ],
+          color: "from-emerald-500 to-emerald-600",
+        },
+        {
+          title: t("afternoonConf10Title"),
+          time: "15:40-15:55",
+          items: [
+            {
+              time: "15:40-15:55",
+              content: t("afternoonConf10Content"),
+              speaker: t("afternoonConf10Speaker"),
+            },
+          ],
+          color: "from-violet-500 to-violet-600",
+        },
+        {
+          title: t("afternoonConf11Title"),
+          time: "15:55-16:20",
+          items: [
+            {
+              time: "15:55-16:20",
+              content: t("afternoonConf11Content"),
+              speaker: t("afternoonConf11Speaker"),
+            },
+          ],
+          color: "from-amber-500 to-amber-600",
+        },
+        {
+          title: t("afternoonConf12Title"),
+          time: "16:20-16:50",
+          items: [
+            {
+              time: "16:20-16:50",
+              content: t("afternoonConf12Content"),
+              speaker: t("afternoonConf12Speaker"),
             },
           ],
           color: "from-cyan-500 to-cyan-600",
         },
         {
-          title: t("conferenceSession5Title"),
-          time: t("conferenceSession5Time"),
+          title: t("afternoonConf13Title"),
+          time: "16:50-17:00",
           items: [
             {
-              time: t("conferenceSession5Time"),
-              content: t("conferenceSession5Content"),
-              speaker: "",
+              time: "16:50-17:00",
+              content: t("afternoonConf13Content"),
+              speaker: t("afternoonConf13Speaker"),
             },
           ],
           color: "from-indigo-500 to-indigo-600",
@@ -508,8 +424,6 @@ export default function ConferencePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-blue-50">
-      
-
       {/* Schedule Section - Left Right Layout */}
       <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -612,9 +526,6 @@ export default function ConferencePage() {
                         <div className="flex items-start gap-3">
                           <Presentation className="w-6 h-6 text-white flex-shrink-0 mt-1" />
                           <div className="text-left">
-                            <h4 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-2">
-                              Chủ đề / Theme
-                            </h4>
                             <p className="text-lg font-medium leading-relaxed">
                               {t(conferences[selectedConference].theme as any)}
                             </p>
@@ -627,9 +538,6 @@ export default function ConferencePage() {
                         <div className="flex items-start gap-3">
                           <MapPin className="w-6 h-6 text-white flex-shrink-0 mt-1" />
                           <div className="text-left">
-                            <h4 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-2">
-                              Địa điểm / Venue
-                            </h4>
                             <p className="text-lg font-medium">
                               {t(conferences[selectedConference].venue as any)}
                             </p>
@@ -642,9 +550,6 @@ export default function ConferencePage() {
                         <div className="flex items-start gap-3">
                           <Users className="w-6 h-6 text-white flex-shrink-0 mt-1" />
                           <div className="text-left">
-                            <h4 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-2">
-                              Quy mô / Capacity
-                            </h4>
                             <p className="text-lg font-medium">
                               {t(
                                 conferences[selectedConference].capacity as any
@@ -657,9 +562,7 @@ export default function ConferencePage() {
                   </div>
 
                   {/* Detailed Schedule for Selected Conference */}
-                  {(selectedConference === 0 ||
-                    selectedConference === 1 ||
-                    selectedConference === 2) && (
+                  {(selectedConference === 0 || selectedConference === 1) && (
                     <div className="space-y-6">
                       <div className="text-center">
                         <h4 className="text-xl md:text-2xl font-bold text-gray-700 mb-2">
@@ -794,8 +697,10 @@ export default function ConferencePage() {
             </p>
           </div>
 
-          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]
-          ">
+          <div
+            className="columns-1 sm:columns-2 md:columns-3 gap-4 md:gap-6 [column-fill:_balance]
+          "
+          >
             {galleryImages.map((name, index) => {
               const webpSrc = `/dien-dan-hoi-nghi/${name}.webp`;
               return (
