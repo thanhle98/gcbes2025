@@ -97,12 +97,12 @@ export default function HomePage() {
 
   const dynamicSessions = [
     {
-      date: "4/9",
+      date: "5/9",
       title: t("session1Title"),
       subtitle: t("session1Subtitle"),
       type: t("session1Type"),
-      time: "12:00 - 18:00",
-      location: t("mainHall"),
+      time: "08:30 - 11:45",
+      location: t("rubyRoom"),
       link: "/activities/conference/1"
     },
     {
@@ -110,8 +110,8 @@ export default function HomePage() {
       title: t("session2Title"),
       subtitle: t("session2Subtitle"),
       type: t("session2Type"),
-      time: "09:00 - 12:00",
-      location: t("hallA"),
+      time: "13:30 - 17:00",
+      location: t("rubyRoom"),
       link: "/activities/conference/2"
     },
     {
@@ -119,24 +119,15 @@ export default function HomePage() {
       title: t("session3Title"),
       subtitle: t("session3Subtitle"),
       type: t("session3Type"),
-      time: "14:00 - 17:30",
-      location: t("mainHall"),
-      link: "/activities/conference/3"
-    },
-    {
-      date: "5/9",
-      title: t("session4Title"),
-      subtitle: t("session4Subtitle"),
-      type: t("session4Type"),
       time: "19:00 - 22:00",
       location: t("vipRestaurant"),
       link: "/activities/gala"
     },
     {
       date: "6/9",
-      title: t("session5Title"),
-      subtitle: t("session5Subtitle"),
-      type: t("session5Type"),
+      title: t("session4Title"),
+      subtitle: t("session4Subtitle"),
+      type: t("session4Type"),
       time: "08:00 - 17:00",
       location: t("locationsInHCM"),
       link: "/activities/tour"

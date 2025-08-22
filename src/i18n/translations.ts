@@ -103,33 +103,28 @@ export const translations = {
 
     // Sessions Section
     sessionsTitle: "EVENT PROGRAM",
-    sessionsSubtitle: "Detailed schedule for 3 meaningful event days",
+    sessionsSubtitle: "Detailed schedule for 2 comprehensive conference sessions",
 
     session1Title:
-      "Forum on Digital Technology Application in the Era of Breakthrough - Digital transformation solutions for Vietnamese manufacturing and export enterprises",
+      "Digital Commerce Conference - Export Market Diversification and Digital Technology Applications for Businesses",
     session1Subtitle:
-      "Digital transformation solutions for Vietnamese manufacturing and export enterprises",
-    session1Type: "Forum",
+      "Export market diversification and digital technology applications for businesses",
+    session1Type: "Conference",
 
     session2Title:
-      "Export market diversification through cross-border e-commerce",
-    session2Subtitle: "Global market expansion strategy",
+      "E-commerce and Cross-border E-commerce Landscape Forum - Strategic Direction for Vietnamese Export Enterprises",
+    session2Subtitle: "Strategic direction for Vietnamese export enterprises",
     session2Type: "Forum",
 
-    session3Title:
-      "Cross-Border E-commerce Summit 2025 - Directions for Vietnamese export enterprises",
-    session3Subtitle: "Directions for Vietnamese export enterprises",
-    session3Type: "Summit",
-
-    session4Title: "Gala dinner networking",
-    session4Subtitle:
+    session3Title: "Gala dinner networking",
+    session3Subtitle:
       "Connect and share experiences with international experts",
-    session4Type: "Event",
+    session3Type: "Event",
 
-    session5Title: "Tour visit",
-    session5Subtitle:
+    session4Title: "Tour visit",
+    session4Subtitle:
       "Explore successful business models and modern logistics centers",
-    session5Type: "Activity",
+    session4Type: "Activity",
 
     sessionsJoin: "Join",
 
@@ -181,6 +176,7 @@ export const translations = {
     // Common
     mainHall: "Main Hall",
     hallA: "Hall A",
+    rubyRoom: "Ruby Room, Adora Premium Conference Center",
     vipRestaurant: "VIP Restaurant",
     locationsInHCM: "Locations in HCM City",
 
@@ -901,33 +897,28 @@ export const translations = {
 
     // Sessions Section
     sessionsTitle: "CHƯƠNG TRÌNH SỰ KIỆN",
-    sessionsSubtitle: "Lịch trình chi tiết cho 3 ngày sự kiện đầy ý nghĩa",
+    sessionsSubtitle: "Lịch trình chi tiết cho 2 phiên hội nghị toàn diện",
 
     session1Title:
-      "DIỄN ĐÀN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ VÀ CÔNG NGHỆ SỐ 2025 – Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
+      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỜ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
     session1Subtitle:
-      "Giải pháp chuyển đổi số cho doanh nghiệp sản xuất và xuất khẩu Việt Nam",
-    session1Type: "Diễn đàn",
+      "Đa dạng hóa thị trường xuất khẩu và ứng dụng công nghệ số cho doanh nghiệp",
+    session1Type: "Hội nghị",
 
     session2Title:
-      "Đa dạng hóa thị trường xuất khẩu qua thương mại điện tử xuyên biên giới",
-    session2Subtitle: "Chiến lược mở rộng thị trường toàn cầu",
+      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỜ VÀ THƯƠNG MẠI ĐIỆN TỜ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
+    session2Subtitle: "Hướng đi chiến lược cho doanh nghiệp xuất khẩu Việt Nam",
     session2Type: "Diễn đàn",
 
-    session3Title:
-      "Hội nghị thượng đỉnh Toàn cảnh Thương mại điện tử xuyên biên giới năm 2025 - Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-    session3Subtitle: "Hướng đi cho doanh nghiệp xuất khẩu Việt Nam",
-    session3Type: "Hội nghị thượng đỉnh",
-
-    session4Title: "Gala dinner giao lưu",
-    session4Subtitle:
+    session3Title: "Gala dinner giao lưu",
+    session3Subtitle:
       "Kết nối và chia sẻ kinh nghiệm cùng các chuyên gia quốc tế",
-    session4Type: "Sự kiện",
+    session3Type: "Sự kiện",
 
-    session5Title: "Tour thăm quan",
-    session5Subtitle:
+    session4Title: "Tour thăm quan",
+    session4Subtitle:
       "Khám phá các mô hình kinh doanh thành công và trung tâm logistics hiện đại",
-    session5Type: "Hoạt động",
+    session4Type: "Hoạt động",
 
     sessionsJoin: "Tham gia",
 
@@ -980,6 +971,7 @@ export const translations = {
     // Common
     mainHall: "Hội trường chính",
     hallA: "Hội trường A",
+    rubyRoom: "Phòng Ruby, Trung tâm hội nghị Adora Premium",
     vipRestaurant: "Nhà hàng VIP",
     locationsInHCM: "Các địa điểm tại TP HCM",
 
@@ -1678,6 +1670,7 @@ export const translations = {
     // Common
     mainHall: "主会场",
     hallA: "A 厅",
+    rubyRoom: "Ruby厅，Adora Premium会议中心",
     vipRestaurant: "VIP 餐厅",
     locationsInHCM: "胡志明市各地点",
 
@@ -1700,24 +1693,21 @@ export const translations = {
 
     // Sessions Section
     sessionsTitle: "活动日程",
-    sessionsSubtitle: "三天活动的详细安排",
+    sessionsSubtitle: "两个全面会议环节的详细时间安排",
     session1Title:
-      "电子商务与数字技术应用论坛 2025——为越南制造与出口企业提供数字化转型方案",
+      "数字商务会议 - 出口市场多元化与企业数字技术应用",
     session1Subtitle:
-      "为越南制造与出口企业提供数字化转型方案",
-    session1Type: "论坛",
-    session2Title: "通过跨境电子商务实现出口市场多元化",
-    session2Subtitle: "全球市场拓展战略",
+      "出口市场多元化与企业数字技术应用",
+    session1Type: "会议",
+    session2Title: "电子商务与跨境电子商务全景论坛 - 越南出口企业的发展方向",
+    session2Subtitle: "越南出口企业的战略方向",
     session2Type: "论坛",
-    session3Title: "2025 跨境电子商务全景峰会——越南企业的出海方向",
-    session3Subtitle: "越南出口企业的发展方向",
-    session3Type: "峰会",
-    session4Title: "联谊晚宴",
-    session4Subtitle: "与国际专家交流与分享",
+    session3Title: "联谊晚宴",
+    session3Subtitle: "与国际专家交流与分享",
+    session3Type: "活动",
+    session4Title: "生态参访",
+    session4Subtitle: "走进成功企业与现代物流中心",
     session4Type: "活动",
-    session5Title: "生态参访",
-    session5Subtitle: "走进成功企业与现代物流中心",
-    session5Type: "活动",
 
     // Generic CTA
     ctaRegisterTitle: "加入 GCBES 2025",
