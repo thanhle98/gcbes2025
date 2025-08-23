@@ -900,13 +900,13 @@ export const translations = {
     sessionsSubtitle: "Lịch trình chi tiết cho 2 phiên hội nghị toàn diện",
 
     session1Title:
-      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỜ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
+      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỬ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
     session1Subtitle:
       "Đa dạng hóa thị trường xuất khẩu và ứng dụng công nghệ số cho doanh nghiệp",
     session1Type: "Hội nghị",
 
     session2Title:
-      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỜ VÀ THƯƠNG MẠI ĐIỆN TỜ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
+      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỬ VÀ THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
     session2Subtitle: "Hướng đi chiến lược cho doanh nghiệp xuất khẩu Việt Nam",
     session2Type: "Diễn đàn",
 
@@ -1012,14 +1012,14 @@ export const translations = {
     // Conference Session 1 - Morning September 5, 2025
     conference1Date: "Sáng 05/09/2025 (08:30 - 11:45)",
     conference1Theme:
-      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỜ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
+      "HỘI NGHỊ THƯƠNG MẠI ĐIỆN TỬ - ĐA DẠNG HÓA THỊ TRƯỜNG XUẤT KHẨU VÀ ỨNG DỤNG CÔNG NGHỆ SỐ CHO DOANH NGHIỆP",
     conference1Venue: "Tầng 1 Phòng Ruby, Trung tâm hội nghị Adora Premium, 803 Đường Nguyễn Văn Linh, Phường Tân Mỹ, Quận 7, Hồ Chí Minh",
     conference1Capacity: "ĐV Tổ chức: Cục Thương mại điện tử và Kinh tế số, Bộ Công Thương",
 
     // Conference Session 2 - Afternoon September 5, 2025
     conference2Date: "Chiều 05/09/2025 (13:30 - 17:00)",
     conference2Theme:
-      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỜ VÀ THƯƠNG MẠI ĐIỆN TỜ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
+      "DIỄN ĐÀN TOÀN CẢNH THƯƠNG MẠI ĐIỆN TỬ VÀ THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI - HƯỚNG ĐI CHO DOANH NGHIỆP XUẤT KHẨU VIỆT NAM",
     conference2Venue: "Tầng 1 Phòng Ruby, Trung tâm hội nghị Adora Premium, 803 Đường Nguyễn Văn Linh, Phường Tân Mỹ, Quận 7, Hồ Chí Minh",
     conference2Capacity: "ĐV Tổ chức: Cục Thương mại điện tử và Kinh tế số, Bộ Công Thương",
 
