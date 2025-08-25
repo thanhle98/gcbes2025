@@ -156,6 +156,12 @@ export default function HomePage() {
       image: "/speakers/anna-nguyen.png",
     },
     {
+      name: t("speaker6Name"),
+      title: t("speaker6Title"),
+      company: t("speaker6Company"),
+      image: "/speakers/pham-tan-dat.png",
+    },
+    {
       name: t("speaker4Name"),
       title: t("speaker4Title"),
       company: t("speaker4Company"),
@@ -167,12 +173,6 @@ export default function HomePage() {
     //   company: t("speaker5Company"),
     //   image: "/speakers/jang-woo-sung.png",
     // },
-    {
-      name: t("speaker6Name"),
-      title: t("speaker6Title"),
-      company: t("speaker6Company"),
-      image: "/speakers/pham-tan-dat.png",
-    },
     {
       name: t("speaker7Name"),
       title: t("speaker7Title"),
