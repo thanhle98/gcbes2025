@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Calendar,
   MapPin,
@@ -27,6 +28,7 @@ import { REGISTRATION_FORM_URL, INTRO_VIDEO_ID } from "../constants/urls";
 export default function HomePage() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const dynamicStats = [
     {
@@ -413,34 +415,192 @@ export default function HomePage() {
       </section>
 
       {/* Logo Nhà tài trợ */}
-      <section className="py-16 bg-white overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 uppercase">
               {t("sponsorsTitle")}
             </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Được hỗ trợ bởi những tổ chức hàng đầu trong ngành công nghệ và
+              thương mại điện tử
+            </p>
           </div>
 
-          {/* Partner Logos Carousel */}
-          <div className="relative overflow-hidden">
-            {/* Edge gradient fades */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10" />
+          {/* Đơn vị phối hợp */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-purple-800 mb-2">
+                Đơn vị phối hợp
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-gradient-to-br from-purple-100 to-indigo-100 border-2 border-purple-300 rounded-xl p-6 shadow-lg">
+                <img
+                  src="/partners/acbc_logo.png"
+                  alt="ACBC"
+                  className="h-16 w-auto object-contain mx-auto"
+                />
+              </div>
+            </div>
+          </div>
 
-            <div className="flex animate-scroll-right whitespace-nowrap">
-              {/* First set of logos */}
-              <div className="flex items-center space-x-12 mr-12 flex-shrink-0">
-                {[
-                  ...dynamicSponsors,
-                  ...dynamicSponsors,
-                  ...dynamicSponsors,
-                ].map((sponsor, index) => (
+          {/* Nhà tài trợ Kim cương */}
+          <div className="mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-yellow-600 mb-2">
+                Nhà tài trợ Kim cương
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {[
+                { name: "VIETFAS", image: "/partners/vietfas_logo.png" },
+                { name: "FADO", image: "/partners/fado_logo.jpg" },
+                { name: "YUGEEKS", image: "/partners/yugeek_logo.png" },
+              ].map((sponsor, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   <img
                     src={sponsor.image}
                     alt={sponsor.name}
-                    className="w-32 h-auto object-contain transition-all duration-300 flex-shrink-0 filter"
+                    className="h-12 w-auto object-contain mx-auto"
                   />
-                ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nhà tài trợ Vàng */}
+          <div className="mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-yellow-700 mb-2">
+                Nhà tài trợ Vàng
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              {[
+                { name: "Yến Sào Happy", image: "/partners/happy_logo.png" },
+                { name: "GGBINGO", image: "/partners/ggbingo_logo.png" },
+              ].map((sponsor, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-yellow-300 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    className="h-12 w-auto object-contain mx-auto"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nhà tài trợ Bạc */}
+          <div className="mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-600 mb-2">
+                Nhà tài trợ Bạc
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-gradient-to-br from-gray-100 to-slate-100 border-2 border-gray-300 rounded-xl p-6 shadow-lg">
+                <img
+                  src="/partners/vnpost_logo.png"
+                  alt="VNPost"
+                  className="h-12 w-auto object-contain mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Đối tác Đồng hành */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-blue-600 mb-2">
+                Đối tác Đồng hành
+              </h3>
+            </div>
+
+            {/* Scrolling carousel for companion partners */}
+            <div className="relative overflow-hidden">
+              {/* Edge gradient fades */}
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+
+              <div className="flex animate-scroll-right whitespace-nowrap">
+                <div className="flex items-center space-x-8 mr-8 flex-shrink-0">
+                  {[
+                    { name: "Proship", image: "/partners/proship_logo.png" },
+                    {
+                      name: "TikTok Shop",
+                      image: "/partners/tiktokshop_logo.png",
+                    },
+                    {
+                      name: "Mê Trang Coffee",
+                      image: "/partners/metrang_logo.jpg",
+                    },
+                    { name: "Flash", image: "/partners/flash_logo.jpg" },
+                    {
+                      name: "JD Logistics",
+                      image: "/partners/jingdong_logistics_logo.png",
+                    },
+                    {
+                      name: "Fastspeed",
+                      image: "/partners/fastspeed_logo.png",
+                    },
+                    {
+                      name: "Amazon Global Selling",
+                      image: "/partners/amazon_logo.png",
+                    },
+                    { name: "Shopee", image: "/partners/shopee_logo.png" },
+                    {
+                      name: "ViettelPost",
+                      image: "/partners/viettelpost_logo.png",
+                    },
+                    // Duplicate for seamless scroll
+                    { name: "Proship", image: "/partners/proship_logo.png" },
+                    {
+                      name: "TikTok Shop",
+                      image: "/partners/tiktokshop_logo.png",
+                    },
+                    {
+                      name: "Mê Trang Coffee",
+                      image: "/partners/metrang_logo.jpg",
+                    },
+                    { name: "Flash", image: "/partners/flash_logo.jpg" },
+                    {
+                      name: "JD Logistics",
+                      image: "/partners/jingdong_logistics_logo.png",
+                    },
+                    {
+                      name: "Fastspeed",
+                      image: "/partners/fastspeed_logo.png",
+                    },
+                    {
+                      name: "Amazon Global Selling",
+                      image: "/partners/amazon_logo.png",
+                    },
+                    { name: "Shopee", image: "/partners/shopee_logo.png" },
+                    {
+                      name: "ViettelPost",
+                      image: "/partners/viettelpost_logo.png",
+                    },
+                  ].map((sponsor, index) => (
+                    <div
+                      key={index}
+                      className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 flex-shrink-0"
+                    >
+                      <img
+                        src={sponsor.image}
+                        alt={sponsor.name}
+                        className="h-10 w-auto object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
