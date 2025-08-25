@@ -422,8 +422,7 @@ export default function HomePage() {
               {t("sponsorsTitle")}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Được hỗ trợ bởi những tổ chức hàng đầu trong ngành công nghệ và
-              thương mại điện tử
+              {t("sponsorsSubtitle")}
             </p>
           </div>
 
@@ -431,7 +430,7 @@ export default function HomePage() {
           <div className="mb-16">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-purple-800 mb-2">
-                Đơn vị phối hợp
+                {t("sponsorsCoOrganizer")}
               </h3>
             </div>
             <div className="flex justify-center">
@@ -449,7 +448,7 @@ export default function HomePage() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-yellow-600 mb-2">
-                Nhà tài trợ Kim cương
+                {t("sponsorsDiamond")}
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -476,7 +475,7 @@ export default function HomePage() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-yellow-700 mb-2">
-                Nhà tài trợ Vàng
+                {t("sponsorsGold")}
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
@@ -502,7 +501,7 @@ export default function HomePage() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-600 mb-2">
-                Nhà tài trợ Bạc
+                {t("sponsorsSilver")}
               </h3>
             </div>
             <div className="flex justify-center">
@@ -520,7 +519,7 @@ export default function HomePage() {
           <div>
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-blue-600 mb-2">
-                Đối tác Đồng hành
+                {t("sponsorsCompanionPartners")}
               </h3>
             </div>
 

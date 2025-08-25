@@ -135,6 +135,13 @@ export const translations = {
     // Sponsors Section
     sponsorsTitle: "PARTNERS & SPONSORS",
     sponsorsUpdating: "Updating",
+    sponsorsCoOrganizer: "Co-organizer",
+    sponsorsSubtitle:
+      "Supported by leading organizations in technology and e-commerce",
+    sponsorsDiamond: "Diamond Sponsors",
+    sponsorsGold: "Gold Sponsors",
+    sponsorsSilver: "Silver Sponsors",
+    sponsorsCompanionPartners: "Supporting Partners",
 
     // Header Navigation
     navIntroduction: "Introduction",
@@ -933,6 +940,13 @@ export const translations = {
     // Sponsors Section
     sponsorsTitle: "ĐỐI TÁC & NHÀ TÀI TRỢ",
     sponsorsUpdating: "Đang cập nhật",
+    sponsorsCoOrganizer: "Đơn vị phối hợp",
+    sponsorsSubtitle:
+      "Được hỗ trợ bởi những tổ chức hàng đầu trong ngành công nghệ và thương mại điện tử",
+    sponsorsDiamond: "Nhà tài trợ Kim cương",
+    sponsorsGold: "Nhà tài trợ Vàng",
+    sponsorsSilver: "Nhà tài trợ Bạc",
+    sponsorsCompanionPartners: "Đối tác Đồng hành",
 
     // Header Navigation
     navIntroduction: "Giới thiệu",
@@ -1770,6 +1784,12 @@ export const translations = {
     // Sponsors Section
     sponsorsTitle: "合作伙伴与赞助商",
     sponsorsUpdating: "更新中",
+    sponsorsCoOrganizer: "协办单位",
+    sponsorsSubtitle: "由技术与电子商务领域的领先机构支持",
+    sponsorsDiamond: "钻石赞助商",
+    sponsorsGold: "黄金赞助商",
+    sponsorsSilver: "白银赞助商",
+    sponsorsCompanionPartners: "支持合作伙伴",
 
     sessionsJoin: "参加",
 
