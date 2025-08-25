@@ -183,10 +183,6 @@ export default function HomePage() {
 
   const dynamicSponsors = [
     {
-      name: "ACBC",
-      image: "/partners/acbc_logo.png",
-    },
-    {
       name: "VIETFAS",
       image: "/partners/vietfas_logo.png",
     },
@@ -426,28 +422,10 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Đơn vị phối hợp */}
-          <div className="mb-16">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-purple-800 mb-2">
-                {t("sponsorsCoOrganizer")}
-              </h3>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-purple-100 to-indigo-100 border-2 border-purple-300 rounded-xl p-6 shadow-lg">
-                <img
-                  src="/partners/acbc_logo.png"
-                  alt="ACBC"
-                  className="h-16 w-auto object-contain mx-auto"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Nhà tài trợ Kim cương */}
           <div className="mb-12">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-yellow-600 mb-2">
+              <h3 className="text-3xl font-bold text-red-600 mb-2">
                 {t("sponsorsDiamond")}
               </h3>
             </div>
@@ -459,7 +437,7 @@ export default function HomePage() {
               ].map((sponsor, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-br from-red-50 via-pink-50 to-rose-50 border-2 border-red-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <img
                     src={sponsor.image}

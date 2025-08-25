@@ -58,7 +58,7 @@ export const translations = {
       "Representative of Yunnan Commerce Department & Chairman of E-commerce Association",
     speaker2Company: "Yunnan Province, China",
 
-    speaker3Name: "Mrs. Anna Nguyen",
+    speaker3Name: "Ms. Anna Nguyen",
     speaker3Title: "Vice President",
     speaker3Company: "Alliance of Global Cross-border E-commerce ACBC",
 
@@ -1761,7 +1761,7 @@ export const translations = {
     speaker2Title: "云南省商务厅代表 & 电商协会主席",
     speaker2Company: "中国云南省",
 
-    speaker3Name: "Anna Nguyen女士",
+    speaker3Name: "Ms. Anna Nguyen",
     speaker3Title: "副主席",
     speaker3Company: "全球跨境电商联盟 ACBC",
 
