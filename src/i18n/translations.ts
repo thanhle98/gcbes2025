@@ -435,7 +435,7 @@ export const translations = {
     morningSession1Speaker2: "Amazon Global Selling",
     morningSession1Item3: "Export market diversification for Vietnamese businesses - Experience in taking national products global through multi-channel e-commerce",
     morningSession1Speaker3: "GGBingo",
-    morningSession1Item4: "ASEANb Market - Exports for small businesses, cooperatives, and households through cross-border e-commerce",
+    morningSession1Item4: "ASEANb Markets - Exports for small businesses, cooperatives, and households through cross-border e-commerce",
     morningSession1Speaker4: "Shopee",
     morningSession1Item5: "Optimizing international logistics to support Vietnamese export businesses in market diversification through cross-border e-commerce",
     morningSession1Speaker5: "JD Logistics",
