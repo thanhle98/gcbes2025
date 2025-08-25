@@ -103,7 +103,7 @@ export default function HomePage() {
       type: t("session1Type"),
       time: "08:30 - 11:45",
       location: t("rubyRoom"),
-      link: "/activities/conference/1"
+      link: "/activities/conference/1",
     },
     {
       date: "5/9",
@@ -112,7 +112,7 @@ export default function HomePage() {
       type: t("session2Type"),
       time: "13:30 - 17:00",
       location: t("rubyRoom"),
-      link: "/activities/conference/2"
+      link: "/activities/conference/2",
     },
     {
       date: "5/9",
@@ -121,7 +121,7 @@ export default function HomePage() {
       type: t("session3Type"),
       time: "19:00 - 22:00",
       location: t("vipRestaurant"),
-      link: "/activities/gala"
+      link: "/activities/gala",
     },
     {
       date: "6/9",
@@ -130,7 +130,7 @@ export default function HomePage() {
       type: t("session4Type"),
       time: "08:00 - 17:00",
       location: t("locationsInHCM"),
-      link: "/activities/tour"
+      link: "/activities/tour",
     },
   ];
 
@@ -141,12 +141,12 @@ export default function HomePage() {
       company: t("speaker1Company"),
       image: "/speakers/le-hoang-oanh.png",
     },
-    {
-      name: t("speaker2Name"),
-      title: t("speaker2Title"),
-      company: t("speaker2Company"),
-      image: "/speakers/liu-liang.png",
-    },
+    // {
+    //   name: t("speaker2Name"),
+    //   title: t("speaker2Title"),
+    //   company: t("speaker2Company"),
+    //   image: "/speakers/liu-liang.png",
+    // },
     {
       name: t("speaker3Name"),
       title: t("speaker3Title"),
@@ -165,12 +165,12 @@ export default function HomePage() {
     //   company: t("speaker5Company"),
     //   image: "/speakers/jang-woo-sung.png",
     // },
-    // {
-    //   name: t("speaker6Name"),
-    //   title: t("speaker6Title"),
-    //   company: t("speaker6Company"),
-    //   image: "/speakers/pham-tan-dat.png",
-    // },
+    {
+      name: t("speaker6Name"),
+      title: t("speaker6Title"),
+      company: t("speaker6Company"),
+      image: "/speakers/pham-tan-dat.png",
+    },
   ];
 
   const dynamicSponsors = [
@@ -238,7 +238,6 @@ export default function HomePage() {
       name: "ViettelPost",
       image: "/partners/viettelpost_logo.png",
     },
-   
   ];
 
   return (
@@ -358,7 +357,10 @@ export default function HomePage() {
       </section>
 
       {/* Các chủ đề */}
-      <section id="topics" className="py-24 bg-gradient-to-br from-blue-300 to-green-300">
+      <section
+        id="topics"
+        className="py-24 bg-gradient-to-br from-blue-300 to-green-300"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -422,8 +424,16 @@ export default function HomePage() {
             <div className="flex animate-scroll-right whitespace-nowrap">
               {/* First set of logos */}
               <div className="flex items-center space-x-12 mr-12 flex-shrink-0">
-                {[...dynamicSponsors, ...dynamicSponsors, ...dynamicSponsors].map((sponsor, index) => (
-                  <img src={sponsor.image} alt={sponsor.name} className="w-32 h-auto object-contain transition-all duration-300 flex-shrink-0 filter" />
+                {[
+                  ...dynamicSponsors,
+                  ...dynamicSponsors,
+                  ...dynamicSponsors,
+                ].map((sponsor, index) => (
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    className="w-32 h-auto object-contain transition-all duration-300 flex-shrink-0 filter"
+                  />
                 ))}
               </div>
             </div>
@@ -483,7 +493,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="mt-6 lg:mt-0 lg:ml-8">
-                      <a 
+                      <a
                         href={REGISTRATION_FORM_URL}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -506,8 +516,6 @@ export default function HomePage() {
           onClose={() => setIsPopupOpen(false)}
         />
       )}
-
-
     </div>
   );
 }
