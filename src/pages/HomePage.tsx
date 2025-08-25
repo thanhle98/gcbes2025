@@ -159,18 +159,18 @@ export default function HomePage() {
       company: t("speaker4Company"),
       image: "/speakers/nguyen-duy-toan.png",
     },
-    {
-      name: t("speaker5Name"),
-      title: t("speaker5Title"),
-      company: t("speaker5Company"),
-      image: "/speakers/jang-woo-sung.png",
-    },
-    {
-      name: t("speaker6Name"),
-      title: t("speaker6Title"),
-      company: t("speaker6Company"),
-      image: "/speakers/pham-tan-dat.png",
-    },
+    // {
+    //   name: t("speaker5Name"),
+    //   title: t("speaker5Title"),
+    //   company: t("speaker5Company"),
+    //   image: "/speakers/jang-woo-sung.png",
+    // },
+    // {
+    //   name: t("speaker6Name"),
+    //   title: t("speaker6Title"),
+    //   company: t("speaker6Company"),
+    //   image: "/speakers/pham-tan-dat.png",
+    // },
   ];
 
   const dynamicSponsors = [
