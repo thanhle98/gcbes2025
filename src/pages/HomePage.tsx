@@ -175,39 +175,70 @@ export default function HomePage() {
 
   const dynamicSponsors = [
     {
-      name: "VietFAS",
+      name: "ACBC",
+      image: "/partners/acbc_logo.png",
+    },
+    {
+      name: "VIETFAS",
       image: "/partners/vietfas_logo.png",
     },
-    
     {
-      name: "Fado",
+      name: "FADO",
       image: "/partners/fado_logo.jpg",
     },
-    
     {
-      name: "Flash",
-      image: "/partners/flash_logo.jpg",
+      name: "YUGEEKS",
+      image: "/partners/yugeek_logo.png",
     },
     {
-      name: "Happy",
+      name: "Yến Sào Happy",
       image: "/partners/happy_logo.png",
     },
     {
-      name: "JingDong Logistics",
-      image: "/partners/jingdong_logistics_logo.png",
+      name: "GGBINGO",
+      image: "/partners/ggbingo_logo.png",
     },
     {
-      name: "Metrang",
-      image: "/partners/metrang_logo.jpg",
+      name: "VNPost",
+      image: "/partners/vnpost_logo.png",
     },
     {
       name: "Proship",
       image: "/partners/proship_logo.png",
     },
     {
-      name: "ACBC",
-      image: "/partners/acbc_logo.png",
+      name: "TikTok Shop",
+      image: "/partners/tiktokshop_logo.png",
     },
+    {
+      name: "Mê Trang Coffee",
+      image: "/partners/metrang_logo.jpg",
+    },
+    {
+      name: "Flash",
+      image: "/partners/flash_logo.jpg",
+    },
+    {
+      name: "JD Logistics",
+      image: "/partners/jingdong_logistics_logo.png",
+    },
+    {
+      name: "Fastspeed",
+      image: "/partners/fastspeed_logo.png",
+    },
+    {
+      name: "Amazon Global Selling",
+      image: "/partners/amazon_logo.png",
+    },
+    {
+      name: "Shopee",
+      image: "/partners/shopee_logo.png",
+    },
+    {
+      name: "ViettelPost",
+      image: "/partners/viettelpost_logo.png",
+    },
+   
   ];
 
   return (
