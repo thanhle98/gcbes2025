@@ -192,7 +192,7 @@ export default function HomePage() {
     },
     {
       name: "FADO",
-      image: "/partners/fado_logo.jpg",
+      image: "/partners/fado_logo.png",
     },
     {
       name: "YUGEEKS",
@@ -455,7 +455,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {[
                 { name: "VIETFAS", image: "/partners/vietfas_logo.png" },
-                { name: "FADO", image: "/partners/fado_logo.jpg" },
+                { name: "FADO", image: "/partners/fado_logo.png" },
                 { name: "YUGEEKS", image: "/partners/yugeek_logo.png" },
               ].map((sponsor, index) => (
                 <div

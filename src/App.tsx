@@ -1,8 +1,6 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
-import SponsorsPage from './pages/SponsorsPage';
 import ActivitiesPage from './pages/ActivitiesPage';
 import Forum49Page from './pages/forums/Forum49Page';
 import ExhibitionPage from './pages/activities/ExhibitionPage';
@@ -13,6 +11,7 @@ import TourPage from './pages/activities/TourPage';
 import TourismPage from './pages/activities/TourismPage';
 import PresentationsPage from './pages/documents/PresentationsPage';
 import DirectoryPage from './pages/documents/DirectoryPage';
+import { useTranslation } from './contexts/LanguageContext';
 
 function PlaceholderPage({ titleKey, className = "py-24 text-center" }: { titleKey: string, className?: string }) {
   const { t } = useTranslation();
@@ -40,7 +39,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="sponsors" element={<SponsorsPage />} />
           <Route path="activities" element={<ActivitiesPage />} />
           <Route path="activities/:activityId" element={<ActivitiesPage />} />
           <Route path="forums/forum-4-9" element={<Forum49Page />} />
