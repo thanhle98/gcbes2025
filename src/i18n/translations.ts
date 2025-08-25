@@ -74,6 +74,10 @@ export const translations = {
     speaker6Title: "CEO",
     speaker6Company: "FADO GROUP",
 
+    speaker7Name: "Mr. Thang Nguyen",
+    speaker7Title: "Head of AI Product Engineering",
+    speaker7Company: "Torus AI France",
+
     // Topics Section
     topicsTitle: "MAIN TOPICS",
     topicsSubtitle: "Explore 6 key areas of cross-border e-commerce",
@@ -867,6 +871,10 @@ export const translations = {
     speaker6Name: "Ông Phạm Tấn Đạt",
     speaker6Title: "Tổng giám đốc",
     speaker6Company: "FADO GROUP",
+
+    speaker7Name: "Ông Nguyễn Thắng",
+    speaker7Title: "Trưởng bộ phận Kỹ thuật Sản phẩm AI",
+    speaker7Company: "Torus AI France",
 
     // Topics Section
     topicsTitle: "CÁC CHỦ ĐỀ CHÍNH",
@@ -1754,6 +1762,10 @@ export const translations = {
     speaker6Name: "范丹达先生",
     speaker6Title: "总经理",
     speaker6Company: "FADO集团",
+
+    speaker7Name: "阮胜先生",
+    speaker7Title: "产品技术部主管",
+    speaker7Company: "Torus AI France",
 
     // Sponsors Section
     sponsorsTitle: "合作伙伴与赞助商",

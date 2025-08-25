@@ -171,6 +171,12 @@ export default function HomePage() {
       company: t("speaker6Company"),
       image: "/speakers/pham-tan-dat.png",
     },
+    {
+      name: t("speaker7Name"),
+      title: t("speaker7Title"),
+      company: t("speaker7Company"),
+      image: "/speakers/thang-nguyen.png",
+    },
   ];
 
   const dynamicSponsors = [
