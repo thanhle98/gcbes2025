@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import {
   Calendar,
   MapPin,
@@ -12,8 +11,6 @@ import {
   Leaf,
   Mic,
   Building2,
-  Star,
-  Award,
   ChevronRight,
   Package,
 } from "lucide-react";
@@ -28,7 +25,6 @@ import { REGISTRATION_FORM_URL, INTRO_VIDEO_ID } from "../constants/urls";
 export default function HomePage() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   const dynamicStats = [
     {
@@ -143,12 +139,12 @@ export default function HomePage() {
       company: t("speaker1Company"),
       image: "/speakers/le-hoang-oanh.png",
     },
-    // {
-    //   name: t("speaker2Name"),
-    //   title: t("speaker2Title"),
-    //   company: t("speaker2Company"),
-    //   image: "/speakers/liu-liang.png",
-    // },
+    {
+      name: t("speaker2Name"),
+      title: t("speaker2Title"),
+      company: t("speaker2Company"), 
+      image: "/speakers/liu-liang.png",
+    },
     {
       name: t("speaker3Name"),
       title: t("speaker3Title"),
@@ -156,32 +152,56 @@ export default function HomePage() {
       image: "/speakers/anna-nguyen.png",
     },
     {
-      name: t("speaker6Name"),
-      title: t("speaker6Title"),
-      company: t("speaker6Company"),
-      image: "/speakers/pham-tan-dat.png",
-    },
-    {
       name: t("speaker4Name"),
       title: t("speaker4Title"),
       company: t("speaker4Company"),
       image: "/speakers/nguyen-duy-toan.png",
     },
-    // {
-    //   name: t("speaker5Name"),
-    //   title: t("speaker5Title"),
-    //   company: t("speaker5Company"),
-    //   image: "/speakers/jang-woo-sung.png",
-    // },
+    {
+      name: t("speaker5Name"),
+      title: t("speaker5Title"),
+      company: t("speaker5Company"),
+      image: "/speakers/jang-woo-sung.png",
+    },
+    {
+      name: t("speaker6Name"), 
+      title: t("speaker6Title"),
+      company: t("speaker6Company"),
+      image: "/speakers/pham-tan-dat.png",
+    },
     {
       name: t("speaker7Name"),
       title: t("speaker7Title"),
       company: t("speaker7Company"),
       image: "/speakers/thang-nguyen.png",
     },
+    {
+      name: t("speaker8Name"),
+      title: t("speaker8Title"),
+      company: t("speaker8Company"),
+      image: "/speakers/default.svg",
+    },
+    {
+      name: t("speaker9Name"),
+      title: t("speaker9Title"),
+      company: t("speaker9Company"),
+      image: "/speakers/default.svg",
+    },
+    {
+      name: t("speaker10Name"),
+      title: t("speaker10Title"),
+      company: t("speaker10Company"),
+      image: "/speakers/default.svg",
+    },
+    {
+      name: t("speaker11Name"),
+      title: t("speaker11Title"),
+      company: t("speaker11Company"),
+      image: "/speakers/default.svg",
+    }
   ];
-
-  const dynamicSponsors = [
+  
+  const sponsorsData = [
     {
       name: "VIETFAS",
       image: "/partners/vietfas_logo.png",
@@ -430,11 +450,7 @@ export default function HomePage() {
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {[
-                { name: "VIETFAS", image: "/partners/vietfas_logo.png" },
-                { name: "FADO", image: "/partners/fado_logo.png" },
-                { name: "YUGEEKS", image: "/partners/yugeek_logo.png" },
-              ].map((sponsor, index) => (
+              {sponsorsData.slice(0,3).map((sponsor, index) => (
                 <div
                   key={index}
                   className="bg-gradient-to-br from-red-50 via-pink-50 to-rose-50 border-2 border-red-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"

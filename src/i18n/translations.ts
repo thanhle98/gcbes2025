@@ -50,33 +50,58 @@ export const translations = {
     // Individual Speakers
     speaker1Name: "Mrs. Le Hoang Oanh",
     speaker1Title: "Director",
-    speaker1Company:
-      "Department of E-commerce and Digital Economy, Ministry of Industry and Trade",
+    speaker1Company: "Department of E-commerce and Digital Economy, Ministry of Industry and Trade",
+    speaker1Description: "Over 20 years of experience in e-commerce policy development and digital economy transformation. Leading Vietnam's national e-commerce development strategy.",
 
     speaker2Name: "Mr. Liu Liang",
-    speaker2Title:
-      "Representative of Yunnan Commerce Department & Chairman of E-commerce Association",
+    speaker2Title: "Representative of Yunnan Commerce Department & Chairman of E-commerce Association",
     speaker2Company: "Yunnan Province, China",
+    speaker2Description: "Expert in China-ASEAN cross-border e-commerce with extensive experience in digital trade development and regional cooperation initiatives.",
 
     speaker3Name: "Ms. Anna Nguyen",
     speaker3Title: "Vice President",
     speaker3Company: "Alliance of Global Cross-border E-commerce ACBC",
+    speaker3Description: "Pioneer in global e-commerce with 15+ years experience connecting Asian businesses to international markets through digital platforms.",
 
     speaker4Name: "Mr. Nguyen Duy Toan",
     speaker4Title: "Founder & CEO",
     speaker4Company: "Proship Joint Stock Company",
+    speaker4Description: "Logistics innovation leader, building smart supply chain solutions for cross-border e-commerce with AI technology integration.",
 
-    speaker5Name: "Mr. Jang Woo Sung",
+    speaker5Name: "Mr. Jang Woo Sung", 
     speaker5Title: "Export Advisory Committee",
     speaker5Company: "Gyeonggi Export Association",
+    speaker5Description: "Korean export strategy specialist with deep insights into Asian e-commerce markets and digital transformation for SMEs.",
 
     speaker6Name: "Mr. Pham Tan Dat",
     speaker6Title: "CEO",
     speaker6Company: "FADO GROUP",
+    speaker6Description: "Vietnamese e-commerce entrepreneur who successfully built a cross-border platform connecting local products to global markets.",
 
     speaker7Name: "Mr. Thang Nguyen",
     speaker7Title: "Head of AI Product Engineering",
     speaker7Company: "Torus AI France",
+    speaker7Description: "AI technology expert specializing in e-commerce applications, with experience implementing AI solutions across European markets.",
+
+    speaker8Name: "Mr. Thoang Tran",
+    speaker8Title: "Director",
+    speaker8Company: "CT-Strategies Vietnam",
+    speaker8Description: "International trade and customs expert with deep expertise in free trade zones and cross-border e-commerce regulations. Over 15 years experience in facilitating global trade.",
+
+    speaker9Name: "Dr. Chen Jia",
+    speaker9Title: "",
+    speaker9Company: "China Ecological Origin PEOP Brand Network",
+    speaker9Description: "Leading expert in product standardization and quality assessment for cross-border e-commerce. Pioneer in implementing PEOP standards for international trade.",
+
+    speaker10Name: "Mr. Xiao Qiuli", 
+    speaker10Title: "General Manager",
+    speaker10Company: "Guangdong Global Shopping E-commerce Co., Ltd (GGBingo)",
+    speaker10Description: "Cross-border e-commerce veteran with extensive experience in connecting Vietnamese products to Chinese market. Specialist in multi-channel digital retail strategies.",
+
+    speaker11Name: "Ms. Dinh Thi Thu Hien",
+    speaker11Title: "CEO", 
+    speaker11Company: "YUGEEKS International Trading Co., Ltd",
+    speaker11Description: "E-commerce innovation leader, transforming traditional trade into digital platforms. Expert in building comprehensive e-commerce ecosystems and operational hubs.",
 
     // Topics Section
     topicsTitle: "MAIN TOPICS",
@@ -872,34 +897,61 @@ export const translations = {
     speaker1Name: "Bà Lê Hoàng Oanh",
     speaker1Title: "Cục trưởng",
     speaker1Company: "Cục Thương mại điện tử và Kinh tế số Bộ Công Thương",
+    speaker1Description: "Hơn 20 năm kinh nghiệm trong phát triển chính sách thương mại điện tử và chuyển đổi kinh tế số. Dẫn dắt chiến lược phát triển TMĐT quốc gia của Việt Nam.",
 
     speaker2Name: "Ông Liu Liang",
-    speaker2Title:
-      "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
+    speaker2Title: "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
     speaker2Company: "Tỉnh Vân Nam, Trung Quốc",
+    speaker2Description: "Chuyên gia về thương mại điện tử xuyên biên giới Trung Quốc-ASEAN với nhiều kinh nghiệm trong phát triển thương mại số và các sáng kiến hợp tác khu vực.",
 
     speaker3Name: "Bà Anna Nguyễn",
     speaker3Title: "Phó chủ tịch",
-    speaker3Company:
-      "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
+    speaker3Company: "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
+    speaker3Description: "Tiên phong trong lĩnh vực thương mại điện tử toàn cầu với hơn 15 năm kinh nghiệm kết nối doanh nghiệp châu Á với thị trường quốc tế thông qua các nền tảng số.",
 
     speaker4Name: "Ông Nguyễn Duy Toàn",
     speaker4Title: "Sáng lập & Tổng giám đốc",
     speaker4Company: "Công ty Cổ phần Proship",
+    speaker4Description: "Người dẫn đầu về đổi mới logistics, xây dựng giải pháp chuỗi cung ứng thông minh cho thương mại điện tử xuyên biên giới với tích hợp công nghệ AI.",
 
     speaker5Name: "Ông Jang Woo Sung",
     speaker5Title: "Ủy ban Tư vấn xuất khẩu",
     speaker5Company: "Hiệp hội xuất khẩu tỉnh Gyeonggi",
+    speaker5Description: "Chuyên gia chiến lược xuất khẩu Hàn Quốc với hiểu biết sâu sắc về thị trường thương mại điện tử châu Á và chuyển đổi số cho doanh nghiệp vừa và nhỏ.",
 
     speaker6Name: "Ông Phạm Tấn Đạt",
     speaker6Title: "Tổng giám đốc",
     speaker6Company: "FADO GROUP",
+    speaker6Description: "Doanh nhân thương mại điện tử Việt Nam đã thành công xây dựng nền tảng xuyên biên giới kết nối sản phẩm địa phương với thị trường toàn cầu.",
 
     speaker7Name: "Ông Nguyễn Thắng",
     speaker7Title: "Trưởng bộ phận Kỹ thuật Sản phẩm AI",
     speaker7Company: "Torus AI France",
+    speaker7Description: "Chuyên gia công nghệ AI chuyên về ứng dụng thương mại điện tử, với kinh nghiệm triển khai giải pháp AI trên các thị trường châu Âu.",
 
-    // Topics Section
+    speaker8Name: "Ông Trần Thoang",
+    speaker8Title: "Giám đốc",
+    speaker8Company: "CT-Strategies Vietnam",
+    speaker8Description: "Chuyên gia thương mại quốc tế và hải quan với chuyên môn sâu về khu vực thương mại tự do và quy định thương mại điện tử xuyên biên giới. Hơn 15 năm kinh nghiệm trong thúc đẩy thương mại toàn cầu.",
+
+    speaker9Name: "TS. Chen Jia",
+    speaker9Title: "", 
+    speaker9Company: "Uỷ ban National Ecological Ingredients Evaluation Center",
+    speaker9Description: "Chuyên gia hàng đầu về tiêu chuẩn hóa sản phẩm và đánh giá chất lượng cho thương mại điện tử xuyên biên giới. Người tiên phong trong việc thực hiện tiêu chuẩn PEOP cho thương mại quốc tế.",
+    
+    speaker10Name: "Ông Xiao Qiuli",
+    speaker10Title: "Giám đốc",  
+    speaker10Company: "Công ty TNHH Thương mại điện tử Mua sắm toàn cầu Quảng Đông (GGBingo)",
+    speaker10Description: "Chuyên gia thương mại điện tử xuyên biên giới với kinh nghiệm phong phú trong việc kết nối sản phẩm Việt Nam với thị trường Trung Quốc. Chuyên gia về chiến lược bán lẻ đa kênh kỹ thuật số.",
+
+    speaker11Name: "Bà Đinh Thị Thu Hiền",
+    speaker11Title: "Tổng giám đốc",
+    speaker11Company: "Công ty TNHH Thương mại Quốc tế YUGEEKS",
+    speaker11Description: "Người dẫn đầu đổi mới thương mại điện tử, chuyển đổi thương mại truyền thống thành nền tảng kỹ thuật số. Chuyên gia xây dựng hệ sinh thái thương mại điện tử toàn diện và trung tâm vận hành."
+    },
+
+    vi: {
+      // Topics Section
     topicsTitle: "CÁC CHỦ ĐỀ CHÍNH",
     topicsSubtitle:
       "Khám phá 6 lĩnh vực then chốt của thương mại điện tử xuyên biên giới",
@@ -1777,30 +1829,58 @@ export const translations = {
     speaker1Name: "黎黄英女士",
     speaker1Title: "局长",
     speaker1Company: "越南工贸部电子商务与数字经济局",
+    speaker1Description: "在电子商务政策制定和数字经济转型领域拥有超过20年经验。主导越南国家电子商务发展战略。",
 
     speaker2Name: "刘亮先生",
     speaker2Title: "云南省商务厅代表 & 电商协会主席",
     speaker2Company: "中国云南省",
+    speaker2Description: "中国-东盟跨境电商专家，在数字贸易发展和区域合作倡议方面拥有丰富经验。",
 
-    speaker3Name: "Ms. Anna Nguyen",
+    speaker3Name: "阮安娜女士",
     speaker3Title: "副主席",
     speaker3Company: "全球跨境电商联盟 ACBC",
+    speaker3Description: "全球电子商务先驱，拥有15年以上通过数字平台连接亚洲企业与国际市场的经验。",
 
     speaker4Name: "阮维全先生",
     speaker4Title: "创始人 & 总经理",
     speaker4Company: "Proship股份公司",
+    speaker4Description: "物流创新领袖，为跨境电商打造智能供应链解决方案，整合AI技术。",
 
     speaker5Name: "张友成先生",
     speaker5Title: "出口咨询委员会",
     speaker5Company: "京畿道出口协会",
+    speaker5Description: "韩国出口战略专家，对亚洲电商市场和中小企业数字化转型有深入见解。",
 
     speaker6Name: "范丹达先生",
     speaker6Title: "总经理",
     speaker6Company: "FADO集团",
+    speaker6Description: "越南电商企业家，成功打造连接本土产品与全球市场的跨境平台。",
 
     speaker7Name: "阮胜先生",
     speaker7Title: "产品技术部主管",
     speaker7Company: "Torus AI France",
+    speaker7Description: "AI技术专家，专注于电商应用，在欧洲市场拥有AI解决方案实施经验。",
+
+    speaker8Name: "陈斌先生",
+    speaker8Title: "总经理",
+    speaker8Company: "CT-Strategies Vietnam",
+    speaker8Description: "国际贸易和海关专家，在自由贸易区和跨境电子商务法规方面有深入的专业知识。拥有超过15年的全球贸易促进经验。",
+
+    speaker9Name: "陈佳博士",
+    speaker9Title: "",
+    speaker9Company: "中国生态原产地PEOP品牌网络",
+    speaker9Description: "跨境电子商务产品标准化和质量评估的领先专家。国际贸易PEOP标准实施的先驱。",
+
+    speaker10Name: "肖秋丽先生",
+    speaker10Title: "总经理",
+    speaker10Company: "广东环球购电商有限公司 (GGBingo)",
+    speaker10Description: "跨境电商资深专家，在连接越南产品与中国市场方面拥有丰富经验。数字零售多渠道战略专家。",
+
+    speaker11Name: "丁氏秋贤女士",
+    speaker11Title: "总经理",
+    speaker11Company: "YUGEEKS国际贸易有限公司",
+    speaker11Description: "电子商务创新领袖，将传统贸易转型为数字平台。构建全面电子商务生态系统和运营中心的专家。"
+  },
 
     // Sponsors Section
     sponsorsTitle: "合作伙伴",
@@ -1924,28 +2004,28 @@ export const translations = {
     conf2Session1Item3: "通过Amazon在线出口 - 在新背景下推进电子商务",
     conf2Session1Speaker3: "Amazon Global Selling",
     
-    conf2Session1Time4: "14:50 – 15:10",
+    conf2Session1Time4: "14:50 – 15:10", 
     conf2Session1Item4: "支持越南中小企业和家庭在越南市场及直接出口到东盟市场",
     conf2Session1Speaker4: "Shopee越南",
 
-    conf2Session2Title: "第二部分：解决方案与技术",
-    conf2Session2Item1: "全球物流供应链 - 将越南建设成支持电子商务发展的物流中心",
+    conf2Session2Title: "PHẦN 2: GIẢI PHÁP VÀ CÔNG NGHỆ",
+    conf2Session2Item1: "Chuỗi cung ứng logistics toàn cầu - Định hướng xây dựng Việt Nam thành trung tâm logistics hỗ trợ thương mại điện tử phát triển",
     conf2Session2Time1: "15:10 – 15:25",
     conf2Session2Speaker1: "ViettelPost",
-    conf2Session2Item2: "从平台到生态系统：电子商务Hub运营革命",
+    conf2Session2Item2: "Từ nền tảng đến hệ sinh thái: Cuộc cách mạng vận hành Hub TMĐT",
     conf2Session2Time2: "15:25 – 15:40",
     conf2Session2Speaker2: "YUGEEKS",
-    conf2Session2Item3: "AI在欧美市场电子商务和B2C中的应用",
+    conf2Session2Item3: "AI trong TMĐT và B2C tại thị trường châu Âu",
     conf2Session2Time3: "15:40 – 15:55",
-    conf2Session2Speaker3: "Taureau AI（法国）",
-    conf2Session2Item4: "自由贸易区在跨境电子商务发展中的作用",
+    conf2Session2Speaker3: "Taureau AI (Pháp)",
+    conf2Session2Item4: "Vai trò của Khu thương mại tự do trong phát triển TMĐT xuyên biên giới",
     conf2Session2Time4: "15:55 – 16:20",
-    conf2Session2Speaker4: "CT Strategies（美国）",
+    conf2Session2Speaker4: "CT Strategies (Mỹ)",
 
-    conf2Session3Title: "圆桌讨论",
+    conf2Session3Title: "TOẠ ĐÀM BÀN TRÒN",
     conf2Session3Time: "16:20 – 16:50",
-    conf2Session3Content: "越南新的电子商务趋势和塑造OEM到D2C的转型，通过电子商务构建全球越南品牌",
-    conf2Session3Speaker: "电商平台、物流、领先制造企业",
+    conf2Session3Content: "Xu hướng thương mại điện tử mới tại Việt Nam và định hình phương thức OEM sang D2C, xây dựng thương hiệu Việt toàn cầu qua thương mại điện tử",
+    conf2Session3Speaker: "Sàn TMĐT, Logistics, doanh nghiệp sản xuất tiêu biểu",
 
     conf2Session4Title: "结束与签约",
     conf2Session4Time1: "16:50 – 17:00",
@@ -2293,9 +2373,9 @@ export const translations = {
     tourAfternoonTitle: "9月6日下午",
     tourAfternoonDetails: "前往参访和开会：\nHappy Nest工厂：体验实际生产线\nFADO技术集团\n在FADO会议室进行B2B对接\n与领导就D2C战略和跨境电商出口讨论\n行程总结与合作方向\n名片交换 – 讨论商业提案\n纪念照 – 组织后续联谊",
     tourEveningTitle: "9月6日晚上",
-    tourEveningDetails: "晚餐\n返回酒店休息",
-  },
-};
+    tourEveningDetails: "晚餐\n返回酒店休息"
+  };
 
+// Type definitions
 export type Language = "en" | "vi" | "zh";
 export type TranslationKey = keyof typeof translations.en;
