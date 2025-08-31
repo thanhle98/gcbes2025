@@ -48,73 +48,74 @@ export const translations = {
       "Meet and exchange with leading experts in Cross-Border E-commerce from many different countries",
 
     // Individual Speakers
-    speaker1Name: "Mrs. Le Hoang Oanh",
-    speaker1Title: "Director",
+    speaker1Name: "Mrs. Lai Viet Anh",
+    speaker1Title: "Deputy Director General",
     speaker1Company:
-      "Department of E-commerce and Digital Economy, Ministry of Industry and Trade",
-    speaker1Description:
-      "Over 20 years of experience in e-commerce policy development and digital economy transformation. Leading Vietnam's national e-commerce development strategy.",
+      "Department of E-commerce and Digital Economy, Ministry of Industry and Trade (MOIT)",
 
-    speaker2Name: "Mr. Liu Liang",
-    speaker2Title:
-      "Representative of Yunnan Commerce Department & Chairman of E-commerce Association",
-    speaker2Company: "Yunnan Province, China",
-    speaker2Description:
-      "Expert in China-ASEAN cross-border e-commerce with extensive experience in digital trade development and regional cooperation initiatives.",
+    speaker2Name: "Ms. Anna Nguyen",
+    speaker2Title: "Vice President",
+    speaker2Company: "Alliance of Global Cross-border E-commerce (ACBC)",
 
-    speaker3Name: "Ms. Anna Nguyen",
-    speaker3Title: "Vice President",
-    speaker3Company: "Alliance of Global Cross-border E-commerce ACBC",
-    speaker3Description:
-      "Pioneer in global e-commerce with 15+ years experience connecting Asian businesses to international markets through digital platforms.",
+    speaker3Name: "Mr. Larry Hu",
+    speaker3Title: "General Manager",
+    speaker3Company: "Amazon Global Selling, Southeast Asia",
 
-    speaker4Name: "Mr. Nguyen Duy Toan",
-    speaker4Title: "Founder & CEO",
-    speaker4Company: "Proship Joint Stock Company",
-    speaker4Description:
-      "Logistics innovation leader, building smart supply chain solutions for cross-border e-commerce with AI technology integration.",
+    speaker4Name: "Mr. Xiao Qiuli",
+    speaker4Title: "General Manager",
+    speaker4Company:
+      "Guangdong Global Shopping E-commerce Co., Ltd (GGBingo)",
 
-    speaker5Name: "Mr. Jang Woo Sung",
-    speaker5Title: "Export Advisory Committee",
-    speaker5Company: "Gyeonggi Export Association",
-    speaker5Description:
-      "Korean export strategy specialist with deep insights into Asian e-commerce markets and digital transformation for SMEs.",
+    speaker5Name: "Mrs. Vu Xuan Linh",
+    speaker5Title: "Director of Strategic Partnerships (Vietnam Market)",
+    speaker5Company: "Sea Limited",
 
-    speaker6Name: "Mr. Pham Tan Dat",
-    speaker6Title: "CEO",
-    speaker6Company: "FADO GROUP",
-    speaker6Description:
-      "Vietnamese e-commerce entrepreneur who successfully built a cross-border platform connecting local products to global markets.",
+    speaker6Name: "Mrs. Nga Dang",
+    speaker6Title: "Founder",
+    speaker6Company: "Vietnam Food Europe B.V.",
 
-    speaker7Name: "Mr. Thang Nguyen",
-    speaker7Title: "Head of AI Product Engineering",
-    speaker7Company: "Torus AI France",
-    speaker7Description:
-      "AI technology expert specializing in e-commerce applications, with experience implementing AI solutions across European markets.",
+    speaker7Name: "Mr. Phi Anh Tuan",
+    speaker7Title:
+      "Vice Chairman, Ho Chi Minh City Computer Association (HCA); Executive Committee Member",
+    speaker7Company: "VINASA",
 
-    speaker8Name: "Mr. Thoang Tran",
-    speaker8Title: "Director",
-    speaker8Company: "CT-Strategies Vietnam",
-    speaker8Description:
-      "International trade and customs expert with deep expertise in free trade zones and cross-border e-commerce regulations. Over 15 years experience in facilitating global trade.",
+    speaker8Name: "Dr. Chen Jia",
+    speaker8Title: "Representative",
+    speaker8Company:
+      "National Ecological Ingredients Evaluation Center (China Ecological Origin PEOP Brand Network)",
 
-    speaker9Name: "Dr. Chen Jia",
-    speaker9Title: "",
-    speaker9Company: "China Ecological Origin PEOP Brand Network",
-    speaker9Description:
-      "Leading expert in product standardization and quality assessment for cross-border e-commerce. Pioneer in implementing PEOP standards for international trade.",
+    speaker9Name: "Mr. Lu Chao",
+    speaker9Title: "Southeast Asia Business Development Manager",
+    speaker9Company: "JD Logistics",
 
-    speaker10Name: "Mr. Xiao Qiuli",
-    speaker10Title: "General Manager",
-    speaker10Company: "Guangdong Global Shopping E-commerce Co., Ltd (GGBingo)",
-    speaker10Description:
-      "Cross-border e-commerce veteran with extensive experience in connecting Vietnamese products to Chinese market. Specialist in multi-channel digital retail strategies.",
+    speaker10Name: "Mr. Vu Ngoc Sy",
+    speaker10Title: "AI Training Strategy Expert for E-commerce",
+    speaker10Company: "Smart Skills Universe",
 
-    speaker11Name: "Ms. Dinh Thi Thu Hien",
-    speaker11Title: "CEO",
-    speaker11Company: "YUGEEKS International Trading Co., Ltd",
-    speaker11Description:
-      "E-commerce innovation leader, transforming traditional trade into digital platforms. Expert in building comprehensive e-commerce ecosystems and operational hubs.",
+    speaker11Name: "Mrs. Phan Thi Thang",
+    speaker11Title: "Vice Minister",
+    speaker11Company: "Ministry of Industry and Trade (MOIT)",
+
+    speaker12Name: "Mr. Nguyen Minh Duc",
+    speaker12Title: "Deputy Secretary General",
+    speaker12Company: "Vietnam E-commerce Association (VECOM)",
+
+    speaker13Name: "Mr. Dinh Thanh Son",
+    speaker13Title: "Deputy General Director",
+    speaker13Company: "Viettel Post Joint Stock Corporation",
+
+    speaker14Name: "Ms. Dinh Thi Thu Hien",
+    speaker14Title: "CEO",
+    speaker14Company: "YUGEEKS International Trading Co., Ltd",
+
+    speaker15Name: "Mr. Thang Nguyen",
+    speaker15Title:
+      "Head of AI Product Engineering; Chief AI Officer (CAIO)",
+    speaker15Company: "Torus AI France; Taureau AI Vietnam",
+
+    speaker16Name: "Mr. Thoang Tran",
+    speaker16Title: "Director",
+    speaker16Company: "CT-Strategies Vietnam",
 
     // Topics Section
     topicsTitle: "MAIN TOPICS",
@@ -959,74 +960,76 @@ export const translations = {
       "Gặp gỡ trao đổi những chuyên gia hàng đầu trong lĩnh vực Thương mại điện tử xuyên biên giới đến từ nhiều quốc gia khác",
 
     // Individual Speakers
-    speaker1Name: "Bà Lê Hoàng Oanh",
-    speaker1Title: "Cục trưởng",
-    speaker1Company: "Cục Thương mại điện tử và Kinh tế số Bộ Công Thương",
-    speaker1Description:
-      "Hơn 20 năm kinh nghiệm trong phát triển chính sách thương mại điện tử và chuyển đổi kinh tế số. Dẫn dắt chiến lược phát triển TMĐT quốc gia của Việt Nam.",
+    speaker1Name: "Bà Lại Việt Anh",
+    speaker1Title: "Phó cục trưởng",
+    speaker1Company: "Cục Thương mại điện tử và Kinh tế số, Bộ Công Thương",
 
-    speaker2Name: "Ông Liu Liang",
-    speaker2Title:
-      "Đại diện Sở Thương mại Tỉnh Vân Nam & Chủ tịch Hiệp hội TMĐT",
-    speaker2Company: "Tỉnh Vân Nam, Trung Quốc",
-    speaker2Description:
-      "Chuyên gia về thương mại điện tử xuyên biên giới Trung Quốc-ASEAN với nhiều kinh nghiệm trong phát triển thương mại số và các sáng kiến hợp tác khu vực.",
+    speaker2Name: "Bà Anna Nguyễn",
+    speaker2Title: "Phó chủ tịch",
+    speaker2Company:
+      "Liên minh Thương Mại điện tử xuyên biên giới toàn cầu ACBC",
 
-    speaker3Name: "Bà Anna Nguyễn",
-    speaker3Title: "Phó chủ tịch",
-    speaker3Company:
-      "Liên minh Thương mại điện tử xuyên biên giới toàn cầu ACBC",
-    speaker3Description:
-      "Tiên phong trong lĩnh vực thương mại điện tử toàn cầu với hơn 15 năm kinh nghiệm kết nối doanh nghiệp châu Á với thị trường quốc tế thông qua các nền tảng số.",
+    speaker3Name: "Ông Larry Hu",
+    speaker3Title: "Giám đốc điều hành",
+    speaker3Company: "Amazon Global Selling khu vực Đông Nam Á",
 
-    speaker4Name: "Ông Nguyễn Duy Toàn",
-    speaker4Title: "Sáng lập & Tổng giám đốc",
-    speaker4Company: "Công ty Cổ phần Proship",
-    speaker4Description:
-      "Người dẫn đầu về đổi mới logistics, xây dựng giải pháp chuỗi cung ứng thông minh cho thương mại điện tử xuyên biên giới với tích hợp công nghệ AI.",
+    speaker4Name: "Ông Xiao Qiuli",
+    speaker4Title: "Tổng Giám đốc",
+    speaker4Company:
+      "Công ty TNHH Thương mại điện tử Mua sắm Toàn cầu Quảng Đông (GGBingo)",
 
-    speaker5Name: "Ông Jang Woo Sung",
-    speaker5Title: "Ủy ban Tư vấn xuất khẩu",
-    speaker5Company: "Hiệp hội xuất khẩu tỉnh Gyeonggi",
-    speaker5Description:
-      "Chuyên gia chiến lược xuất khẩu Hàn Quốc với hiểu biết sâu sắc về thị trường thương mại điện tử châu Á và chuyển đổi số cho doanh nghiệp vừa và nhỏ.",
+    speaker5Name: "Bà Vũ Xuân Linh",
+    speaker5Title: "Giám đốc Quan hệ Đối tác Chiến lược (Thị trường Việt Nam)",
+    speaker5Company: "Tập đoàn Sea Limited",
 
-    speaker6Name: "Ông Phạm Tấn Đạt",
-    speaker6Title: "Tổng giám đốc",
-    speaker6Company: "FADO GROUP",
-    speaker6Description:
-      "Doanh nhân thương mại điện tử Việt Nam đã thành công xây dựng nền tảng xuyên biên giới kết nối sản phẩm địa phương với thị trường toàn cầu.",
+    speaker6Name: "Bà Nga Đặng",
+    speaker6Title: "Nhà Sáng Lập",
+    speaker6Company: "Vietnam Food Europe B.V.",
 
-    speaker7Name: "Ông Nguyễn Thắng",
-    speaker7Title: "Trưởng bộ phận Kỹ thuật Sản phẩm AI",
-    speaker7Company: "Torus AI France",
-    speaker7Description:
-      "Chuyên gia công nghệ AI chuyên về ứng dụng thương mại điện tử, với kinh nghiệm triển khai giải pháp AI trên các thị trường châu Âu.",
+    speaker7Name: "Ông Phí Anh Tuấn",
+    speaker7Title:
+      "Phó Chủ tịch",
+    speaker7Company: "Hội Tin học TP.HCM (HCA) - Ủy viên BCH VINASA",
 
-    speaker8Name: "Ông Trần Thoang",
-    speaker8Title: "Giám đốc",
-    speaker8Company: "CT-Strategies Vietnam",
-    speaker8Description:
-      "Chuyên gia thương mại quốc tế và hải quan với chuyên môn sâu về khu vực thương mại tự do và quy định thương mại điện tử xuyên biên giới. Hơn 15 năm kinh nghiệm trong thúc đẩy thương mại toàn cầu.",
+    speaker8Name: "TS. Chen Jia",
+    speaker8Title: "Đại diện",
+    speaker8Company:
+      "National Ecological Ingredients Evaluation Center (China Ecological Origin PEOP Brand Network)",
 
-    speaker9Name: "TS. Chen Jia",
-    speaker9Title: "",
-    speaker9Company: "Uỷ ban National Ecological Ingredients Evaluation Center",
-    speaker9Description:
-      "Chuyên gia hàng đầu về tiêu chuẩn hóa sản phẩm và đánh giá chất lượng cho thương mại điện tử xuyên biên giới. Người tiên phong trong việc thực hiện tiêu chuẩn PEOP cho thương mại quốc tế.",
+    speaker9Name: "Ông Lu Chao",
+    speaker9Title: "Quản lý Phát triển Kinh doanh khu vực Đông Nam Á",
+    speaker9Company: "JINGDONG Logistics",
 
-    speaker10Name: "Ông Xiao Qiuli",
-    speaker10Title: "Giám đốc",
-    speaker10Company:
-      "Công ty TNHH Thương mại điện tử Mua sắm toàn cầu Quảng Đông (GGBingo)",
-    speaker10Description:
-      "Chuyên gia thương mại điện tử xuyên biên giới với kinh nghiệm phong phú trong việc kết nối sản phẩm Việt Nam với thị trường Trung Quốc. Chuyên gia về chiến lược bán lẻ đa kênh kỹ thuật số.",
+    speaker10Name: "Ông Vũ Ngọc Sỹ",
+    speaker10Title:
+      "Chuyên gia chiến lược về đào tạo AI cho Thương Mại Điện Tử",
+    speaker10Company: "Smart Skills Universe",
 
-    speaker11Name: "Bà Đinh Thị Thu Hiền",
-    speaker11Title: "Tổng giám đốc",
-    speaker11Company: "Công ty TNHH Thương mại Quốc tế YUGEEKS",
-    speaker11Description:
-      "Người dẫn đầu đổi mới thương mại điện tử, chuyển đổi thương mại truyền thống thành nền tảng kỹ thuật số. Chuyên gia xây dựng hệ sinh thái thương mại điện tử toàn diện và trung tâm vận hành.",
+    speaker11Name: "Bà Phan Thị Thắng",
+    speaker11Title: "Thứ trưởng",
+    speaker11Company: "Bộ Công Thương",
+
+    speaker12Name: "Ông Nguyễn Minh Đức",
+    speaker12Title: "Phó tổng thư ký",
+    speaker12Company: "Hiệp hội Thương mại điện tử Việt Nam (VECOM)",
+
+    speaker13Name: "Ông Đinh Thanh Sơn",
+    speaker13Title: "Phó tổng giám đốc",
+    speaker13Company: "Tổng Công ty Cổ phần Bưu chính Viettel",
+
+    speaker14Name: "Bà Đinh Thị Thu Hiền",
+    speaker14Title: "Tổng giám đốc",
+    speaker14Company: "CÔNG TY TNHH THƯƠNG MẠI QUỐC TẾ YUGEEKS",
+
+    speaker15Name: "Ông Thắng Nguyễn",
+    speaker15Title:
+      "Trưởng bộ phận Kỹ thuật Sản phẩm AI; CAIO",
+    speaker15Company:
+      "Torus AI Pháp; Taureau AI Việt Nam",
+
+    speaker16Name: "Ông Thoang Trần",
+    speaker16Title: "Giám đốc",
+    speaker16Company: "CT-Strategies Vietnam",
 
     // Topics Section
     topicsTitle: "CÁC CHỦ ĐỀ CHÍNH",
@@ -1949,71 +1952,70 @@ export const translations = {
     speakersSubtitle: "与来自各国跨境电商领域顶尖专家交流互动",
 
     // Individual Speakers
-    speaker1Name: "黎黄英女士",
-    speaker1Title: "局长",
+    speaker1Name: "Lai Viet Anh 女士",
+    speaker1Title: "副局长",
     speaker1Company: "越南工贸部电子商务与数字经济局",
-    speaker1Description:
-      "在电子商务政策制定和数字经济转型领域拥有超过20年经验。主导越南国家电子商务发展战略。",
 
-    speaker2Name: "刘亮先生",
-    speaker2Title: "云南省商务厅代表 & 电商协会主席",
-    speaker2Company: "中国云南省",
-    speaker2Description:
-      "中国-东盟跨境电商专家，在数字贸易发展和区域合作倡议方面拥有丰富经验。",
+    speaker2Name: "Anna Nguyen 女士",
+    speaker2Title: "副主席",
+    speaker2Company: "全球跨境电商联盟（ACBC）",
 
-    speaker3Name: "阮安娜女士",
-    speaker3Title: "副主席",
-    speaker3Company: "全球跨境电商联盟 ACBC",
-    speaker3Description:
-      "全球电子商务先驱，拥有15年以上通过数字平台连接亚洲企业与国际市场的经验。",
+    speaker3Name: "Larry Hu 先生",
+    speaker3Title: "总经理",
+    speaker3Company: "亚马逊全球开店（东南亚）",
 
-    speaker4Name: "阮维全先生",
-    speaker4Title: "创始人 & 总经理",
-    speaker4Company: "Proship股份公司",
-    speaker4Description:
-      "物流创新领袖，为跨境电商打造智能供应链解决方案，整合AI技术。",
+    speaker4Name: "Xiao Qiuli 先生",
+    speaker4Title: "总经理",
+    speaker4Company: "广东环球购电商有限公司（GGBingo）",
 
-    speaker5Name: "张友成先生",
-    speaker5Title: "出口咨询委员会",
-    speaker5Company: "京畿道出口协会",
-    speaker5Description:
-      "韩国出口战略专家，对亚洲电商市场和中小企业数字化转型有深入见解。",
+    speaker5Name: "Vu Xuan Linh 女士",
+    speaker5Title: "战略合作总监（越南市场）",
+    speaker5Company: "Sea 集团",
 
-    speaker6Name: "范丹达先生",
-    speaker6Title: "总经理",
-    speaker6Company: "FADO集团",
-    speaker6Description:
-      "越南电商企业家，成功打造连接本土产品与全球市场的跨境平台。",
+    speaker6Name: "Nga Dang 女士",
+    speaker6Title: "创始人",
+    speaker6Company: "Vietnam Food Europe B.V.",
 
-    speaker7Name: "阮胜先生",
-    speaker7Title: "产品技术部主管",
-    speaker7Company: "Torus AI France",
-    speaker7Description:
-      "AI技术专家，专注于电商应用，在欧洲市场拥有AI解决方案实施经验。",
+    speaker7Name: "Phi Anh Tuan 先生",
+    speaker7Title: "胡志明市计算机协会副主席；VINASA执委",
+    speaker7Company: "",
 
-    speaker8Name: "陈斌先生",
-    speaker8Title: "总经理",
-    speaker8Company: "CT-Strategies Vietnam",
-    speaker8Description:
-      "国际贸易和海关专家，在自由贸易区和跨境电子商务法规方面有深入的专业知识。拥有超过15年的全球贸易促进经验。",
+    speaker8Name: "Chen Jia 博士",
+    speaker8Title: "代表",
+    speaker8Company:
+      "国家生态原料评估中心（中国生态原产地PEOP品牌网络）",
 
-    speaker9Name: "陈佳博士",
-    speaker9Title: "",
-    speaker9Company: "中国生态原产地PEOP品牌网络",
-    speaker9Description:
-      "跨境电子商务产品标准化和质量评估的领先专家。国际贸易PEOP标准实施的先驱。",
+    speaker9Name: "Lu Chao 先生",
+    speaker9Title: "东南亚业务发展经理",
+    speaker9Company: "京东物流",
 
-    speaker10Name: "肖秋丽先生",
-    speaker10Title: "总经理",
-    speaker10Company: "广东环球购电商有限公司 (GGBingo)",
-    speaker10Description:
-      "跨境电商资深专家，在连接越南产品与中国市场方面拥有丰富经验。数字零售多渠道战略专家。",
+    speaker10Name: "Vu Ngoc Sy 先生",
+    speaker10Title: "电商AI培训战略专家",
+    speaker10Company: "Smart Skills Universe",
 
-    speaker11Name: "丁氏秋贤女士",
-    speaker11Title: "总经理",
-    speaker11Company: "YUGEEKS国际贸易有限公司",
-    speaker11Description:
-      "电子商务创新领袖，将传统贸易转型为数字平台。构建全面电子商务生态系统和运营中心的专家。",
+    speaker11Name: "Phan Thi Thang 女士",
+    speaker11Title: "副部长",
+    speaker11Company: "越南工贸部",
+
+    speaker12Name: "Nguyen Minh Duc 先生",
+    speaker12Title: "副秘书长",
+    speaker12Company: "越南电子商务协会（VECOM）",
+
+    speaker13Name: "Dinh Thanh Son 先生",
+    speaker13Title: "副总经理",
+    speaker13Company: "Viettel Post 股份总公司",
+
+    speaker14Name: "Dinh Thi Thu Hien 女士",
+    speaker14Title: "总经理",
+    speaker14Company: "YUGEEKS 国际贸易有限公司",
+
+    speaker15Name: "Thang Nguyen 先生",
+    speaker15Title: "AI产品工程负责人；首席AI官（CAIO）",
+    speaker15Company: "Torus AI France；Taureau AI Vietnam",
+
+    speaker16Name: "Thoang Tran 先生",
+    speaker16Title: "总监",
+    speaker16Company: "CT-Strategies Vietnam",
   },
 
   // Sponsors Section
