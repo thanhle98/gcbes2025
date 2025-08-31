@@ -12,6 +12,7 @@ import {
   Mic,
   Building2,
   ChevronRight,
+  ChevronLeft,
   Package,
 } from "lucide-react";
 import VideoPopup from "../components/common/VideoPopup";
@@ -150,6 +151,19 @@ export default function HomePage() {
     { name: t("speaker15Name"), title: t("speaker15Title"), company: t("speaker15Company"), image: "/speakers/thang-nguyen.png" },
     { name: t("speaker16Name"), title: t("speaker16Title"), company: t("speaker16Company"), image: "/speakers/thoang-tran.png" },
   ];
+  
+  // Speakers pagination (6 per page)
+  const speakersPerPage = 6;
+  const [currentSpeakerPage, setCurrentSpeakerPage] = useState(0);
+  const totalSpeakerPages = Math.ceil(dynamicSpeakers.length / speakersPerPage);
+  const visibleSpeakers = dynamicSpeakers.slice(
+    currentSpeakerPage * speakersPerPage,
+    (currentSpeakerPage + 1) * speakersPerPage
+  );
+  const handlePrevSpeakers = () =>
+    setCurrentSpeakerPage((prev) => Math.max(0, prev - 1));
+  const handleNextSpeakers = () =>
+    setCurrentSpeakerPage((prev) => Math.min(totalSpeakerPages - 1, prev + 1));
   
   const sponsorsData = [
     {
@@ -298,9 +312,9 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {dynamicSpeakers.map((speaker, index) => (
+            {visibleSpeakers.map((speaker) => (
               <div
-                key={index}
+                key={speaker.name}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative p-6 pt-8">
@@ -326,6 +340,29 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-8 flex items-center justify-center space-x-4">
+            <button
+              type="button"
+              onClick={handlePrevSpeakers}
+              disabled={currentSpeakerPage === 0}
+              aria-label="Previous speakers"
+              className="inline-flex items-center justify-center rounded-full border border-gray-300 p-2 bg-white text-gray-700 hover:bg-gray-50 shadow-sm disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <span className="text-sm text-gray-600">
+              {currentSpeakerPage + 1} / {totalSpeakerPages}
+            </span>
+            <button
+              type="button"
+              onClick={handleNextSpeakers}
+              disabled={currentSpeakerPage === totalSpeakerPages - 1}
+              aria-label="Next speakers"
+              className="inline-flex items-center justify-center rounded-full border border-gray-300 p-2 bg-white text-gray-700 hover:bg-gray-50 shadow-sm disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>
