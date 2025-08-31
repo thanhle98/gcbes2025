@@ -140,12 +140,6 @@ export default function HomePage() {
       image: "/speakers/le-hoang-oanh.png",
     },
     {
-      name: t("speaker2Name"),
-      title: t("speaker2Title"),
-      company: t("speaker2Company"), 
-      image: "/speakers/liu-liang.png",
-    },
-    {
       name: t("speaker3Name"),
       title: t("speaker3Title"),
       company: t("speaker3Company"),
@@ -156,12 +150,6 @@ export default function HomePage() {
       title: t("speaker4Title"),
       company: t("speaker4Company"),
       image: "/speakers/nguyen-duy-toan.png",
-    },
-    {
-      name: t("speaker5Name"),
-      title: t("speaker5Title"),
-      company: t("speaker5Company"),
-      image: "/speakers/jang-woo-sung.png",
     },
     {
       name: t("speaker6Name"), 
@@ -488,24 +476,6 @@ export default function HomePage() {
                   />
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Nhà tài trợ Bạc */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-600 mb-2">
-                {t("sponsorsSilver")}
-              </h3>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-gray-100 to-slate-100 border-2 border-gray-300 rounded-xl p-6 shadow-lg">
-                <img
-                  src="/partners/vnpost_logo.png"
-                  alt="VNPost"
-                  className="h-12 w-auto object-contain mx-auto"
-                />
-              </div>
             </div>
           </div>
 
