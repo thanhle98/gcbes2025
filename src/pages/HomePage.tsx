@@ -134,6 +134,7 @@ export default function HomePage() {
   ];
 
   const dynamicSpeakers = [
+    { name: t("speaker11Name"), title: t("speaker11Title"), company: t("speaker11Company"), image: "/speakers/phan-thi-thang.png" },
     { name: t("speaker1Name"), title: t("speaker1Title"), company: t("speaker1Company"), image: "/speakers/lai-viet-anh.png" },
     { name: t("speaker2Name"), title: t("speaker2Title"), company: t("speaker2Company"), image: "/speakers/anna-nguyen.png" },
     { name: t("speaker3Name"), title: t("speaker3Title"), company: t("speaker3Company"), image: "/speakers/larry-hu.png" },
@@ -144,7 +145,6 @@ export default function HomePage() {
     { name: t("speaker8Name"), title: t("speaker8Title"), company: t("speaker8Company"), image: "/speakers/chen-jia.png" },
     { name: t("speaker9Name"), title: t("speaker9Title"), company: t("speaker9Company"), image: "/speakers/lu-chao.png" },
     { name: t("speaker10Name"), title: t("speaker10Title"), company: t("speaker10Company"), image: "/speakers/vu-ngoc-sy.png" },
-    { name: t("speaker11Name"), title: t("speaker11Title"), company: t("speaker11Company"), image: "/speakers/phan-thi-thang.png" },
     { name: t("speaker12Name"), title: t("speaker12Title"), company: t("speaker12Company"), image: "/speakers/nguyen-minh-duc.png" },
     { name: t("speaker13Name"), title: t("speaker13Title"), company: t("speaker13Company"), image: "/speakers/dinh-thanh-son.png" },
     { name: t("speaker14Name"), title: t("speaker14Title"), company: t("speaker14Company"), image: "/speakers/dinh-thi-thu-hien.png" },
