@@ -9,10 +9,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { email, phone } = req.body;
+    const { email, phone, name, position, company } = req.body;
 
-    if (!email || !phone) {
-      return res.status(400).json({ error: "Missing email or phone" });
+    if (!email || !phone || !name || !position || !company) {
+      return res.status(400).json({ error: "Missing required fields" });
     }
 
     // Example link you want to send
@@ -21,13 +21,23 @@ export default async function handler(req, res) {
     const { data, error } = await resend.emails.send({
       from: "Em Hiền <hello@vietfas.com>",
       to: email,
-      subject: "Em Hiền - Tài liệu tham luận sự kiện GCBES 2025",
+      subject: `Em Hiền - Tài liệu tham luận sự kiện GCBES 2025 cho ${name}`,
       html: `
-      <p>Xin chào và cảm ơn quý anh/chị đã quan tâm đến sự kiện GCBES 2025,</p>
-      <p>Đây là link tài liệu tham luận của sự kiện GCBES 2025: <a href="${link}">${link}</a></p>
-      <p>Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ em qua email <a href="mailto:hello@vietfas.com">hello@vietfas.com</a></p>
+      <p>Kính chào ${name},</p>
+      <p>Cảm ơn anh/chị ${name} (${position} tại ${company}) đã quan tâm đến sự kiện GCBES 2025.</p>
+      <p>Đây là link tài liệu tham luận của sự kiện GCBES 2025: <a href="${link}" style="color: #4F46E5; text-decoration: underline;">${link}</a></p>
+      <p><strong>Thông tin của anh/chị:</strong></p>
+      <ul>
+        <li>Họ và tên: ${name}</li>
+        <li>Chức vụ: ${position}</li>
+        <li>Công ty/Đơn vị: ${company}</li>
+        <li>Số điện thoại: ${phone}</li>
+        <li>Email: ${email}</li>
+      </ul>
+      <p>Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ em qua email <a href="mailto:hello@vietfas.com">hello@vietfas.com</a> hoặc số điện thoại.</p>
       <p>Trân trọng,</p>
-      <p>Em Hiền</p>`,
+      <p>Em Hiền</p>
+      <p>VIETFAS Team</p>`,
     });
 
     if (error) {

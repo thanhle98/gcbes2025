@@ -8,12 +8,18 @@ import {
   Mail,
   Phone,
   Send,
+  User,
+  Briefcase,
+  Building2,
 } from "lucide-react";
 
 export default function PresentationsPage() {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [position, setPosition] = useState("");
+  const [company, setCompany] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
@@ -26,8 +32,8 @@ export default function PresentationsPage() {
     setIsSuccess(false);
 
     // Basic validation
-    if (!email.trim() || !phone.trim()) {
-      setMessage("Vui lòng điền đầy đủ email và số điện thoại");
+    if (!email.trim() || !phone.trim() || !name.trim() || !position.trim() || !company.trim()) {
+      setMessage("Vui lòng điền đầy đủ tất cả thông tin");
       setIsLoading(false);
       return;
     }
@@ -56,6 +62,9 @@ export default function PresentationsPage() {
         body: JSON.stringify({
           email: email.trim(),
           phone: phone.trim(),
+          name: name.trim(),
+          position: position.trim(),
+          company: company.trim(),
         }),
       });
 
@@ -64,6 +73,9 @@ export default function PresentationsPage() {
         setMessage("Link tài liệu đã được gửi về email của bạn!");
         setEmail("");
         setPhone("");
+        setName("");
+        setPosition("");
+        setCompany("");
       } else {
         throw new Error("Có lỗi xảy ra khi gửi yêu cầu");
       }
@@ -138,6 +150,45 @@ export default function PresentationsPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <User className="h-5 w-5 text-gray-400" />
+                      </div>
+                      <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Họ và tên"
+                        className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <Briefcase className="h-5 w-5 text-gray-400" />
+                      </div>
+                      <input
+                        type="text"
+                        value={position}
+                        onChange={(e) => setPosition(e.target.value)}
+                        placeholder="Chức vụ"
+                        className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <Building2 className="h-5 w-5 text-gray-400" />
+                      </div>
+                      <input
+                        type="text"
+                        value={company}
+                        onChange={(e) => setCompany(e.target.value)}
+                        placeholder="Tên công ty/đơn vị"
+                        className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <Mail className="h-5 w-5 text-gray-400" />
                       </div>
                       <input
@@ -149,7 +200,7 @@ export default function PresentationsPage() {
                         required
                       />
                     </div>
-                    <div className="relative">
+                    <div className="relative md:col-span-2">
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <Phone className="h-5 w-5 text-gray-400" />
                       </div>
