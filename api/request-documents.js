@@ -18,12 +18,17 @@ export default async function handler(req, res) {
     // Example link you want to send
     const link = `https://drive.google.com/drive/folders/1xzTf1dcnoeX37Cb3hBA5PPIVuJaN_wi8`;
 
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Mrs. Hien <hello@vietfas.com>",
       to: email,
       subject: "GCBES 2025 - Tài liệu tham luận",
       html: `<p>Xin chào và cảm ơn bạn đã quan tâm đến sự kiện GCBES 2025,</p><p>Đây là link tài liệu tham luận của GCBES 2025: <a href="${link}">${link}</a></p>`,
     });
+
+    if (error) {
+      console.error(error);
+      return res.status(500).json({ error: "Failed to send email" });
+    }
 
     return res.status(200).json({ success: true });
   } catch (err) {
