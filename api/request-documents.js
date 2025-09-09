@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     const { data, error } = await resend.emails.send({
       from: "Em Hiền <hello@vietfas.com>",
       to: email,
+      cc: "gcbes.acbc@gmail.com",
       subject: `Em Hiền - Tài liệu tham luận sự kiện GCBES 2025 cho ${name}`,
       html: `
       <p>Kính chào ${name},</p>
