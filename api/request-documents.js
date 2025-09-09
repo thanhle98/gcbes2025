@@ -19,6 +19,7 @@ export default async function handler(req, res) {
     const link = `https://drive.google.com/drive/folders/1xzTf1dcnoeX37Cb3hBA5PPIVuJaN_wi8`;
 
     const { data, error } = await resend.emails.send({
+      from: "Em Hiền <hello@vietfas.com>",
       to: email,
       subject: "Em Hiền - Tài liệu tham luận sự kiện GCBES 2025",
       html: `
