@@ -19,10 +19,14 @@ export default async function handler(req, res) {
     const link = `https://drive.google.com/drive/folders/1xzTf1dcnoeX37Cb3hBA5PPIVuJaN_wi8`;
 
     const { data, error } = await resend.emails.send({
-      from: "Mrs. Hien <hello@vietfas.com>",
       to: email,
-      subject: "GCBES 2025 - Tài liệu tham luận",
-      html: `<p>Xin chào và cảm ơn bạn đã quan tâm đến sự kiện GCBES 2025,</p><p>Đây là link tài liệu tham luận của GCBES 2025: <a href="${link}">${link}</a></p>`,
+      subject: "Em Hiền - Tài liệu tham luận sự kiện GCBES 2025",
+      html: `
+      <p>Xin chào và cảm ơn quý anh/chị đã quan tâm đến sự kiện GCBES 2025,</p>
+      <p>Đây là link tài liệu tham luận của sự kiện GCBES 2025: <a href="${link}">${link}</a></p>
+      <p>Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ em qua email <a href="mailto:hello@vietfas.com">hello@vietfas.com</a></p>
+      <p>Trân trọng,</p>
+      <p>Em Hiền</p>`,
     });
 
     if (error) {
